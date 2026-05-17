@@ -1,0 +1,355 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/CyberStrategyInstitute/crypto-shield/metadata/threat-event-schema.json",
+  "title": "CryptoSHIELD Threat Event Schema v1.1",
+  "description": "Machine-readable metadata schema for crypto security threat events. Compatible with SIEM ingestion, analytics platforms, and DefiLlama enrichment API.",
+  "type": "object",
+  "required": ["id", "timestamp", "threat_id", "category", "severity", "ooda_phase"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique event ID: [threat_id]-[YYYYMMDD]-[location/platform code]",
+      "examples": ["CS-PHY-01-20250919-MN", "CS-FRD-01-20250301-CA-001"]
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 UTC timestamp of event detection or occurrence"
+    },
+    "discovered_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "exploit_date": {
+      "type": "string",
+      "format": "date",
+      "description": "For delayed exploits (e.g., backdoor planted weeks before activation)"
+    },
+    "threat_id": {
+      "type": "string",
+      "pattern": "^CS-[A-Z]{2,4}-[0-9]{2}$",
+      "description": "CryptoSHIELD threat taxonomy ID",
+      "examples": ["CS-PHY-01", "CS-FRD-01", "CS-AI-04"]
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Physical", "Insider", "Social Engineering", "Malware",
+        "Wallet", "DeFi Protocol", "Supply Chain", "AI Agent",
+        "Market Manipulation", "Financial Fraud", "Sovereignty", "Extortion"
+      ]
+    },
+    "subcategory": {
+      "type": "string"
+    },
+    "severity": {
+      "type": "string",
+      "enum": ["CRITICAL", "HIGH", "MEDIUM", "LOW"]
+    },
+    "ctrs_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100,
+      "description": "Crypto Threat Risk Score: (L×0.25 + Ia×0.30 + R×0.20 + D×0.15 + RecD×0.10) × 20"
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["HIGH", "MEDIUM", "LOW", "UNCONFIRMED"]
+    },
+    "layer": {
+      "type": "string",
+      "enum": ["on_chain_protocol", "consumer_fraud", "ransomware_extortion", "physical", "supply_chain", "social_engineering"],
+      "description": "Loss layer for multi-source intelligence aggregation"
+    },
+    "ooda_phase": {
+      "type": "string",
+      "enum": ["observe", "orient", "decide", "act", "all"],
+      "description": "Primary OODA phase where threat operates"
+    },
+    "target_type": {
+      "type": "string",
+      "enum": ["individual", "protocol", "cex", "developer", "organization", "family", "elderly"]
+    },
+    "target_profile": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "examples": [["high_net_worth", "public_on_chain_identity", "poor_opsec"]]
+    },
+    "attack_vectors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "financial_loss_usd": {
+      "type": "number",
+      "description": "Confirmed financial loss in USD; null if unknown"
+    },
+    "financial_loss_estimated": {
+      "type": "boolean",
+      "description": "True if loss figure is estimated rather than confirmed"
+    },
+    "loss_type": {
+      "type": "string",
+      "enum": [
+        "coerced_transfer", "wallet_drain", "protocol_exploit",
+        "fraud_deposit", "ransomware_payment", "recovery_scam_payment",
+        "atm_transfer", "fee_payment_to_fraudster", "bridge_exploit"
+      ]
+    },
+    "chain": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Blockchain(s) involved",
+      "examples": [["ethereum", "solana", "bitcoin"]]
+    },
+    "protocol_name": {
+      "type": "string",
+      "description": "For DeFi protocol exploits"
+    },
+    "jurisdiction": {
+      "type": "string",
+      "description": "ISO 3166-1 alpha-2 country code or state code"
+    },
+    "attribution": {
+      "type": "string",
+      "description": "Attributed threat actor or group — always verify with false_flag_probability"
+    },
+    "false_flag_probability": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Probability official attribution is incorrect based on false flag checklist"
+    },
+    "insider_vector": {
+      "type": "boolean",
+      "description": "True if insider access was the root enabler or primary hypothesis"
+    },
+    "ai_assisted": {
+      "type": "boolean",
+      "description": "True if AI was used to enhance or execute the attack"
+    },
+    "ai_attack_type": {
+      "type": "string",
+      "description": "Specific AI technique used if ai_assisted is true"
+    },
+    "sovereignty_impact": {
+      "type": "string",
+      "enum": ["LOW", "MEDIUM", "HIGH", "CRITICAL"]
+    },
+    "self_custody_relevant": {
+      "type": "boolean",
+      "description": "True if attack directly targets self-custodied assets"
+    },
+    "regulatory_vector": {
+      "type": "boolean",
+      "description": "True if a regulatory mechanism was used as an attack vector"
+    },
+    "fall_guy_pattern": {
+      "type": "boolean",
+      "description": "True if a visible actor appears to have been sacrificed to protect deeper operations"
+    },
+    "capital_rotation_sig": {
+      "type": "boolean",
+      "description": "True if incident is part of a systemic capital extraction pattern (Rotator Effect)"
+    },
+    "forced_labor_link": {
+      "type": "boolean",
+      "description": "True if operation is linked to forced labor scam compound infrastructure"
+    },
+    "indicators": {
+      "type": "object",
+      "properties": {
+        "osint_exposure": {"type": "boolean"},
+        "ens_linked_to_identity": {"type": "boolean"},
+        "social_media_flex_post": {"type": "boolean"},
+        "address_reuse": {"type": "boolean"},
+        "unsolicited_contact": {"type": "boolean"},
+        "urgency_pressure": {"type": "boolean"},
+        "fee_demand_to_unlock": {"type": "boolean"},
+        "profitable_test_withdrawal": {"type": "boolean"},
+        "code_change_pre_exploit": {"type": "boolean"},
+        "multisig_masquerade": {"type": "boolean"}
+      }
+    },
+    "deterministic_defense": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Z]{2,4}-[0-9]{2}$"
+      },
+      "description": "CryptoSHIELD control IDs that would have prevented this event",
+      "examples": [["WKS-02", "WKS-03", "OPS-05"]]
+    },
+    "controls_triggered": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "Controls that were breached or absent in this incident"
+    },
+    "mitre_attack": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "MITRE ATT&CK technique IDs"
+    },
+    "ai_safe2_ref": {
+      "type": "string",
+      "description": "Reference to relevant AI SAFE² v3.0 control(s) for AI-related threats"
+    },
+    "csf_cognitive_ref": {
+      "type": "string",
+      "description": "Reference to relevant CSF threat taxonomy entry for cognitive/social engineering threats"
+    },
+    "defillama_hack_id": {
+      "type": "string",
+      "description": "Cross-reference to DefiLlama incident ID if applicable"
+    },
+    "chainabuse_addresses": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "Reported attacker wallet addresses from Chainabuse"
+    },
+    "dfpi_reported": {"type": "boolean"},
+    "chainabuse_reported": {"type": "boolean"},
+    "cryptoscamdb_listed": {"type": "boolean"},
+    "ic3_reported": {"type": "boolean"},
+    "scam_platform_url": {
+      "type": ["string", "null"],
+      "description": "For CS-FRD-* events: URL of fraudulent platform"
+    },
+    "scam_fee_demand_type": {
+      "type": ["string", "null"],
+      "enum": ["tax", "aml_deposit", "account_upgrade", "certification", "green_channel", "risk_deposit", "other", null]
+    },
+    "victim_demographic": {
+      "type": "object",
+      "properties": {
+        "age_group": {
+          "type": "string",
+          "enum": ["under_30", "30_60", "over_60", "unknown"]
+        },
+        "technical_level": {
+          "type": "string",
+          "enum": ["novice", "intermediate", "advanced", "unknown"]
+        }
+      }
+    },
+    "recovery_attempt_scam_followed": {
+      "type": "boolean",
+      "description": "True if victim was subsequently targeted by a recovery scam (CS-FRD-02)"
+    },
+    "btc_atm_used": {"type": "boolean"},
+    "ai_deepfake_used": {"type": "boolean"},
+    "ai_document_forgery": {"type": "boolean"},
+    "typosquat_domain": {
+      "type": ["string", "null"]
+    },
+    "estimated_total_campaign_loss_usd": {
+      "type": ["number", "null"],
+      "description": "Total estimated losses across all victims of the same campaign"
+    },
+    "tags": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "references": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "related_threats": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^CS-[A-Z]{2,4}-[0-9]{2}$"
+      }
+    },
+    "notes": {
+      "type": "string",
+      "description": "Free-text analysis notes for the event"
+    }
+  },
+  "examples": [
+    {
+      "id": "CS-PHY-01-20250919-MN",
+      "timestamp": "2025-09-19T00:00:00Z",
+      "threat_id": "CS-PHY-01",
+      "category": "Physical",
+      "subcategory": "Kidnapping",
+      "severity": "CRITICAL",
+      "ctrs_score": 90,
+      "confidence": "HIGH",
+      "layer": "physical",
+      "ooda_phase": "act",
+      "target_type": "individual",
+      "target_profile": ["high_net_worth", "public_on_chain_identity", "poor_opsec"],
+      "attack_vectors": ["OSINT", "social_media_profiling", "physical_coercion"],
+      "financial_loss_usd": 8000000,
+      "financial_loss_estimated": false,
+      "loss_type": "coerced_transfer",
+      "jurisdiction": "US-MN",
+      "attribution": "unknown_organized_crime",
+      "false_flag_probability": 0.1,
+      "insider_vector": false,
+      "ai_assisted": false,
+      "sovereignty_impact": "CRITICAL",
+      "self_custody_relevant": true,
+      "indicators": {
+        "osint_exposure": true,
+        "ens_linked_to_identity": true,
+        "social_media_flex_post": true,
+        "address_reuse": true
+      },
+      "deterministic_defense": ["OPS-01", "OPS-02", "OPS-05", "OPS-06", "OPS-10"],
+      "mitre_attack": ["T1591", "T1589"],
+      "tags": ["wrench_attack", "physical", "opsec_failure", "osint", "coercion"],
+      "references": ["DOJ-2025-MN-KID", "CSI-ISSUE-46"],
+      "ic3_reported": true
+    },
+    {
+      "id": "CS-FRD-01-20250301-CA-001",
+      "timestamp": "2025-03-01T00:00:00Z",
+      "threat_id": "CS-FRD-01",
+      "category": "Financial Fraud",
+      "subcategory": "Pig Butchering",
+      "severity": "CRITICAL",
+      "ctrs_score": 92,
+      "confidence": "HIGH",
+      "layer": "consumer_fraud",
+      "ooda_phase": "observe",
+      "target_type": "individual",
+      "attack_vectors": ["dating_app", "whatsapp", "fake_trading_platform"],
+      "financial_loss_usd": 180000,
+      "financial_loss_estimated": false,
+      "loss_type": "fraud_deposit",
+      "jurisdiction": "US-CA",
+      "attribution": "organized_crime_scam_compound",
+      "false_flag_probability": 0.02,
+      "insider_vector": false,
+      "ai_assisted": true,
+      "ai_attack_type": "AI-generated relationship persona; AI-written messages",
+      "sovereignty_impact": "CRITICAL",
+      "self_custody_relevant": true,
+      "forced_labor_link": true,
+      "indicators": {
+        "unsolicited_contact": true,
+        "profitable_test_withdrawal": true,
+        "fee_demand_to_unlock": true
+      },
+      "scam_platform_url": "stridefinex-exchange.com",
+      "scam_fee_demand_type": "tax",
+      "victim_demographic": {
+        "age_group": "30_60",
+        "technical_level": "novice"
+      },
+      "deterministic_defense": ["CFD-01", "CFD-02", "CFD-03", "CFD-04", "SMS-13"],
+      "dfpi_reported": true,
+      "chainabuse_reported": true,
+      "ic3_reported": true,
+      "tags": ["pig_butchering", "romance_scam", "fake_platform", "trust_bait", "fee_escalation"],
+      "references": ["DFPI Scam Tracker CA-2025-PB-001"]
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+<svg viewBox="0 0 900 540" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <!-- Background -->
+  <rect width="900" height="540" fill="#0B1F33" rx="12"/>
+
+  <!-- Title -->
+  <text x="450" y="44" text-anchor="middle" font-size="20" font-weight="700" fill="#F6921E" letter-spacing="1">CSI SECURITY FRAMEWORK STACK</text>
+  <text x="450" y="66" text-anchor="middle" font-size="12" fill="#808080">Three complementary frameworks. One unified defense posture.</text>
+
+  <!-- CryptoSHIELD — primary, top layer -->
+  <rect x="60" y="90" width="780" height="160" rx="8" fill="#820F1A" opacity="0.9" stroke="#F6921E" stroke-width="2"/>
+  <text x="450" y="120" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">CSI CryptoSHIELD Framework v1.1</text>
+  <text x="450" y="141" text-anchor="middle" font-size="11" fill="#F6921E">github.com/CyberStrategyInstitute/crypto-shield</text>
+
+  <!-- CryptoSHIELD domain pills -->
+  <g font-size="10" fill="#FFFFFF" text-anchor="middle">
+    <!-- Row 1 -->
+    <rect x="80" y="158" width="130" height="26" rx="4" fill="#0B1F33" opacity="0.7"/>
+    <text x="145" y="175">Wallet &amp; Key Sovereignty</text>
+
+    <rect x="222" y="158" width="130" height="26" rx="4" fill="#0B1F33" opacity="0.7"/>
+    <text x="287" y="175">Endpoint Defense</text>
+
+    <rect x="364" y="158" width="130" height="26" rx="4" fill="#0B1F33" opacity="0.7"/>
+    <text x="429" y="175">OPSEC &amp; Physical</text>
+
+    <rect x="506" y="158" width="130" height="26" rx="4" fill="#0B1F33" opacity="0.7"/>
+    <text x="571" y="175">On-Chain Monitoring</text>
+
+    <rect x="648" y="158" width="130" height="26" rx="4" fill="#0B1F33" opacity="0.7"/>
+    <text x="713" y="175">Supply Chain Defense</text>
+
+    <!-- Row 2 -->
+    <rect x="120" y="196" width="130" height="26" rx="4" fill="#0B1F33" opacity="0.7"/>
+    <text x="185" y="213">Social &amp; Platform Sec</text>
+
+    <rect x="270" y="196" width="130" height="26" rx="4" fill="#0B1F33" opacity="0.7"/>
+    <text x="335" y="213">Consumer Fraud Defense</text>
+
+    <rect x="420" y="196" width="130" height="26" rx="4" fill="#0B1F33" opacity="0.7"/>
+    <text x="485" y="213">Governance &amp; Sovereignty</text>
+
+    <rect x="570" y="196" width="130" height="26" rx="4" fill="#0B1F33" opacity="0.7"/>
+    <text x="635" y="213">Cross-Domain (CDG)</text>
+  </g>
+
+  <!-- Stats bar -->
+  <rect x="80" y="232" width="740" height="4" rx="2" fill="#F6921E" opacity="0.3"/>
+  <g font-size="11" fill="#808080" text-anchor="middle">
+    <text x="175" y="254">9 Domains</text>
+    <text x="307" y="254">95 Controls</text>
+    <text x="450" y="254">42 Threats (CTRS)</text>
+    <text x="607" y="254">OODA Playbooks</text>
+    <text x="745" y="254">U.S. Constitutional</text>
+  </g>
+
+  <!-- Connector arrows -->
+  <line x1="280" y1="340" x2="280" y2="310" stroke="#808080" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrowGray)"/>
+  <line x1="620" y1="340" x2="620" y2="310" stroke="#808080" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrowGray)"/>
+
+  <!-- Labels between -->
+  <text x="450" y="295" text-anchor="middle" font-size="10" fill="#808080">AI Agent Governance</text>
+  <text x="450" y="309" text-anchor="middle" font-size="10" fill="#808080">Cognitive Layer</text>
+
+  <text x="110" y="325" text-anchor="middle" font-size="9" fill="#F6921E">defers to</text>
+  <text x="795" y="325" text-anchor="middle" font-size="9" fill="#F6921E">defers to</text>
+
+  <!-- AI SAFE2 -->
+  <rect x="60" y="340" width="360" height="140" rx="8" fill="#0B1F33" stroke="#F6921E" stroke-width="1.5"/>
+  <text x="240" y="368" text-anchor="middle" font-size="15" font-weight="700" fill="#F6921E">AI SAFE² v3.0</text>
+  <text x="240" y="386" text-anchor="middle" font-size="10" fill="#808080">github.com/CyberStrategyInstitute/ai-safe2-framework</text>
+  <g font-size="10" fill="#FFFFFF" text-anchor="middle">
+    <text x="240" y="410">161 Controls (151 Pillar + 10 CP)</text>
+    <text x="240" y="428">HEAR Doctrine (CP.10) | ACT Tiers 1-4</text>
+    <text x="240" y="446">Agent Replication Governance (CP.9)</text>
+    <text x="240" y="464">NHI Identity | MCP Server Security</text>
+  </g>
+
+  <!-- CSF -->
+  <rect x="480" y="340" width="360" height="140" rx="8" fill="#0B1F33" stroke="#820F1A" stroke-width="1.5"/>
+  <text x="660" y="368" text-anchor="middle" font-size="15" font-weight="700" fill="#820F1A">Cognitive Sovereignty</text>
+  <text x="660" y="386" text-anchor="middle" font-size="10" fill="#808080">github.com/CyberStrategyInstitute/cognitive-sovereignty</text>
+  <g font-size="10" fill="#FFFFFF" text-anchor="middle">
+    <text x="660" y="410">6 Resilience Domains | 41 Threat Entries</text>
+    <text x="660" y="428">CTSS Scoring | Digital &amp; AI Symbiosis</text>
+    <text x="660" y="446">Deepfake Resistance | Social Engineering</text>
+    <text x="660" y="464">Human Decision Autonomy</text>
+  </g>
+
+  <!-- Bottom tagline -->
+  <text x="450" y="508" text-anchor="middle" font-size="11" fill="#808080">"Policy is just intent. Engineering is reality."</text>
+  <text x="450" y="526" text-anchor="middle" font-size="10" fill="#F6921E">Cyber Strategy Institute | cyberstrategyinstitute.com | Open-Source | Sovereignty-First</text>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowGray" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#808080"/>
+    </marker>
+  </defs>
+</svg>
