@@ -1,0 +1,132 @@
+name: Taxonomy Integrity Check
+
+on:
+  push:
+    paths:
+      - 'taxonomy/registry.json'
+      - 'metadata/threat-event-schema.json'
+  pull_request:
+    paths:
+      - 'taxonomy/**'
+      - 'metadata/**'
+
+jobs:
+  validate-registry:
+    runs-on: ubuntu-latest
+    name: Validate Threat Registry
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install ajv-cli for JSON Schema validation
+        run: npm install -g ajv-cli ajv-formats
+
+      - name: Validate registry.json against schema
+        run: |
+          ajv validate \
+            -s metadata/threat-event-schema.json \
+            -d taxonomy/registry.json \
+            --all-errors \
+            --strict=false \
+            2>&1 || echo "::warning::Schema validation produced warnings"
+
+      - name: Check CTRS scores are within range
+        run: |
+          python3 - <<'EOF'
+          import json
+          import sys
+
+          with open('taxonomy/registry.json') as f:
+              data = json.load(f)
+
+          errors = []
+          threats = data.get('threats', data) if isinstance(data, dict) else data
+
+          if isinstance(threats, dict):
+              threats = list(threats.values())
+
+          for threat in threats:
+              tid = threat.get('id', 'UNKNOWN')
+              ctrs = threat.get('ctrs_score')
+              if ctrs is not None:
+                  if not (0 <= ctrs <= 20):
+                      errors.append(f"{tid}: CTRS score {ctrs} out of range (0-20)")
+              severity = threat.get('severity', '').upper()
+              if severity and severity not in ['CRITICAL', 'HIGH', 'MEDIUM', 'LOW']:
+                  errors.append(f"{tid}: Invalid severity '{severity}'")
+
+          if errors:
+              print("::error::Registry validation errors:")
+              for e in errors:
+                  print(f"  - {e}")
+              sys.exit(1)
+          else:
+              print(f"Registry validation passed: {len(threats)} threats checked")
+          EOF
+
+      - name: Check threat ID uniqueness
+        run: |
+          python3 - <<'EOF'
+          import json
+          import sys
+
+          with open('taxonomy/registry.json') as f:
+              data = json.load(f)
+
+          threats = data.get('threats', data) if isinstance(data, dict) else data
+          if isinstance(threats, dict):
+              threats = list(threats.values())
+
+          ids = [t.get('id') for t in threats if t.get('id')]
+          duplicates = [id for id in set(ids) if ids.count(id) > 1]
+
+          if duplicates:
+              print(f"::error::Duplicate threat IDs found: {duplicates}")
+              sys.exit(1)
+          else:
+              print(f"ID uniqueness check passed: {len(ids)} unique IDs")
+          EOF
+
+  validate-markdown:
+    runs-on: ubuntu-latest
+    name: Validate Domain Documentation
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check all domain READMEs exist
+        run: |
+          domains=(
+            "00-cross-domain"
+            "01-wallet-key-sovereignty"
+            "02-endpoint-device-defense"
+            "03-opsec-physical-security"
+            "04-social-media-platform-security"
+            "05-on-chain-monitoring"
+            "06-supply-chain-defense"
+            "07-ai-agent-security"
+            "08-governance-compliance-sovereignty"
+            "09-consumer-fraud-defense"
+          )
+          missing=0
+          for d in "${domains[@]}"; do
+            if [ ! -f "${d}/README.md" ]; then
+              echo "::warning::Missing README: ${d}/README.md"
+              missing=$((missing + 1))
+            fi
+          done
+          echo "Domain README check: $missing missing"
+
+      - name: Check for em dashes in all markdown files
+        run: |
+          # CSI style: no em dashes
+          if grep -r " — " --include="*.md" . 2>/dev/null | grep -v ".git"; then
+            echo "::warning::Em dashes found in markdown files. Replace with colon, semicolon, or parentheses."
+          else
+            echo "Em dash check passed"
+          fi
