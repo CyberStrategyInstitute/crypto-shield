@@ -1,3 +1,7 @@
+<div align="center">
+
+<img src="assets/CryptoSHIELD Framework.png" alt="CryptoSHIELD Framework" width="100%" />
+
 # CSI CryptoSHIELD Framework
 
 **The open-source, sovereignty-first security doctrine for crypto holders, DeFi developers, and protocol teams: 42 threats, 95 controls, 9 domains, one engineering thesis: unknown code does not execute.**
