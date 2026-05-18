@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/Domain 04 Social Media and Platform Security (SMS).png" alt="Domain 04 Social Media and Platform Security (SMS)" width="100%" />
+<img src="../assets/Domain 04 Social Media and Platform Security (SMS).png" alt="Domain 04 Social Media and Platform Security (SMS)" width="100%" />
 </div>
 
 
