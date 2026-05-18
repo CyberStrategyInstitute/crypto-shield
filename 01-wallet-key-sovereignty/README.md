@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/Domain 01 Wallet and Key Sovereignty (WKS).png" alt="Domain 01 Wallet and Key Sovereignty (WKS)" width="100%" />
+<img src="../assets/Domain 01 Wallet and Key Sovereignty (WKS).png" alt="Domain 01 Wallet and Key Sovereignty (WKS)" width="100%" />
 </div>
 
 # Domain 01: Wallet and Key Sovereignty (WKS)
