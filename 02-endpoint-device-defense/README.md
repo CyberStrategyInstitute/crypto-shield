@@ -1,7 +1,7 @@
 <div align="center">
 
 <img src="assets/Domain 02 Endpoint and Device Defense (EDD).png" alt="Domain 02 Endpoint and Device Defense (EDD)" width="100%" />
-
+</div></div>
 
 # Domain 02: Endpoint and Device Defense (EDD)
 
