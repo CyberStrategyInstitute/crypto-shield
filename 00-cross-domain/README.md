@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/Domain 00 Cross-Domain Sovereignty Governance (CDG).png" alt="Domain 00 Cross-Domain Sovereignty Governance (CDG)" width="100%" />
+<img src="../assets/Domain 00 Cross-Domain Sovereignty Governance (CDG).png" alt="Domain 00 Cross-Domain Sovereignty Governance (CDG)" width="100%" />
 </div>
 
 # Domain 00: Cross-Domain Sovereignty Governance (CDG)
