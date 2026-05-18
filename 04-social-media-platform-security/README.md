@@ -1,3 +1,9 @@
+<div align="center">
+
+<img src="assets/Domain 04 Social Media and Platform Security (SMS).png" alt="Domain 04 Social Media and Platform Security (SMS)" width="100%" />
+</div>
+
+
 # Domain 04: Social Media and Platform Security (SMS)
 
 **CSI CryptoSHIELD Framework v1.1**
