@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/Domain 03 OPSEC and Physical Security (OPS).png" alt="Domain 03 OPSEC and Physical Security (OPS)" width="100%" />
+<img src="../assets/Domain 03 OPSEC and Physical Security (OPS).png" alt="Domain 03 OPSEC and Physical Security (OPS)" width="100%" />
 </div>
 
 
