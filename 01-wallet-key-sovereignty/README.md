@@ -1,3 +1,8 @@
+<div align="center">
+
+<img src="assets/Domain 01 Wallet and Key Sovereignty (WKS).png" alt="Domain 01 Wallet and Key Sovereignty (WKS)" width="100%" />
+
+
 # Domain 01: Wallet and Key Sovereignty (WKS)
 
 **CSI CryptoSHIELD Framework v1.1 | May 2026**
