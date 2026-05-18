@@ -1,3 +1,9 @@
+<div align="center">
+
+<img src="assets/Domain 06 Supply Chain Defense (SCD).png" alt="Domain 06 Supply Chain Defense (SCD)" width="100%" />
+</div>
+
+
 # Domain 06: Supply Chain Defense (SCD)
 
 **CSI CryptoSHIELD Framework v1.1**
