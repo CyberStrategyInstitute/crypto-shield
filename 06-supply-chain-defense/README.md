@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/Domain 06 Supply Chain Defense (SCD).png" alt="Domain 06 Supply Chain Defense (SCD)" width="100%" />
+<img src="../assets/Domain 06 Supply Chain Defense (SCD).png" alt="Domain 06 Supply Chain Defense (SCD)" width="100%" />
 </div>
 
 
