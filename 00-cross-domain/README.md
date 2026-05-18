@@ -1,3 +1,7 @@
+<div align="center">
+
+<img src="assets/Domain 00 Cross-Domain Sovereignty Governance (CDG).png" alt="Domain 00 Cross-Domain Sovereignty Governance (CDG)" width="100%" />
+
 # Domain 00: Cross-Domain Sovereignty Governance (CDG)
 
 **CSI CryptoSHIELD Framework v1.1 | May 2026**
