@@ -1,3 +1,8 @@
+<div align="center">
+
+<img src="assets/Domain 02 Endpoint and Device Defense (EDD).png" alt="Domain 02 Endpoint and Device Defense (EDD)" width="100%" />
+
+
 # Domain 02: Endpoint and Device Defense (EDD)
 
 **CSI CryptoSHIELD Framework v1.1 | May 2026**
