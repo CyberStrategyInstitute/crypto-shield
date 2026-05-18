@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/Domain 05 On-Chain Monitoring and Transaction Defense (OCM).png" alt="Domain 05 On-Chain Monitoring and Transaction Defense (OCM)" width="100%" />
+<img src="../assets/Domain 05 On-Chain Monitoring and Transaction Defense (OCM).png" alt="Domain 05 On-Chain Monitoring and Transaction Defense (OCM)" width="100%" />
 </div>
 
 
