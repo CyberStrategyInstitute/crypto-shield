@@ -620,6 +620,16 @@ CryptoSHIELD is a living framework updated against the active threat landscape. 
 }
 ```
 
+## Star History
+
+<a href="https://www.star-history.com/?repos=cyberstrategyinstitute%2Fcrypto-shield&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=cyberstrategyinstitute/crypto-shield&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=cyberstrategyinstitute/crypto-shield&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=cyberstrategyinstitute/crypto-shield&type=date&legend=top-left" />
+ </picture>
+</a>
+
 ---
 
 ## Licensing
