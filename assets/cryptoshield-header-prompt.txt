@@ -1,0 +1,24 @@
+Built-in image generation. Native final output: 1774 x 887 pixels, PNG, 2:1. The user confirmed that version 2.0.0 is published and requested a grey/black background. The previous white-background three-column draft was the edit target. Final text, numbering, counts and visual contrast were inspected.
+
+Exact final edit prompt:
+Edit this exact header. Preserve its cleaner three-column conceptual structure, labels, numbering, counts, strong typographic hierarchy, spaciousness, 2:1 wide composition, and published version v2.0.0. CHANGE THE PALETTE: the entire background must be dark grey/charcoal black, NOT WHITE. Use #17191d charcoal with extremely subtle graphite variation. Main title, subtitle, domain labels, statistics descriptions and brand name should be sharp warm-white / light silver for excellent contrast. Use clear bright periwinkle/cobalt for ASSETS & AUTHORITY, refined lavender/violet for SYSTEMS & AGENTS, and fresh teal for PEOPLE & TRUST. Color the numbers, icons, group headings and thin horizontal rules consistently. Small orange CSI accent may remain. Thin dividers in medium charcoal grey. Foundation bar slightly darker black with warm-white label. The result should be refined, crisp, flat and editorial, not glowing sci-fi: NO bevels, chrome, luminous gradients, 3D panels, noisy textures, decorative circuits, or heavy boxes. Keep all copy exactly and all nine numbered operational domain rows, with 00 sovereignty governance as common foundation. Make text razor-sharp. No proposed/draft label anywhere.
+Exact copy:
+CYBER STRATEGY INSTITUTE
+CryptoSHIELD
+v2.0.0
+Security for crypto assets, systems, and people.
+46 threat classes • 112 controls • 9 operational domains + cross-domain governance
+ASSETS & AUTHORITY
+01 Wallets & Keys
+05 On-Chain Defense
+08 Governance & Compliance
+SYSTEMS & AGENTS
+02 Endpoints & Devices
+06 Supply Chains
+07 AI Agents
+PEOPLE & TRUST
+03 Physical Security & OPSEC
+04 Social & Platform Security
+09 Consumer Fraud
+00 SOVEREIGNTY GOVERNANCE
+Preserve exact spelling and generous safe margins. No added text, no watermark. Target highest native resolution with 2:1 aspect.

@@ -1,9 +1,11 @@
+![CryptoSHIELD v2.0.0: assets and authority, systems and agents, people and trust, supported by sovereignty governance](assets/CryptoSHIELD%20Framework.png)
+
 # CSI CryptoSHIELD
 
 CryptoSHIELD specifies controls for crypto holders, developers, and protocol teams. It covers wallets and financial authority, endpoint defense, physical exposure, social platforms, on-chain activity, supply chains, agents, governance, and consumer fraud.
 
 <!-- summary:start -->
-**Integrity update, proposed version 2.0.0:** 46 threats across 12 categories; 105 operational controls in nine domains, plus 7 cross-domain governance controls, for 112 total. CTRS scoring is suspended. Historical scores are unvalidated and must not drive new rankings or protection claims.
+**CryptoSHIELD v2.0.0:** 46 threats across 12 categories; 105 operational controls in nine domains, plus 7 cross-domain governance controls, for 112 total. CTRS scoring is suspended. Historical scores are unvalidated and must not drive new rankings or protection claims.
 <!-- summary:end -->
 
 [Review and remaining work](reviews/2026-11-07-baseline-integrity.md) | [Threat registry](taxonomy/registry-table.md) | [Incident response](OODA-PLAYBOOK.md) | [Hardening sprint](tools/30-day-hardening-sprint.md) | [Self-assessment](tools/sovereignty-self-assessment.md)
@@ -92,6 +94,6 @@ The prior MCP-server, handbook, card-deck, campaign, and brief dates were plans.
 
 ## Licensing and citation
 
-The existing [LICENSE](LICENSE) governs: code under MIT; framework methodology, taxonomy content, and documentation under CC BY-SA 4.0. This update does not relicense existing material. Cite a specific commit and distinguish the proposed integrity update from a tagged release.
+The existing [LICENSE](LICENSE) governs: code under MIT; framework methodology, taxonomy content, and documentation under CC BY-SA 4.0. This update does not relicense existing material. Cite a specific commit when referring to the published framework specification.
 
-Managed by Cyber Strategy Institute. No merge, tag, release, or deployment is implied by this proposal.
+Managed by Cyber Strategy Institute.

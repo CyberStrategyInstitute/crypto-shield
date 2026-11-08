@@ -1,5 +1,9 @@
 # CryptoSHIELD changelog
 
+## Header presentation update
+
+Replace the overall-framework PNG with a simpler charcoal-background header, three visual groups, and a shared sovereignty-governance foundation. Use published v2.0.0 status as confirmed by the user. Restore README header placement and align its current version label.
+
 ## Proposed 2.0.0: financial authority and framework integrity (November 7, 2026)
 
 This is a pull-request proposal, not a tagged release.
