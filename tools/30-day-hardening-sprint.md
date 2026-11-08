@@ -1,5 +1,9 @@
 # 30-day hardening sprint
 
+<!-- navigation:start -->
+[Home](../README.md) | [All pages](../REPOSITORY-MAP.md) | [Domains](../README.md#domains-and-control-counts) | [v2.0 changes](../FRAMEWORK-UPDATE.md) | [Machine-readable index](../metadata/repository-index.json) | [Automation guide](../AUTOMATION.md)
+<!-- navigation:end -->
+
 Use this planning checklist for routine improvements. It is not an emergency response sequence. During suspected compromise, use the [wallet decision tree](../playbooks/wallet-compromise.md); during physical danger, prioritize safety. Timing and allocation thresholds are planning choices, not validated loss bounds.
 
 ## Week 1: Keys, authority, and recovery

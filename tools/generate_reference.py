@@ -2,6 +2,7 @@
 from pathlib import Path
 import json
 import re
+from generate_navigation import generated_navigation
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -68,14 +69,15 @@ def generated_files(root=ROOT):
     governance = len(items) - operational
     summary = f"**CryptoSHIELD v2.0.0:** {len(data['threats'])} threats across {len(data['threat_categories'])} categories; {operational} operational controls in nine domains, plus {governance} cross-domain governance controls, for {len(items)} total. CTRS scoring is suspended. Historical scores are unvalidated and must not drive new rankings or protection claims."
     readme = replace_region((root/'README.md').read_text(encoding='utf-8'), 'summary', summary)
-    return {
+    return generated_navigation(root, items, {
         'taxonomy/registry-table.md': registry_table(data),
         'README.md': replace_region(readme, 'inventory', inventory_table(items)),
         'tools/sovereignty-self-assessment.md': replace_region((root/'tools/sovereignty-self-assessment.md').read_text(encoding='utf-8'), 'assessment', assessment_table(items)),
-    }
+    })
 
 
 if __name__ == '__main__':
     for name, text in generated_files().items():
+        (ROOT/name).parent.mkdir(parents=True, exist_ok=True)
         (ROOT/name).write_text(text, encoding='utf-8', newline='\n')
         print(f'Generated {name}')

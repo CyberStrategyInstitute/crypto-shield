@@ -1,5 +1,9 @@
 # Tabletop exercises
 
+<!-- navigation:start -->
+[Home](../README.md) | [All pages](../REPOSITORY-MAP.md) | [Domains](../README.md#domains-and-control-counts) | [v2.0 changes](../FRAMEWORK-UPDATE.md) | [Machine-readable index](../metadata/repository-index.json) | [Automation guide](../AUTOMATION.md)
+<!-- navigation:end -->
+
 Twelve synthetic exercises, one per category. These prompts are not historical claims or executed validation results. Use simulated values and local copies of the templates. No live funds, attack payloads, secrets, real notifications, or emergency calls.
 
 For each exercise, assign roles, open an incident log, record the chosen route, authority to act, stop condition, expected/observed result, residual exposure, and next owner. Mark not-run until the exercise is actually completed.

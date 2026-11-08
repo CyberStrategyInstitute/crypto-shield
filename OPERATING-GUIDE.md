@@ -1,5 +1,9 @@
 # Operating CryptoSHIELD
 
+<!-- navigation:start -->
+[Home](README.md) | [All pages](REPOSITORY-MAP.md) | [Domains](README.md#domains-and-control-counts) | [v2.0 changes](FRAMEWORK-UPDATE.md) | [Machine-readable index](metadata/repository-index.json) | [Automation guide](AUTOMATION.md)
+<!-- navigation:end -->
+
 The framework is useful when evidence leads to a decision that can be verified. Reading a control or completing a template does not install protection.
 
 | Layer | Purpose | Example/output |

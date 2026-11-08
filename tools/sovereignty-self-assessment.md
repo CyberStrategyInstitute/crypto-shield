@@ -1,5 +1,9 @@
 # CryptoSHIELD control self-assessment
 
+<!-- navigation:start -->
+[Home](../README.md) | [All pages](../REPOSITORY-MAP.md) | [Domains](../README.md#domains-and-control-counts) | [v2.0 changes](../FRAMEWORK-UPDATE.md) | [Machine-readable index](../metadata/repository-index.json) | [Automation guide](../AUTOMATION.md)
+<!-- navigation:end -->
+
 This checklist records implementation evidence and gaps. The former 100-point instrument and assurance tiers are withdrawn: weights and applicability handling were unvalidated, several fraud questions referenced the wrong controls, and inapplicable controls could receive automatic credit.
 
 For each applicable control, record **verified**, **partial**, **absent**, or **unknown**, evidence and date, owner, residual exposure, and next action. Use **not applicable** only with a rationale. Do not award points for inapplicability. Optional decoys must not be a condition for a favorable result.

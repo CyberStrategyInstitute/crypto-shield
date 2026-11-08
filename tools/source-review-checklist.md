@@ -1,5 +1,9 @@
 # Source and case review checklist
 
+<!-- navigation:start -->
+[Home](../README.md) | [All pages](../REPOSITORY-MAP.md) | [Domains](../README.md#domains-and-control-counts) | [v2.0 changes](../FRAMEWORK-UPDATE.md) | [Machine-readable index](../metadata/repository-index.json) | [Automation guide](../AUTOMATION.md)
+<!-- navigation:end -->
+
 - [ ] Read the original artifact; record publisher, URL, publication/update date, event date or range, and actual review date.
 - [ ] Separate allegations, judicial findings, affected-party accounts, vendor telemetry, and analyst inference.
 - [ ] Explain the threat-ID mapping. Use provisional mapping or a new justified class when the mechanism does not fit existing IDs.

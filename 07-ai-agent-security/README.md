@@ -1,5 +1,38 @@
 # Domain 07: AI Agent and Autonomous System Security (AAS)
 
+<!-- domain-overview:start -->
+![Domain 07: AI Agent Security, 12 control specifications](../assets/domain-headers/07-aas.svg)
+
+[![Version 2.0.0](https://img.shields.io/badge/Version-2.0.0-e879f9?style=flat-square)](../CHANGELOG.md) [![12 controls](https://img.shields.io/badge/Controls-12-e879f9?style=flat-square)](#controls) [![2 new controls](https://img.shields.io/badge/NEW-2-15803d?style=flat-square)](../FRAMEWORK-UPDATE.md#added-controls) [![7 materially updated controls](https://img.shields.io/badge/UPDATED-7-b45309?style=flat-square)](../FRAMEWORK-UPDATE.md#material-updates-to-existing-controls)
+
+[Home](../README.md) | [All pages](../REPOSITORY-MAP.md) | [Domains](../README.md#domains-and-control-counts) | [v2.0 changes](../FRAMEWORK-UPDATE.md) | [Machine-readable index](../metadata/repository-index.json) | [Automation guide](../AUTOMATION.md)
+
+## Review this domain
+
+- Apply the controls below, then record evidence in the [self-assessment](../tools/sovereignty-self-assessment.md).
+- Respond using the [ai agent compromise playbook](../playbooks/ai-agent-compromise.md); read the [related research note](../research/004_ai_agent_attack_surface.md).
+- Trace threat definitions in the [taxonomy](../taxonomy/README.md), cases in the [intelligence library](../intelligence/README.md), and practice in the [tabletop exercises](../tools/tabletop-exercises.md).
+
+### Control changes in v2.0.0
+
+NEW identifies added IDs. UPDATED identifies material revisions listed in the [framework comparison](../FRAMEWORK-UPDATE.md). RETAINED identifies an existing ID outside that material-update list; it does not mean the wording is unchanged or the control has been tested. Colors repeat the written labels.
+
+| Control | v2.0 status |
+|---|---|
+| AAS-01 | ![UPDATED](https://img.shields.io/badge/UPDATED-b45309?style=flat-square) |
+| AAS-02 | ![UPDATED](https://img.shields.io/badge/UPDATED-b45309?style=flat-square) |
+| AAS-03 | ![UPDATED](https://img.shields.io/badge/UPDATED-b45309?style=flat-square) |
+| AAS-04 | ![RETAINED](https://img.shields.io/badge/RETAINED-64748b?style=flat-square) |
+| AAS-05 | ![RETAINED](https://img.shields.io/badge/RETAINED-64748b?style=flat-square) |
+| AAS-06 | ![UPDATED](https://img.shields.io/badge/UPDATED-b45309?style=flat-square) |
+| AAS-07 | ![RETAINED](https://img.shields.io/badge/RETAINED-64748b?style=flat-square) |
+| AAS-08 | ![UPDATED](https://img.shields.io/badge/UPDATED-b45309?style=flat-square) |
+| AAS-09 | ![UPDATED](https://img.shields.io/badge/UPDATED-b45309?style=flat-square) |
+| AAS-10 | ![UPDATED](https://img.shields.io/badge/UPDATED-b45309?style=flat-square) |
+| AAS-11 | ![NEW](https://img.shields.io/badge/NEW-15803d?style=flat-square) |
+| AAS-12 | ![NEW](https://img.shields.io/badge/NEW-15803d?style=flat-square) |
+<!-- domain-overview:end -->
+
 CSI CryptoSHIELD 2.0.0 | Integrity review: November 7, 2026
 
 An agent without a private key can still cause a signing service to move funds. Enforce financial authority outside the model and outside attacker-controlled prompts, memory, and tools.

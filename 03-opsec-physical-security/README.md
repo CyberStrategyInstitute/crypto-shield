@@ -1,5 +1,36 @@
 # Domain 03: OPSEC and Physical Security (OPS)
 
+<!-- domain-overview:start -->
+![Domain 03: OPSEC & Physical Security, 10 control specifications](../assets/domain-headers/03-ops.svg)
+
+[![Version 2.0.0](https://img.shields.io/badge/Version-2.0.0-fb7185?style=flat-square)](../CHANGELOG.md) [![10 controls](https://img.shields.io/badge/Controls-10-fb7185?style=flat-square)](#controls) [![0 new controls](https://img.shields.io/badge/NEW-0-15803d?style=flat-square)](../FRAMEWORK-UPDATE.md#added-controls) [![3 materially updated controls](https://img.shields.io/badge/UPDATED-3-b45309?style=flat-square)](../FRAMEWORK-UPDATE.md#material-updates-to-existing-controls)
+
+[Home](../README.md) | [All pages](../REPOSITORY-MAP.md) | [Domains](../README.md#domains-and-control-counts) | [v2.0 changes](../FRAMEWORK-UPDATE.md) | [Machine-readable index](../metadata/repository-index.json) | [Automation guide](../AUTOMATION.md)
+
+## Review this domain
+
+- Apply the controls below, then record evidence in the [self-assessment](../tools/sovereignty-self-assessment.md).
+- Respond using the [physical coercion playbook](../playbooks/physical-coercion.md); read the [related research note](../research/001_wrench_attack_epidemic.md).
+- Trace threat definitions in the [taxonomy](../taxonomy/README.md), cases in the [intelligence library](../intelligence/README.md), and practice in the [tabletop exercises](../tools/tabletop-exercises.md).
+
+### Control changes in v2.0.0
+
+NEW identifies added IDs. UPDATED identifies material revisions listed in the [framework comparison](../FRAMEWORK-UPDATE.md). RETAINED identifies an existing ID outside that material-update list; it does not mean the wording is unchanged or the control has been tested. Colors repeat the written labels.
+
+| Control | v2.0 status |
+|---|---|
+| OPS-01 | ![RETAINED](https://img.shields.io/badge/RETAINED-64748b?style=flat-square) |
+| OPS-02 | ![RETAINED](https://img.shields.io/badge/RETAINED-64748b?style=flat-square) |
+| OPS-03 | ![RETAINED](https://img.shields.io/badge/RETAINED-64748b?style=flat-square) |
+| OPS-04 | ![RETAINED](https://img.shields.io/badge/RETAINED-64748b?style=flat-square) |
+| OPS-05 | ![UPDATED](https://img.shields.io/badge/UPDATED-b45309?style=flat-square) |
+| OPS-06 | ![UPDATED](https://img.shields.io/badge/UPDATED-b45309?style=flat-square) |
+| OPS-07 | ![RETAINED](https://img.shields.io/badge/RETAINED-64748b?style=flat-square) |
+| OPS-08 | ![RETAINED](https://img.shields.io/badge/RETAINED-64748b?style=flat-square) |
+| OPS-09 | ![RETAINED](https://img.shields.io/badge/RETAINED-64748b?style=flat-square) |
+| OPS-10 | ![UPDATED](https://img.shields.io/badge/UPDATED-b45309?style=flat-square) |
+<!-- domain-overview:end -->
+
 CSI CryptoSHIELD 2.0.0 | Integrity review: November 7, 2026
 
 Physical safety takes priority over assets. Reduce public exposure and plan with trusted contacts before a crisis. Multisig and delays constrain some transfers; they cannot guarantee safety or prevent prolonged coercion.

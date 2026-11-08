@@ -1,5 +1,9 @@
 # Contributing to CryptoSHIELD
 
+<!-- navigation:start -->
+[Home](README.md) | [All pages](REPOSITORY-MAP.md) | [Domains](README.md#domains-and-control-counts) | [v2.0 changes](FRAMEWORK-UPDATE.md) | [Machine-readable index](metadata/repository-index.json) | [Automation guide](AUTOMATION.md)
+<!-- navigation:end -->
+
 Contributions need evidence that another reviewer can inspect and reproduce. Distinguish documented facts, publisher allegations, hypotheses, proposed controls, and tested results. Disclose conflicts of interest.
 
 ## Threats and controls

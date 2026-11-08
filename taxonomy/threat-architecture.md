@@ -1,5 +1,9 @@
 # CryptoSHIELD Threat Architecture: Five-Layer Causal Stack
 
+<!-- navigation:start -->
+[Home](../README.md) | [All pages](../REPOSITORY-MAP.md) | [Domains](../README.md#domains-and-control-counts) | [v2.0 changes](../FRAMEWORK-UPDATE.md) | [Machine-readable index](../metadata/repository-index.json) | [Automation guide](../AUTOMATION.md)
+<!-- navigation:end -->
+
 **CSI CryptoSHIELD 2.0.0**
 
 This is a conceptual threat model, not a complete causal proof or incident dataset. Companion references are provisional; see [mapping requirements](../FRAMEWORK-ALIGNMENT.md).

@@ -1,5 +1,9 @@
 # Research notes
 
+<!-- navigation:start -->
+[Home](../README.md) | [All pages](../REPOSITORY-MAP.md) | [Domains](../README.md#domains-and-control-counts) | [v2.0 changes](../FRAMEWORK-UPDATE.md) | [Machine-readable index](../metadata/repository-index.json) | [Automation guide](../AUTOMATION.md)
+<!-- navigation:end -->
+
 Seven scoped research notes now contain findings, methods, linked cases, control consequences, worked applications, counterexamples, and remaining work. They are source-checked drafts awaiting independent review, not completed broad empirical studies. NEW marks substantive notes 004-006 that replaced research stubs; UPDATED marks revised notes 001-003 and 007. These labels compare v2.0.0 with the prior baseline.
 
 | Note | v2.0 change | Scope |

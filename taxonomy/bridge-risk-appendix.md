@@ -1,5 +1,9 @@
 # Bridge and cross-chain risk
 
+<!-- navigation:start -->
+[Home](../README.md) | [All pages](../REPOSITORY-MAP.md) | [Domains](../README.md#domains-and-control-counts) | [v2.0 changes](../FRAMEWORK-UPDATE.md) | [Machine-readable index](../metadata/repository-index.json) | [Automation guide](../AUTOMATION.md)
+<!-- navigation:end -->
+
 Related control: OCM-07. Related threat: CS-DFI-03. Numerical bridge ratings and the previous approved-bridge list are withdrawn pending a defined model and deployment-specific evidence. Validator count, TVL, audit count, age, and a canonical label cannot establish safety.
 
 ## Review each deployed route

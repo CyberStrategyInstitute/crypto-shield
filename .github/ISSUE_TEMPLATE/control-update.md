@@ -8,6 +8,10 @@ assignees: ""
 
 ## Control and proposed change
 
+<!-- navigation:start -->
+[Home](../../README.md) | [All pages](../../REPOSITORY-MAP.md) | [Domains](../../README.md#domains-and-control-counts) | [v2.0 changes](../../FRAMEWORK-UPDATE.md) | [Machine-readable index](../../metadata/repository-index.json) | [Automation guide](../../AUTOMATION.md)
+<!-- navigation:end -->
+
 Control ID, owning domain, current definition, proposed definition, and reason:
 
 ## Supporting and contrary evidence

@@ -1,5 +1,38 @@
 # Domain 05: On-Chain Monitoring and Transaction Defense (OCM)
 
+<!-- domain-overview:start -->
+![Domain 05: On-Chain Monitoring, 12 control specifications](../assets/domain-headers/05-ocm.svg)
+
+[![Version 2.0.0](https://img.shields.io/badge/Version-2.0.0-818cf8?style=flat-square)](../CHANGELOG.md) [![12 controls](https://img.shields.io/badge/Controls-12-818cf8?style=flat-square)](#controls) [![2 new controls](https://img.shields.io/badge/NEW-2-15803d?style=flat-square)](../FRAMEWORK-UPDATE.md#added-controls) [![6 materially updated controls](https://img.shields.io/badge/UPDATED-6-b45309?style=flat-square)](../FRAMEWORK-UPDATE.md#material-updates-to-existing-controls)
+
+[Home](../README.md) | [All pages](../REPOSITORY-MAP.md) | [Domains](../README.md#domains-and-control-counts) | [v2.0 changes](../FRAMEWORK-UPDATE.md) | [Machine-readable index](../metadata/repository-index.json) | [Automation guide](../AUTOMATION.md)
+
+## Review this domain
+
+- Apply the controls below, then record evidence in the [self-assessment](../tools/sovereignty-self-assessment.md).
+- Respond using the [protocol exploit playbook](../playbooks/protocol-exploit.md); read the [related research note](../research/002_rotator_effect.md).
+- Trace threat definitions in the [taxonomy](../taxonomy/README.md), cases in the [intelligence library](../intelligence/README.md), and practice in the [tabletop exercises](../tools/tabletop-exercises.md).
+
+### Control changes in v2.0.0
+
+NEW identifies added IDs. UPDATED identifies material revisions listed in the [framework comparison](../FRAMEWORK-UPDATE.md). RETAINED identifies an existing ID outside that material-update list; it does not mean the wording is unchanged or the control has been tested. Colors repeat the written labels.
+
+| Control | v2.0 status |
+|---|---|
+| OCM-01 | ![UPDATED](https://img.shields.io/badge/UPDATED-b45309?style=flat-square) |
+| OCM-02 | ![UPDATED](https://img.shields.io/badge/UPDATED-b45309?style=flat-square) |
+| OCM-03 | ![UPDATED](https://img.shields.io/badge/UPDATED-b45309?style=flat-square) |
+| OCM-04 | ![RETAINED](https://img.shields.io/badge/RETAINED-64748b?style=flat-square) |
+| OCM-05 | ![RETAINED](https://img.shields.io/badge/RETAINED-64748b?style=flat-square) |
+| OCM-06 | ![RETAINED](https://img.shields.io/badge/RETAINED-64748b?style=flat-square) |
+| OCM-07 | ![UPDATED](https://img.shields.io/badge/UPDATED-b45309?style=flat-square) |
+| OCM-08 | ![UPDATED](https://img.shields.io/badge/UPDATED-b45309?style=flat-square) |
+| OCM-09 | ![RETAINED](https://img.shields.io/badge/RETAINED-64748b?style=flat-square) |
+| OCM-10 | ![UPDATED](https://img.shields.io/badge/UPDATED-b45309?style=flat-square) |
+| OCM-11 | ![NEW](https://img.shields.io/badge/NEW-15803d?style=flat-square) |
+| OCM-12 | ![NEW](https://img.shields.io/badge/NEW-15803d?style=flat-square) |
+<!-- domain-overview:end -->
+
 CSI CryptoSHIELD 2.0.0 | Integrity review: November 7, 2026
 
 Verify transaction intent and resulting authority before signing; monitor afterward. Simulation observes a particular state and payload. Finality does not prevent every form of restitution, seizure, issuer freeze, or negotiated return.

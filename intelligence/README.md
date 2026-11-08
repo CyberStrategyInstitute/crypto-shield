@@ -1,5 +1,9 @@
 # Intelligence case library
 
+<!-- navigation:start -->
+[Home](../README.md) | [All pages](../REPOSITORY-MAP.md) | [Domains](../README.md#domains-and-control-counts) | [v2.0 changes](../FRAMEWORK-UPDATE.md) | [Machine-readable index](../metadata/repository-index.json) | [Automation guide](../AUTOMATION.md)
+<!-- navigation:end -->
+
 Thirteen source-checked historical reports cover all 12 taxonomy categories. This is a purposive teaching set, not a complete incident corpus or a ranking of the biggest losses. Official allegations remain allegations; vendor accounts remain vendor accounts. The AI entry is an adjacent non-crypto case, and the sovereignty entry is a policy action, not a theft. Wallet mechanism mappings remain provisional where the inspected disclosure does not establish them.
 
 Use [the template](TEMPLATE.md) for additions. Each report has a separate validated event JSON record. `primary_reviewed` means original publisher material was read, not that its claims were independently reproduced. Publication dates are explicitly distinguished from incident timestamps.

@@ -1,5 +1,9 @@
 # Consumer fraud response
 
+<!-- navigation:start -->
+[Home](../README.md) | [All pages](../REPOSITORY-MAP.md) | [Domains](../README.md#domains-and-control-counts) | [v2.0 changes](../FRAMEWORK-UPDATE.md) | [Machine-readable index](../metadata/repository-index.json) | [Automation guide](../AUTOMATION.md)
+<!-- navigation:end -->
+
 Pause further payments and signatures when an investment contact or platform appears fraudulent. A small successful withdrawal, polished interface, familiar voice, or clean database search does not establish legitimacy.
 
 ## Immediate actions

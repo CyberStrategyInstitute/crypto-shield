@@ -1,5 +1,9 @@
 # CryptoSHIELD 2.0.0 framework update
 
+<!-- navigation:start -->
+[Home](README.md) | [All pages](REPOSITORY-MAP.md) | [Domains](README.md#domains-and-control-counts) | [v2.0 changes](FRAMEWORK-UPDATE.md) | [Machine-readable index](metadata/repository-index.json) | [Automation guide](AUTOMATION.md)
+<!-- navigation:end -->
+
 Published major version, merged in [PR #3](https://github.com/CyberStrategyInstitute/crypto-shield/pull/3). This expanded the framework from 100 to 112 controls: 105 operational controls plus seven cross-domain governance controls. All 100 existing IDs remain; 12 new IDs make previously embedded or missing requirements independently assessable. The taxonomy expands from 44 to 46 threat classes across 12 categories, adding price/collateral manipulation and policy/provider access restrictions. No replacement CTRS ratings are adopted.
 
 ## Why a major version

@@ -1,5 +1,39 @@
 # Domain 08: Governance, Compliance, and Sovereignty (GCS)
 
+<!-- domain-overview:start -->
+![Domain 08: Governance & Compliance, 13 control specifications](../assets/domain-headers/08-gcs.svg)
+
+[![Version 2.0.0](https://img.shields.io/badge/Version-2.0.0-fbbf24?style=flat-square)](../CHANGELOG.md) [![13 controls](https://img.shields.io/badge/Controls-13-fbbf24?style=flat-square)](#controls) [![3 new controls](https://img.shields.io/badge/NEW-3-15803d?style=flat-square)](../FRAMEWORK-UPDATE.md#added-controls) [![5 materially updated controls](https://img.shields.io/badge/UPDATED-5-b45309?style=flat-square)](../FRAMEWORK-UPDATE.md#material-updates-to-existing-controls)
+
+[Home](../README.md) | [All pages](../REPOSITORY-MAP.md) | [Domains](../README.md#domains-and-control-counts) | [v2.0 changes](../FRAMEWORK-UPDATE.md) | [Machine-readable index](../metadata/repository-index.json) | [Automation guide](../AUTOMATION.md)
+
+## Review this domain
+
+- Apply the controls below, then record evidence in the [self-assessment](../tools/sovereignty-self-assessment.md).
+- Respond using the [policy custody event playbook](../playbooks/policy-custody-event.md); read the [related research note](../research/006_pig_butchering_anatomy.md).
+- Trace threat definitions in the [taxonomy](../taxonomy/README.md), cases in the [intelligence library](../intelligence/README.md), and practice in the [tabletop exercises](../tools/tabletop-exercises.md).
+
+### Control changes in v2.0.0
+
+NEW identifies added IDs. UPDATED identifies material revisions listed in the [framework comparison](../FRAMEWORK-UPDATE.md). RETAINED identifies an existing ID outside that material-update list; it does not mean the wording is unchanged or the control has been tested. Colors repeat the written labels.
+
+| Control | v2.0 status |
+|---|---|
+| GCS-01 | ![RETAINED](https://img.shields.io/badge/RETAINED-64748b?style=flat-square) |
+| GCS-02 | ![RETAINED](https://img.shields.io/badge/RETAINED-64748b?style=flat-square) |
+| GCS-03 | ![UPDATED](https://img.shields.io/badge/UPDATED-b45309?style=flat-square) |
+| GCS-04 | ![UPDATED](https://img.shields.io/badge/UPDATED-b45309?style=flat-square) |
+| GCS-05 | ![UPDATED](https://img.shields.io/badge/UPDATED-b45309?style=flat-square) |
+| GCS-06 | ![UPDATED](https://img.shields.io/badge/UPDATED-b45309?style=flat-square) |
+| GCS-07 | ![UPDATED](https://img.shields.io/badge/UPDATED-b45309?style=flat-square) |
+| GCS-08 | ![RETAINED](https://img.shields.io/badge/RETAINED-64748b?style=flat-square) |
+| GCS-09 | ![RETAINED](https://img.shields.io/badge/RETAINED-64748b?style=flat-square) |
+| GCS-10 | ![RETAINED](https://img.shields.io/badge/RETAINED-64748b?style=flat-square) |
+| GCS-11 | ![NEW](https://img.shields.io/badge/NEW-15803d?style=flat-square) |
+| GCS-12 | ![NEW](https://img.shields.io/badge/NEW-15803d?style=flat-square) |
+| GCS-13 | ![NEW](https://img.shields.io/badge/NEW-15803d?style=flat-square) |
+<!-- domain-overview:end -->
+
 CSI CryptoSHIELD 2.0.0 | Integrity review: November 7, 2026
 
 CSI favors self-custody and privacy. Implementation must account for applicable law, asset rights, operational capability, custody liabilities, and recovery. A policy preference or standards crosswalk does not establish legal compliance.

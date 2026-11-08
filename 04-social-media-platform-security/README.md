@@ -1,5 +1,41 @@
 # Domain 04: Social Media and Platform Security (SMS)
 
+<!-- domain-overview:start -->
+![Domain 04: Social & Platform Security, 15 control specifications](../assets/domain-headers/04-sms.svg)
+
+[![Version 2.0.0](https://img.shields.io/badge/Version-2.0.0-2dd4bf?style=flat-square)](../CHANGELOG.md) [![15 controls](https://img.shields.io/badge/Controls-15-2dd4bf?style=flat-square)](#controls) [![0 new controls](https://img.shields.io/badge/NEW-0-15803d?style=flat-square)](../FRAMEWORK-UPDATE.md#added-controls) [![6 materially updated controls](https://img.shields.io/badge/UPDATED-6-b45309?style=flat-square)](../FRAMEWORK-UPDATE.md#material-updates-to-existing-controls)
+
+[Home](../README.md) | [All pages](../REPOSITORY-MAP.md) | [Domains](../README.md#domains-and-control-counts) | [v2.0 changes](../FRAMEWORK-UPDATE.md) | [Machine-readable index](../metadata/repository-index.json) | [Automation guide](../AUTOMATION.md)
+
+## Review this domain
+
+- Apply the controls below, then record evidence in the [self-assessment](../tools/sovereignty-self-assessment.md).
+- Respond using the [account takeover playbook](../playbooks/account-takeover.md); read the [related research note](../research/006_pig_butchering_anatomy.md).
+- Trace threat definitions in the [taxonomy](../taxonomy/README.md), cases in the [intelligence library](../intelligence/README.md), and practice in the [tabletop exercises](../tools/tabletop-exercises.md).
+
+### Control changes in v2.0.0
+
+NEW identifies added IDs. UPDATED identifies material revisions listed in the [framework comparison](../FRAMEWORK-UPDATE.md). RETAINED identifies an existing ID outside that material-update list; it does not mean the wording is unchanged or the control has been tested. Colors repeat the written labels.
+
+| Control | v2.0 status |
+|---|---|
+| SMS-01 | ![UPDATED](https://img.shields.io/badge/UPDATED-b45309?style=flat-square) |
+| SMS-02 | ![UPDATED](https://img.shields.io/badge/UPDATED-b45309?style=flat-square) |
+| SMS-03 | ![RETAINED](https://img.shields.io/badge/RETAINED-64748b?style=flat-square) |
+| SMS-04 | ![RETAINED](https://img.shields.io/badge/RETAINED-64748b?style=flat-square) |
+| SMS-05 | ![RETAINED](https://img.shields.io/badge/RETAINED-64748b?style=flat-square) |
+| SMS-06 | ![RETAINED](https://img.shields.io/badge/RETAINED-64748b?style=flat-square) |
+| SMS-07 | ![RETAINED](https://img.shields.io/badge/RETAINED-64748b?style=flat-square) |
+| SMS-08 | ![RETAINED](https://img.shields.io/badge/RETAINED-64748b?style=flat-square) |
+| SMS-09 | ![RETAINED](https://img.shields.io/badge/RETAINED-64748b?style=flat-square) |
+| SMS-10 | ![RETAINED](https://img.shields.io/badge/RETAINED-64748b?style=flat-square) |
+| SMS-11 | ![RETAINED](https://img.shields.io/badge/RETAINED-64748b?style=flat-square) |
+| SMS-12 | ![UPDATED](https://img.shields.io/badge/UPDATED-b45309?style=flat-square) |
+| SMS-13 | ![UPDATED](https://img.shields.io/badge/UPDATED-b45309?style=flat-square) |
+| SMS-14 | ![UPDATED](https://img.shields.io/badge/UPDATED-b45309?style=flat-square) |
+| SMS-15 | ![UPDATED](https://img.shields.io/badge/UPDATED-b45309?style=flat-square) |
+<!-- domain-overview:end -->
+
 CSI CryptoSHIELD 2.0.0 | Integrity review: November 7, 2026
 
 Verify identities, destinations, permissions, and recovery paths independently. A correct URL, HTTPS connection, paid verification badge, clean scam-database search, or plausible video does not establish safety.
