@@ -1,3 +1,5 @@
+![CSI CryptoSHIELD proposed v2.0.0: 46 threat classes, 112 controls, nine operational domains and cross-domain governance](assets/CryptoSHIELD%20Framework.png)
+
 # CSI CryptoSHIELD
 
 CryptoSHIELD specifies controls for crypto holders, developers, and protocol teams. It covers wallets and financial authority, endpoint defense, physical exposure, social platforms, on-chain activity, supply chains, agents, governance, and consumer fraud.

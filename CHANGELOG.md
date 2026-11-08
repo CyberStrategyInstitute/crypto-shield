@@ -20,6 +20,8 @@ See [migration details](metadata/README.md), [historical data](taxonomy/legacy/R
 
 ## Operational evidence and examples added to the 2.0.0 proposal
 
+- Replace the overall-framework PNG with a readable 2:1 header showing current counts, all ten numbered modules, and proposed release status; restore it as the README header. Domain PNGs remain retired.
+
 - Write seven scoped research notes instead of leaving research placeholders.
 - Add 13 source-checked report/event pairs across all 12 categories; retain allegation/vendor/provisional status.
 - Add CS-MKT-04 and CS-SOV-03, bringing the active taxonomy to 46 unscored classes.
