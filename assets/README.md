@@ -1,6 +1,6 @@
 # Asset status
 
-`CryptoSHIELD Framework.png` is the current v2.0.0 header, redesigned at the user's request for a cleaner presentation on a charcoal/black background. The three visual groups are Assets & Authority, Systems & Agents, and People & Trust; they organize the existing nine operational domains above the shared Domain 00 sovereignty-governance foundation. They do not introduce replacement domains. Counts: 46 threat classes and 112 controls.
+`CryptoSHIELD Framework.png` is the current v2.0.0 header, redesigned at the user's request with a charcoal/black background, frosted-glass panels, tactile icons, and a three-part interlocking glass-shield sculpture. Blue, violet, and teal distinguish Assets & Authority, Systems & Agents, and People & Trust. These groups organize the existing nine operational domains above the shared Domain 00 sovereignty-governance foundation; they do not introduce replacement domains. Counts: 46 threat classes and 112 controls.
 
 Native output: 1774 x 887 pixels (2:1). Created with the built-in image tool; text, counts, domain numbering, and publication status visually checked. The user confirmed that v2.0.0 is published, so the header does not say proposed. [Generation prompt](cryptoshield-header-prompt.txt).
 
