@@ -2,6 +2,10 @@
 
 # CSI CryptoSHIELD v2.0.0
 
+<!-- navigation:start -->
+[Home](README.md) | [All pages](REPOSITORY-MAP.md) | [Domains](README.md#domains-and-control-counts) | [v2.0 changes](FRAMEWORK-UPDATE.md) | [Machine-readable index](metadata/repository-index.json) | [Automation guide](AUTOMATION.md)
+<!-- navigation:end -->
+
 [![Version: 2.0.0 published](https://img.shields.io/badge/Version-2.0.0_published-orange?style=flat-square)](CHANGELOG.md)
 [![Documentation: CC BY-SA 4.0](https://img.shields.io/badge/Docs-CC_BY--SA_4.0-lightgrey?style=flat-square)](LICENSE)
 [![Code: MIT](https://img.shields.io/badge/Code-MIT-yellow?style=flat-square)](LICENSE)
@@ -117,6 +121,16 @@ python -m unittest discover -s tests -v
 After intentional definition changes, run `python tools/generate_reference.py`, inspect the diff, and rerun validation. [CI](.github/workflows/taxonomy-lint.yml) checks every push and pull request. Validation proves contract and consistency checks pass; it does not validate historical incident claims or deployed security controls.
 
 The prior MCP-server, handbook, card-deck, campaign, and brief dates were plans. Delivery is not established by this repository. Contribute through the [issue templates](.github/ISSUE_TEMPLATE/) and [contribution guide](CONTRIBUTING.md).
+
+## Star History
+
+<a href="https://www.star-history.com/?repos=cyberstrategyinstitute%2Fcrypto-shield&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=cyberstrategyinstitute/crypto-shield&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=cyberstrategyinstitute/crypto-shield&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=cyberstrategyinstitute/crypto-shield&type=date&legend=top-left" />
+ </picture>
+</a>
 
 ## Licensing and citation
 

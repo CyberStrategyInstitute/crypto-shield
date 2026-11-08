@@ -1,5 +1,9 @@
 # CSI-CASE-011: Tornado Cash delisting: policy-dependency example
 
+<!-- navigation:start -->
+[Home](../../README.md) | [All pages](../../REPOSITORY-MAP.md) | [Domains](../../README.md#domains-and-control-counts) | [v2.0 changes](../../FRAMEWORK-UPDATE.md) | [Machine-readable index](../../metadata/repository-index.json) | [Automation guide](../../AUTOMATION.md)
+<!-- navigation:end -->
+
 ## Report header
 
 Author: Codex-assisted repository research. Status: source-checked draft; independent review pending. Classification: open source. Source publication: 2025-03-21. Source reviewed: 2026-11-07. Historical scope: this cited disclosure only. Category: Sovereignty. Case type: policy. Mapping: supported_scope. No vendor endorsement or undisclosed paid relationship is asserted.

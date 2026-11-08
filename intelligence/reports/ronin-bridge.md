@@ -1,5 +1,9 @@
 # CSI-CASE-006: Ronin bridge reopening and backing account
 
+<!-- navigation:start -->
+[Home](../../README.md) | [All pages](../../REPOSITORY-MAP.md) | [Domains](../../README.md#domains-and-control-counts) | [v2.0 changes](../../FRAMEWORK-UPDATE.md) | [Machine-readable index](../../metadata/repository-index.json) | [Automation guide](../../AUTOMATION.md)
+<!-- navigation:end -->
+
 ## Report header
 
 Author: Codex-assisted repository research. Status: source-checked draft; independent review pending. Classification: open source. Source publication: 2022-06-28. Source reviewed: 2026-11-07. Historical scope: this cited disclosure only. Category: DeFi Protocol. Case type: incident. Mapping: supported_scope. No vendor endorsement or undisclosed paid relationship is asserted.

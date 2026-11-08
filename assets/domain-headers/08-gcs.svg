@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" role="img" aria-labelledby="title desc">
+<title id="title">Domain 08: Governance &amp; Compliance (GCS)</title>
+<desc id="desc">CryptoSHIELD v2.0.0. 13 control specifications. Domain definitions and evidence limits are available in the accompanying Markdown.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#111827"/><stop offset="1" stop-color="#24272e"/></linearGradient></defs>
+<rect width="1200" height="220" rx="20" fill="url(#bg)"/>
+<rect x="0" y="0" width="9" height="220" rx="4" fill="#fbbf24"/>
+<path d="M1070 35 1140 62V118Q1140 163 1070 193Q1000 163 1000 118V62Z" fill="#fbbf24" fill-opacity=".12" stroke="#fbbf24" stroke-width="2"/>
+<text x="1070" y="128" text-anchor="middle" fill="#fbbf24" font-family="sans-serif" font-size="42" font-weight="700">08</text>
+<text x="42" y="48" fill="#fbbf24" font-family="sans-serif" font-size="18" letter-spacing="2">CRYPTOSHIELD / DOMAIN 08 / GCS</text>
+<text x="42" y="103" fill="#f8fafc" font-family="sans-serif" font-size="38" font-weight="700">Governance &amp; Compliance</text>
+<text x="42" y="151" fill="#cbd5e1" font-family="sans-serif" font-size="21">Published v2.0.0  |  13 controls  |  Evidence before assurance</text>
+<path d="M42 181H930" stroke="#fbbf24" stroke-opacity=".5"/>
+</svg>

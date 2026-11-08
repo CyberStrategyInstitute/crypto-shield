@@ -1,5 +1,9 @@
 # Data contracts and migration
 
+<!-- navigation:start -->
+[Home](../README.md) | [All pages](../REPOSITORY-MAP.md) | [Domains](../README.md#domains-and-control-counts) | [v2.0 changes](../FRAMEWORK-UPDATE.md) | [Machine-readable index](repository-index.json) | [Automation guide](../AUTOMATION.md)
+<!-- navigation:end -->
+
 Schema version 2.0.0 deliberately breaks ambiguous v1.1 field semantics.
 
 | v1.1 | v2.0 | Meaning |
@@ -23,3 +27,7 @@ The published framework version is 2.0.0; registry and event contract versions a
 
 
 Case events carry `timestamp_basis: "publication_date"` and `source_review_date`. Midnight UTC is an indexing convention, not an asserted occurrence time. The case register distinguishes incidents, campaigns, adjacent examples, and policy actions, records provisional mappings, and links reports, events, controls, sources, and playbooks. `primary_reviewed` means original publisher material was examined; it does not certify the underlying claim.
+
+## Discovery index
+
+[repository-index.json](repository-index.json) is a generated discovery document, separate from registry and event contracts. Its `index_version` is 1.0; `framework_version` is 2.0.0. It enumerates Markdown pages, domains, and all control IDs with paths and v2.0 change labels. See the [automation guide](../AUTOMATION.md) for source ownership and interpretation rules.

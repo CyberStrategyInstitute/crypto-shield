@@ -1,5 +1,9 @@
 # CryptoSHIELD threat registry
 
+<!-- navigation:start -->
+[Home](../README.md) | [All pages](../REPOSITORY-MAP.md) | [Domains](../README.md#domains-and-control-counts) | [v2.0 changes](../FRAMEWORK-UPDATE.md) | [Machine-readable index](../metadata/repository-index.json) | [Automation guide](../AUTOMATION.md)
+<!-- navigation:end -->
+
 Generated from [registry.json](registry.json). Do not edit this table manually.
 
 46 threat definitions across 12 categories. All evidence is pending primary review. Severity is inherited qualitative metadata, separate from a calculated tier. CTRS is suspended; legacy scores are not current risk ratings. Candidate controls are proposed mitigations, not prevention evidence.

@@ -1,5 +1,9 @@
 # Ransomware, blackmail, or extortion
 
+<!-- navigation:start -->
+[Home](../README.md) | [All pages](../REPOSITORY-MAP.md) | [Domains](../README.md#domains-and-control-counts) | [v2.0 changes](../FRAMEWORK-UPDATE.md) | [Machine-readable index](../metadata/repository-index.json) | [Automation guide](../AUTOMATION.md)
+<!-- navigation:end -->
+
 Use during: Threats to publish data, harm people, disable systems, or demand payment. This is an adaptable response procedure; only authorized responders should operate production controls. Physical safety comes first.
 
 ## Observe and classify

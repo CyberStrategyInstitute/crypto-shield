@@ -1,0 +1,1350 @@
+{
+  "index_version": "1.0",
+  "framework_version": "2.0.0",
+  "comparison_baseline": "v1.1 (051a317fb72db38f11d8928fddd5c506d24d468a)",
+  "status_legend": {
+    "new": "Added control ID in v2.0.0",
+    "updated": "Material revision documented in FRAMEWORK-UPDATE.md",
+    "retained": "Existing ID outside the documented material-revision list; wording may have changed"
+  },
+  "entry_points": {
+    "human": "REPOSITORY-MAP.md",
+    "automation": "AUTOMATION.md",
+    "registry": "taxonomy/registry.json",
+    "cases": "intelligence/case-register.json"
+  },
+  "pages": [
+    {
+      "path": ".github/ISSUE_TEMPLATE/control-update.md",
+      "title": "Control and proposed change",
+      "content_type": "guidance"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/new-threat-entry.md",
+      "title": "Proposed threat",
+      "content_type": "guidance"
+    },
+    {
+      "path": "00-cross-domain/README.md",
+      "title": "Domain 00: Cross-Domain Sovereignty Governance (CDG)",
+      "content_type": "guidance"
+    },
+    {
+      "path": "01-wallet-key-sovereignty/README.md",
+      "title": "Domain 01: Wallet and Key Sovereignty (WKS)",
+      "content_type": "guidance"
+    },
+    {
+      "path": "02-endpoint-device-defense/README.md",
+      "title": "Domain 02: Endpoint and Device Defense (EDD)",
+      "content_type": "guidance"
+    },
+    {
+      "path": "03-opsec-physical-security/README.md",
+      "title": "Domain 03: OPSEC and Physical Security (OPS)",
+      "content_type": "guidance"
+    },
+    {
+      "path": "04-social-media-platform-security/README.md",
+      "title": "Domain 04: Social Media and Platform Security (SMS)",
+      "content_type": "guidance"
+    },
+    {
+      "path": "05-on-chain-monitoring/README.md",
+      "title": "Domain 05: On-Chain Monitoring and Transaction Defense (OCM)",
+      "content_type": "guidance"
+    },
+    {
+      "path": "06-supply-chain-defense/README.md",
+      "title": "Domain 06: Supply Chain Defense (SCD)",
+      "content_type": "guidance"
+    },
+    {
+      "path": "07-ai-agent-security/README.md",
+      "title": "Domain 07: AI Agent and Autonomous System Security (AAS)",
+      "content_type": "guidance"
+    },
+    {
+      "path": "08-governance-compliance-sovereignty/README.md",
+      "title": "Domain 08: Governance, Compliance, and Sovereignty (GCS)",
+      "content_type": "guidance"
+    },
+    {
+      "path": "09-consumer-fraud-defense/README.md",
+      "title": "Domain 09: Consumer Fraud and Financial Grooming Defense (CFD)",
+      "content_type": "guidance"
+    },
+    {
+      "path": "AUTOMATION.md",
+      "title": "Automation and structured access",
+      "content_type": "guidance"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "title": "CryptoSHIELD changelog",
+      "content_type": "guidance"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "title": "Contributing to CryptoSHIELD",
+      "content_type": "guidance"
+    },
+    {
+      "path": "FRAMEWORK-ALIGNMENT.md",
+      "title": "CryptoSHIELD framework alignment",
+      "content_type": "guidance"
+    },
+    {
+      "path": "FRAMEWORK-UPDATE.md",
+      "title": "CryptoSHIELD 2.0.0 framework update",
+      "content_type": "guidance"
+    },
+    {
+      "path": "OODA-PLAYBOOK.md",
+      "title": "CryptoSHIELD OODA response playbook",
+      "content_type": "guidance"
+    },
+    {
+      "path": "OPERATING-GUIDE.md",
+      "title": "Operating CryptoSHIELD",
+      "content_type": "guidance"
+    },
+    {
+      "path": "README.md",
+      "title": "CSI CryptoSHIELD v2.0.0",
+      "content_type": "guidance"
+    },
+    {
+      "path": "REPOSITORY-MAP.md",
+      "title": "Repository map",
+      "content_type": "guidance"
+    },
+    {
+      "path": "assets/README.md",
+      "title": "Asset status",
+      "content_type": "guidance"
+    },
+    {
+      "path": "intelligence/README.md",
+      "title": "Intelligence case library",
+      "content_type": "guidance"
+    },
+    {
+      "path": "intelligence/TEMPLATE.md",
+      "title": "Intelligence report template",
+      "content_type": "template"
+    },
+    {
+      "path": "intelligence/reports/anthropic-agent-misuse.md",
+      "title": "CSI-CASE-008: Anthropic agentic espionage disclosure: adjacent example",
+      "content_type": "guidance"
+    },
+    {
+      "path": "intelligence/reports/atomic-wallet.md",
+      "title": "CSI-CASE-005: Atomic Wallet unauthorized transfers: unresolved mechanism",
+      "content_type": "guidance"
+    },
+    {
+      "path": "intelligence/reports/bitconnect.md",
+      "title": "CSI-CASE-010: BitConnect investment-fraud indictment",
+      "content_type": "guidance"
+    },
+    {
+      "path": "intelligence/reports/bybit-official.md",
+      "title": "CSI-CASE-013: Bybit major theft: official attribution and response boundary",
+      "content_type": "guidance"
+    },
+    {
+      "path": "intelligence/reports/coinbase-support.md",
+      "title": "CSI-CASE-002: Coinbase support-data theft and extortion disclosure",
+      "content_type": "guidance"
+    },
+    {
+      "path": "intelligence/reports/colonial-recovery.md",
+      "title": "CSI-CASE-012: Colonial Pipeline ransom-proceeds seizure",
+      "content_type": "guidance"
+    },
+    {
+      "path": "intelligence/reports/ledger-connect-kit.md",
+      "title": "CSI-CASE-007: Ledger Connect Kit malicious-package distribution",
+      "content_type": "guidance"
+    },
+    {
+      "path": "intelligence/reports/mango-market.md",
+      "title": "CSI-CASE-009: Mango Markets price and collateral manipulation allegations",
+      "content_type": "guidance"
+    },
+    {
+      "path": "intelligence/reports/physical-home-invasions.md",
+      "title": "CSI-CASE-001: Violent home invasions targeting cryptocurrency",
+      "content_type": "guidance"
+    },
+    {
+      "path": "intelligence/reports/ronin-bridge.md",
+      "title": "CSI-CASE-006: Ronin bridge reopening and backing account",
+      "content_type": "guidance"
+    },
+    {
+      "path": "intelligence/reports/tornado-policy.md",
+      "title": "CSI-CASE-011: Tornado Cash delisting: policy-dependency example",
+      "content_type": "guidance"
+    },
+    {
+      "path": "intelligence/reports/tradertraitor-malware.md",
+      "title": "CSI-CASE-004: TraderTraitor trojanized-application advisory",
+      "content_type": "guidance"
+    },
+    {
+      "path": "intelligence/reports/twitter-account-takeover.md",
+      "title": "CSI-CASE-003: Twitter administrative-access social engineering",
+      "content_type": "guidance"
+    },
+    {
+      "path": "metadata/README.md",
+      "title": "Data contracts and migration",
+      "content_type": "guidance"
+    },
+    {
+      "path": "playbooks/README.md",
+      "title": "Using the response playbooks",
+      "content_type": "guidance"
+    },
+    {
+      "path": "playbooks/account-takeover.md",
+      "title": "Account or social-platform takeover",
+      "content_type": "guidance"
+    },
+    {
+      "path": "playbooks/ai-agent-compromise.md",
+      "title": "AI agent or delegated signing compromise",
+      "content_type": "guidance"
+    },
+    {
+      "path": "playbooks/consumer-fraud.md",
+      "title": "Consumer fraud response",
+      "content_type": "guidance"
+    },
+    {
+      "path": "playbooks/endpoint-supply-chain.md",
+      "title": "Endpoint and supply-chain compromise",
+      "content_type": "guidance"
+    },
+    {
+      "path": "playbooks/extortion.md",
+      "title": "Ransomware, blackmail, or extortion",
+      "content_type": "guidance"
+    },
+    {
+      "path": "playbooks/physical-coercion.md",
+      "title": "Physical coercion response",
+      "content_type": "guidance"
+    },
+    {
+      "path": "playbooks/policy-custody-event.md",
+      "title": "Policy, legal, custody, or redemption restriction",
+      "content_type": "guidance"
+    },
+    {
+      "path": "playbooks/protocol-exploit.md",
+      "title": "Protocol, bridge, oracle, or market-integrity incident",
+      "content_type": "guidance"
+    },
+    {
+      "path": "playbooks/wallet-compromise.md",
+      "title": "Wallet compromise response",
+      "content_type": "guidance"
+    },
+    {
+      "path": "research/001_wrench_attack_epidemic.md",
+      "title": "Research Note 001: Physical coercion and the limit of transfer controls",
+      "content_type": "research-draft"
+    },
+    {
+      "path": "research/002_rotator_effect.md",
+      "title": "Research Note 002: Market manipulation: test mechanisms before inferring coordination",
+      "content_type": "research-draft"
+    },
+    {
+      "path": "research/003_dprk_attribution_analysis.md",
+      "title": "Research Note 003: Actor attribution and privileged access are separate questions",
+      "content_type": "research-draft"
+    },
+    {
+      "path": "research/004_ai_agent_attack_surface.md",
+      "title": "Research Note 004: Agent authority, independent approval, and shutdown",
+      "content_type": "research-draft"
+    },
+    {
+      "path": "research/005_supply_chain_vectors.md",
+      "title": "Research Note 005: Runtime dependencies, publishing sessions, and offboarding",
+      "content_type": "research-draft"
+    },
+    {
+      "path": "research/006_pig_butchering_anatomy.md",
+      "title": "Research Note 006: Investment fraud: returns, withdrawals, fees, and liability evidence",
+      "content_type": "research-draft"
+    },
+    {
+      "path": "research/007_false_flag_forensics.md",
+      "title": "Research Note 007: Attribution review without invented probabilities",
+      "content_type": "research-draft"
+    },
+    {
+      "path": "research/README.md",
+      "title": "Research notes",
+      "content_type": "guidance"
+    },
+    {
+      "path": "reviews/2026-11-07-baseline-integrity.md",
+      "title": "CryptoSHIELD baseline-integrity review",
+      "content_type": "review"
+    },
+    {
+      "path": "reviews/csi-proof-update-proposal.md",
+      "title": "Proposed CSI proof record",
+      "content_type": "review"
+    },
+    {
+      "path": "taxonomy/README.md",
+      "title": "Taxonomy and case mapping",
+      "content_type": "guidance"
+    },
+    {
+      "path": "taxonomy/bridge-risk-appendix.md",
+      "title": "Bridge and cross-chain risk",
+      "content_type": "guidance"
+    },
+    {
+      "path": "taxonomy/ctrs-scoring.md",
+      "title": "Crypto Threat Risk Score (CTRS): suspended",
+      "content_type": "guidance"
+    },
+    {
+      "path": "taxonomy/legacy/README.md",
+      "title": "Historical assessments",
+      "content_type": "historical"
+    },
+    {
+      "path": "taxonomy/registry-table.md",
+      "title": "CryptoSHIELD threat registry",
+      "content_type": "guidance"
+    },
+    {
+      "path": "taxonomy/threat-architecture.md",
+      "title": "CryptoSHIELD Threat Architecture: Five-Layer Causal Stack",
+      "content_type": "guidance"
+    },
+    {
+      "path": "tools/30-day-hardening-sprint.md",
+      "title": "30-day hardening sprint",
+      "content_type": "guidance"
+    },
+    {
+      "path": "tools/README.md",
+      "title": "Operational tools",
+      "content_type": "guidance"
+    },
+    {
+      "path": "tools/source-review-checklist.md",
+      "title": "Source and case review checklist",
+      "content_type": "guidance"
+    },
+    {
+      "path": "tools/sovereignty-self-assessment.md",
+      "title": "CryptoSHIELD control self-assessment",
+      "content_type": "guidance"
+    },
+    {
+      "path": "tools/tabletop-exercises.md",
+      "title": "Tabletop exercises",
+      "content_type": "guidance"
+    }
+  ],
+  "domains": [
+    {
+      "id": "00",
+      "prefix": "CDG",
+      "title": "Sovereignty Governance",
+      "path": "00-cross-domain/README.md",
+      "color": "#f6921e",
+      "control_count": 7,
+      "new_controls": [
+        "CDG-06",
+        "CDG-07"
+      ],
+      "materially_updated_controls": [],
+      "playbook": "playbooks/policy-custody-event.md",
+      "research": "research/007_false_flag_forensics.md"
+    },
+    {
+      "id": "01",
+      "prefix": "WKS",
+      "title": "Wallet & Key Sovereignty",
+      "path": "01-wallet-key-sovereignty/README.md",
+      "color": "#60a5fa",
+      "control_count": 13,
+      "new_controls": [
+        "WKS-11",
+        "WKS-12",
+        "WKS-13"
+      ],
+      "materially_updated_controls": [
+        "WKS-01",
+        "WKS-02",
+        "WKS-03",
+        "WKS-04",
+        "WKS-05",
+        "WKS-06",
+        "WKS-07",
+        "WKS-08",
+        "WKS-09",
+        "WKS-10"
+      ],
+      "playbook": "playbooks/wallet-compromise.md",
+      "research": "research/005_supply_chain_vectors.md"
+    },
+    {
+      "id": "02",
+      "prefix": "EDD",
+      "title": "Endpoint & Device Defense",
+      "path": "02-endpoint-device-defense/README.md",
+      "color": "#38bdf8",
+      "control_count": 10,
+      "new_controls": [],
+      "materially_updated_controls": [
+        "EDD-01",
+        "EDD-02",
+        "EDD-04",
+        "EDD-07",
+        "EDD-08",
+        "EDD-10"
+      ],
+      "playbook": "playbooks/endpoint-supply-chain.md",
+      "research": "research/005_supply_chain_vectors.md"
+    },
+    {
+      "id": "03",
+      "prefix": "OPS",
+      "title": "OPSEC & Physical Security",
+      "path": "03-opsec-physical-security/README.md",
+      "color": "#fb7185",
+      "control_count": 10,
+      "new_controls": [],
+      "materially_updated_controls": [
+        "OPS-05",
+        "OPS-06",
+        "OPS-10"
+      ],
+      "playbook": "playbooks/physical-coercion.md",
+      "research": "research/001_wrench_attack_epidemic.md"
+    },
+    {
+      "id": "04",
+      "prefix": "SMS",
+      "title": "Social & Platform Security",
+      "path": "04-social-media-platform-security/README.md",
+      "color": "#2dd4bf",
+      "control_count": 15,
+      "new_controls": [],
+      "materially_updated_controls": [
+        "SMS-01",
+        "SMS-02",
+        "SMS-12",
+        "SMS-13",
+        "SMS-14",
+        "SMS-15"
+      ],
+      "playbook": "playbooks/account-takeover.md",
+      "research": "research/006_pig_butchering_anatomy.md"
+    },
+    {
+      "id": "05",
+      "prefix": "OCM",
+      "title": "On-Chain Monitoring",
+      "path": "05-on-chain-monitoring/README.md",
+      "color": "#818cf8",
+      "control_count": 12,
+      "new_controls": [
+        "OCM-11",
+        "OCM-12"
+      ],
+      "materially_updated_controls": [
+        "OCM-01",
+        "OCM-02",
+        "OCM-03",
+        "OCM-07",
+        "OCM-08",
+        "OCM-10"
+      ],
+      "playbook": "playbooks/protocol-exploit.md",
+      "research": "research/002_rotator_effect.md"
+    },
+    {
+      "id": "06",
+      "prefix": "SCD",
+      "title": "Supply Chain Defense",
+      "path": "06-supply-chain-defense/README.md",
+      "color": "#c084fc",
+      "control_count": 10,
+      "new_controls": [],
+      "materially_updated_controls": [
+        "SCD-02",
+        "SCD-03",
+        "SCD-07",
+        "SCD-08",
+        "SCD-09"
+      ],
+      "playbook": "playbooks/endpoint-supply-chain.md",
+      "research": "research/005_supply_chain_vectors.md"
+    },
+    {
+      "id": "07",
+      "prefix": "AAS",
+      "title": "AI Agent Security",
+      "path": "07-ai-agent-security/README.md",
+      "color": "#e879f9",
+      "control_count": 12,
+      "new_controls": [
+        "AAS-11",
+        "AAS-12"
+      ],
+      "materially_updated_controls": [
+        "AAS-01",
+        "AAS-02",
+        "AAS-03",
+        "AAS-06",
+        "AAS-08",
+        "AAS-09",
+        "AAS-10"
+      ],
+      "playbook": "playbooks/ai-agent-compromise.md",
+      "research": "research/004_ai_agent_attack_surface.md"
+    },
+    {
+      "id": "08",
+      "prefix": "GCS",
+      "title": "Governance & Compliance",
+      "path": "08-governance-compliance-sovereignty/README.md",
+      "color": "#fbbf24",
+      "control_count": 13,
+      "new_controls": [
+        "GCS-11",
+        "GCS-12",
+        "GCS-13"
+      ],
+      "materially_updated_controls": [
+        "GCS-03",
+        "GCS-04",
+        "GCS-05",
+        "GCS-06",
+        "GCS-07"
+      ],
+      "playbook": "playbooks/policy-custody-event.md",
+      "research": "research/006_pig_butchering_anatomy.md"
+    },
+    {
+      "id": "09",
+      "prefix": "CFD",
+      "title": "Consumer Fraud Defense",
+      "path": "09-consumer-fraud-defense/README.md",
+      "color": "#34d399",
+      "control_count": 10,
+      "new_controls": [],
+      "materially_updated_controls": [
+        "CFD-03",
+        "CFD-04",
+        "CFD-07",
+        "CFD-08",
+        "CFD-10"
+      ],
+      "playbook": "playbooks/consumer-fraud.md",
+      "research": "research/006_pig_butchering_anatomy.md"
+    }
+  ],
+  "controls": [
+    {
+      "id": "CDG-01",
+      "name": "Sovereignty-First Policy Declaration: explicit written commitment to self-custody as the default",
+      "priority": "CRITICAL",
+      "path": "00-cross-domain/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "CDG-02",
+      "name": "U.S. Constitutional Alignment Protocol: framework review against applicable court rulings quarterly",
+      "priority": "HIGH",
+      "path": "00-cross-domain/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "CDG-03",
+      "name": "CBDC Non-Adoption Commitment: documented organizational policy against CBDC participation",
+      "priority": "CRITICAL",
+      "path": "00-cross-domain/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "CDG-04",
+      "name": "Self-Custody Rights Documentation: maintain documented record of self-custody rights per jurisdiction",
+      "priority": "HIGH",
+      "path": "00-cross-domain/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "CDG-05",
+      "name": "Annual Sovereignty Architecture Review: annual comprehensive review of all framework controls against updated threat and regulatory landscape",
+      "priority": "HIGH",
+      "path": "00-cross-domain/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "CDG-06",
+      "name": "Evidence provenance and claim lifecycle",
+      "priority": "HIGH",
+      "path": "00-cross-domain/README.md",
+      "change_in_2_0": "new"
+    },
+    {
+      "id": "CDG-07",
+      "name": "Versioned assessment and compatibility governance",
+      "priority": "HIGH",
+      "path": "00-cross-domain/README.md",
+      "change_in_2_0": "new"
+    },
+    {
+      "id": "WKS-01",
+      "name": "Hardware wallet and device-integrity review",
+      "priority": "CRITICAL",
+      "path": "01-wallet-key-sovereignty/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "WKS-02",
+      "name": "Multisig with Geographic Diversity",
+      "priority": "CRITICAL",
+      "path": "01-wallet-key-sovereignty/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "WKS-03",
+      "name": "Tiered Timelock on Governance Transactions",
+      "priority": "CRITICAL",
+      "path": "01-wallet-key-sovereignty/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "WKS-04",
+      "name": "Seed Phrase Offline Sovereignty",
+      "priority": "CRITICAL",
+      "path": "01-wallet-key-sovereignty/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "WKS-05",
+      "name": "No Blind Signing",
+      "priority": "CRITICAL",
+      "path": "01-wallet-key-sovereignty/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "WKS-06",
+      "name": "Independent Address Verification Protocol",
+      "priority": "HIGH",
+      "path": "01-wallet-key-sovereignty/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "WKS-07",
+      "name": "Token Approval Revocation Protocol",
+      "priority": "HIGH",
+      "path": "01-wallet-key-sovereignty/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "WKS-08",
+      "name": "Permit Scam Recognition",
+      "priority": "HIGH",
+      "path": "01-wallet-key-sovereignty/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "WKS-09",
+      "name": "Cold storage and total accessible exposure",
+      "priority": "CRITICAL",
+      "path": "01-wallet-key-sovereignty/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "WKS-10",
+      "name": "Watch-Only Wallet for Household Members",
+      "priority": "HIGH",
+      "path": "01-wallet-key-sovereignty/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "WKS-11",
+      "name": "Financial authority inventory",
+      "priority": "CRITICAL",
+      "path": "01-wallet-key-sovereignty/README.md",
+      "change_in_2_0": "new"
+    },
+    {
+      "id": "WKS-12",
+      "name": "Authority revocation and recovery verification",
+      "priority": "CRITICAL",
+      "path": "01-wallet-key-sovereignty/README.md",
+      "change_in_2_0": "new"
+    },
+    {
+      "id": "WKS-13",
+      "name": "Hardware procurement and whole-device trust",
+      "priority": "HIGH",
+      "path": "01-wallet-key-sovereignty/README.md",
+      "change_in_2_0": "new"
+    },
+    {
+      "id": "EDD-01",
+      "name": "Kernel-Level Default-Deny Endpoint Protection",
+      "priority": "CRITICAL",
+      "path": "02-endpoint-device-defense/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "EDD-02",
+      "name": "Dedicated Signing Device",
+      "priority": "CRITICAL",
+      "path": "02-endpoint-device-defense/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "EDD-03",
+      "name": "Verified Software and SBOM for Developers",
+      "priority": "CRITICAL",
+      "path": "02-endpoint-device-defense/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "EDD-04",
+      "name": "Anti-Clipboard-Hijack Protocol",
+      "priority": "CRITICAL",
+      "path": "02-endpoint-device-defense/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "EDD-05",
+      "name": "Browser Extension Minimization",
+      "priority": "HIGH",
+      "path": "02-endpoint-device-defense/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "EDD-06",
+      "name": "Operating System Hardening",
+      "priority": "HIGH",
+      "path": "02-endpoint-device-defense/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "EDD-07",
+      "name": "EDR as Supplemental Detection Layer",
+      "priority": "MEDIUM",
+      "path": "02-endpoint-device-defense/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "EDD-08",
+      "name": "Network Isolation for Signing Operations",
+      "priority": "HIGH",
+      "path": "02-endpoint-device-defense/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "EDD-09",
+      "name": "Physical Security of Signing Device",
+      "priority": "HIGH",
+      "path": "02-endpoint-device-defense/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "EDD-10",
+      "name": "Application Allowlisting",
+      "priority": "CRITICAL",
+      "path": "02-endpoint-device-defense/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "OPS-01",
+      "name": "Zero Public Disclosure of Holdings",
+      "priority": "CRITICAL",
+      "path": "03-opsec-physical-security/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "OPS-02",
+      "name": "Decouple Identity from On-Chain",
+      "priority": "CRITICAL",
+      "path": "03-opsec-physical-security/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "OPS-03",
+      "name": "Chain-aware address privacy",
+      "priority": "HIGH",
+      "path": "03-opsec-physical-security/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "OPS-04",
+      "name": "OSINT Self-Audit",
+      "priority": "HIGH",
+      "path": "03-opsec-physical-security/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "OPS-05",
+      "name": "Physical Incident Response Plan",
+      "priority": "CRITICAL",
+      "path": "03-opsec-physical-security/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "OPS-06",
+      "name": "Optional decoy risk assessment",
+      "priority": "HIGH",
+      "path": "03-opsec-physical-security/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "OPS-07",
+      "name": "Family OPSEC",
+      "priority": "CRITICAL",
+      "path": "03-opsec-physical-security/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "OPS-08",
+      "name": "Geolocation Hygiene",
+      "priority": "HIGH",
+      "path": "03-opsec-physical-security/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "OPS-09",
+      "name": "Surveillance Detection",
+      "priority": "MEDIUM",
+      "path": "03-opsec-physical-security/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "OPS-10",
+      "name": "Duress Protocol",
+      "priority": "HIGH",
+      "path": "03-opsec-physical-security/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "SMS-01",
+      "name": "Phishing-resistant authentication where supported",
+      "priority": "CRITICAL",
+      "path": "04-social-media-platform-security/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "SMS-02",
+      "name": "Reduce phone-based recovery exposure",
+      "priority": "CRITICAL",
+      "path": "04-social-media-platform-security/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "SMS-03",
+      "name": "OAuth Audit",
+      "priority": "HIGH",
+      "path": "04-social-media-platform-security/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "SMS-04",
+      "name": "Dedicated Recovery Email",
+      "priority": "HIGH",
+      "path": "04-social-media-platform-security/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "SMS-05",
+      "name": "URL Verification",
+      "priority": "CRITICAL",
+      "path": "04-social-media-platform-security/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "SMS-06",
+      "name": "No Unsolicited DM Trust",
+      "priority": "CRITICAL",
+      "path": "04-social-media-platform-security/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "SMS-07",
+      "name": "Social Engineering Drill",
+      "priority": "HIGH",
+      "path": "04-social-media-platform-security/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "SMS-08",
+      "name": "Official Channel Verification",
+      "priority": "HIGH",
+      "path": "04-social-media-platform-security/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "SMS-09",
+      "name": "DNS/Frontend Alert System",
+      "priority": "HIGH",
+      "path": "04-social-media-platform-security/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "SMS-10",
+      "name": "Influencer Skepticism Protocol",
+      "priority": "MEDIUM",
+      "path": "04-social-media-platform-security/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "SMS-11",
+      "name": "Manual URL Entry Protocol",
+      "priority": "HIGH",
+      "path": "04-social-media-platform-security/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "SMS-12",
+      "name": "Pre-Transaction Platform Verification",
+      "priority": "CRITICAL",
+      "path": "04-social-media-platform-security/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "SMS-13",
+      "name": "10-Day Rule for New Platforms",
+      "priority": "HIGH",
+      "path": "04-social-media-platform-security/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "SMS-14",
+      "name": "Independently verify withdrawal fee demands",
+      "priority": "CRITICAL",
+      "path": "04-social-media-platform-security/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "SMS-15",
+      "name": "Recovery scam awareness",
+      "priority": "CRITICAL",
+      "path": "04-social-media-platform-security/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "OCM-01",
+      "name": "Transaction Simulation",
+      "priority": "CRITICAL",
+      "path": "05-on-chain-monitoring/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "OCM-02",
+      "name": "Real-Time Wallet Monitor",
+      "priority": "HIGH",
+      "path": "05-on-chain-monitoring/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "OCM-03",
+      "name": "Authority monitoring and revocation",
+      "priority": "HIGH",
+      "path": "05-on-chain-monitoring/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "OCM-04",
+      "name": "Mempool Awareness",
+      "priority": "HIGH",
+      "path": "05-on-chain-monitoring/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "OCM-05",
+      "name": "MEV Protection",
+      "priority": "MEDIUM",
+      "path": "05-on-chain-monitoring/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "OCM-06",
+      "name": "Address Poisoning Detection",
+      "priority": "HIGH",
+      "path": "05-on-chain-monitoring/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "OCM-07",
+      "name": "Bridge verification and backing assessment",
+      "priority": "HIGH",
+      "path": "05-on-chain-monitoring/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "OCM-08",
+      "name": "Smart Contract Audit Verification",
+      "priority": "HIGH",
+      "path": "05-on-chain-monitoring/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "OCM-09",
+      "name": "Anomaly Detection",
+      "priority": "HIGH",
+      "path": "05-on-chain-monitoring/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "OCM-10",
+      "name": "Permit/Signature Intelligence",
+      "priority": "CRITICAL",
+      "path": "05-on-chain-monitoring/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "OCM-11",
+      "name": "Aggregate exposure budget enforcement",
+      "priority": "CRITICAL",
+      "path": "05-on-chain-monitoring/README.md",
+      "change_in_2_0": "new"
+    },
+    {
+      "id": "OCM-12",
+      "name": "Bridge backing and redemption invariants",
+      "priority": "CRITICAL",
+      "path": "05-on-chain-monitoring/README.md",
+      "change_in_2_0": "new"
+    },
+    {
+      "id": "SCD-01",
+      "name": "SBOM Enforcement",
+      "priority": "CRITICAL",
+      "path": "06-supply-chain-defense/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "SCD-02",
+      "name": "Dependency Allowlisting",
+      "priority": "CRITICAL",
+      "path": "06-supply-chain-defense/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "SCD-03",
+      "name": "CI/CD Secret Isolation",
+      "priority": "CRITICAL",
+      "path": "06-supply-chain-defense/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "SCD-04",
+      "name": "Binary Analysis",
+      "priority": "HIGH",
+      "path": "06-supply-chain-defense/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "SCD-05",
+      "name": "Third-Party Risk Assessment",
+      "priority": "HIGH",
+      "path": "06-supply-chain-defense/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "SCD-06",
+      "name": "Adversarial Supply Chain Simulation",
+      "priority": "HIGH",
+      "path": "06-supply-chain-defense/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "SCD-07",
+      "name": "Package Lock Pinning",
+      "priority": "CRITICAL",
+      "path": "06-supply-chain-defense/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "SCD-08",
+      "name": "AI Model Provenance",
+      "priority": "HIGH",
+      "path": "06-supply-chain-defense/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "SCD-09",
+      "name": "Post-Install Hook Blocking",
+      "priority": "HIGH",
+      "path": "06-supply-chain-defense/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "SCD-10",
+      "name": "Critical Release Exam",
+      "priority": "HIGH",
+      "path": "06-supply-chain-defense/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "AAS-01",
+      "name": "Separate agent decisions from signing authority",
+      "priority": "CRITICAL",
+      "path": "07-ai-agent-security/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "AAS-02",
+      "name": "Memory provenance and integrity",
+      "priority": "CRITICAL",
+      "path": "07-ai-agent-security/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "AAS-03",
+      "name": "Prompt injection containment",
+      "priority": "CRITICAL",
+      "path": "07-ai-agent-security/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "AAS-04",
+      "name": "Agent wallet isolation: minimal-balance dedicated wallets per strategy",
+      "priority": "HIGH",
+      "path": "07-ai-agent-security/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "AAS-05",
+      "name": "Testnet simulation first: no mainnet deployment without sandbox validation",
+      "priority": "HIGH",
+      "path": "07-ai-agent-security/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "AAS-06",
+      "name": "Aggregate financial exposure limits",
+      "priority": "CRITICAL",
+      "path": "07-ai-agent-security/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "AAS-07",
+      "name": "Real-time agent behavior anomaly detection",
+      "priority": "HIGH",
+      "path": "07-ai-agent-security/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "AAS-08",
+      "name": "Tool call allowlisting: permitted smart contracts and endpoints only",
+      "priority": "CRITICAL",
+      "path": "07-ai-agent-security/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "AAS-09",
+      "name": "Independent oracle inputs and outage policy",
+      "priority": "HIGH",
+      "path": "07-ai-agent-security/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "AAS-10",
+      "name": "Swarm isolation and shared exposure limits",
+      "priority": "HIGH",
+      "path": "07-ai-agent-security/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "AAS-11",
+      "name": "Independent human financial authorization",
+      "priority": "CRITICAL",
+      "path": "07-ai-agent-security/README.md",
+      "change_in_2_0": "new"
+    },
+    {
+      "id": "AAS-12",
+      "name": "Agent shutdown and persistent-authority containment",
+      "priority": "CRITICAL",
+      "path": "07-ai-agent-security/README.md",
+      "change_in_2_0": "new"
+    },
+    {
+      "id": "GCS-01",
+      "name": "Self-Custody First Policy",
+      "priority": "CRITICAL",
+      "path": "08-governance-compliance-sovereignty/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "GCS-02",
+      "name": "CBDC Resistance Protocol",
+      "priority": "CRITICAL",
+      "path": "08-governance-compliance-sovereignty/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "GCS-03",
+      "name": "Legal Awareness",
+      "priority": "HIGH",
+      "path": "08-governance-compliance-sovereignty/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "GCS-04",
+      "name": "Minimize identity data within applicable law",
+      "priority": "HIGH",
+      "path": "08-governance-compliance-sovereignty/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "GCS-05",
+      "name": "Vendor Sovereignty Assessment",
+      "priority": "HIGH",
+      "path": "08-governance-compliance-sovereignty/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "GCS-06",
+      "name": "Incident Response Plan",
+      "priority": "CRITICAL",
+      "path": "08-governance-compliance-sovereignty/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "GCS-07",
+      "name": "Decentralized Governance Participation",
+      "priority": "MEDIUM",
+      "path": "08-governance-compliance-sovereignty/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "GCS-08",
+      "name": "Open Source Preference",
+      "priority": "HIGH",
+      "path": "08-governance-compliance-sovereignty/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "GCS-09",
+      "name": "Privacy Tool Assessment",
+      "priority": "MEDIUM",
+      "path": "08-governance-compliance-sovereignty/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "GCS-10",
+      "name": "Annual Framework Review",
+      "priority": "HIGH",
+      "path": "08-governance-compliance-sovereignty/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "GCS-11",
+      "name": "Bounded emergency authority",
+      "priority": "CRITICAL",
+      "path": "08-governance-compliance-sovereignty/README.md",
+      "change_in_2_0": "new"
+    },
+    {
+      "id": "GCS-12",
+      "name": "Governance capture and lasting-authority review",
+      "priority": "HIGH",
+      "path": "08-governance-compliance-sovereignty/README.md",
+      "change_in_2_0": "new"
+    },
+    {
+      "id": "GCS-13",
+      "name": "Custody liabilities and asset-rights assessment",
+      "priority": "HIGH",
+      "path": "08-governance-compliance-sovereignty/README.md",
+      "change_in_2_0": "new"
+    },
+    {
+      "id": "CFD-01",
+      "name": "Platform Legitimacy Stack Check",
+      "priority": "CRITICAL",
+      "path": "09-consumer-fraud-defense/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "CFD-02",
+      "name": "Unsolicited Investment Offer Zero Trust",
+      "priority": "CRITICAL",
+      "path": "09-consumer-fraud-defense/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "CFD-03",
+      "name": "Profitable Test Withdrawal Recognition",
+      "priority": "CRITICAL",
+      "path": "09-consumer-fraud-defense/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "CFD-04",
+      "name": "Fee Demand as Exit Signal",
+      "priority": "CRITICAL",
+      "path": "09-consumer-fraud-defense/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "CFD-05",
+      "name": "Bitcoin ATM Transaction Refusal",
+      "priority": "CRITICAL",
+      "path": "09-consumer-fraud-defense/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "CFD-06",
+      "name": "Elder Household Protocol",
+      "priority": "HIGH",
+      "path": "09-consumer-fraud-defense/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "CFD-07",
+      "name": "Recovery Scam Firewall",
+      "priority": "HIGH",
+      "path": "09-consumer-fraud-defense/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "CFD-08",
+      "name": "Independent identity verification",
+      "priority": "HIGH",
+      "path": "09-consumer-fraud-defense/README.md",
+      "change_in_2_0": "updated"
+    },
+    {
+      "id": "CFD-09",
+      "name": "Group Chat Investment Protocol",
+      "priority": "HIGH",
+      "path": "09-consumer-fraud-defense/README.md",
+      "change_in_2_0": "retained"
+    },
+    {
+      "id": "CFD-10",
+      "name": "Custody, liabilities, and withdrawal assessment",
+      "priority": "CRITICAL",
+      "path": "09-consumer-fraud-defense/README.md",
+      "change_in_2_0": "updated"
+    }
+  ]
+}

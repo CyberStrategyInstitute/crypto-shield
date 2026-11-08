@@ -1,5 +1,9 @@
 # CSI-CASE-008: Anthropic agentic espionage disclosure: adjacent example
 
+<!-- navigation:start -->
+[Home](../../README.md) | [All pages](../../REPOSITORY-MAP.md) | [Domains](../../README.md#domains-and-control-counts) | [v2.0 changes](../../FRAMEWORK-UPDATE.md) | [Machine-readable index](../../metadata/repository-index.json) | [Automation guide](../../AUTOMATION.md)
+<!-- navigation:end -->
+
 ## Report header
 
 Author: Codex-assisted repository research. Status: source-checked draft; independent review pending. Classification: open source. Source publication: 2025-11-13. Source reviewed: 2026-11-07. Historical scope: this cited disclosure only. Category: AI Agent. Case type: adjacent. Mapping: supported_scope. No vendor endorsement or undisclosed paid relationship is asserted.

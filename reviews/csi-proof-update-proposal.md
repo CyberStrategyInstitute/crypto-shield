@@ -1,5 +1,9 @@
 # Proposed CSI proof record
 
+<!-- navigation:start -->
+[Home](../README.md) | [All pages](../REPOSITORY-MAP.md) | [Domains](../README.md#domains-and-control-counts) | [v2.0 changes](../FRAMEWORK-UPDATE.md) | [Machine-readable index](../metadata/repository-index.json) | [Automation guide](../AUTOMATION.md)
+<!-- navigation:end -->
+
 Status: prepared locally for this pull request. Not saved to the shared canonical proof ledger. A repository proposal is not campaign publication or a released implementation.
 
 Claim ID: P-CRYPTO-INVENTORY-2026-11-07.

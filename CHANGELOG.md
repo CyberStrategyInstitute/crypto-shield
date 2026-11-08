@@ -1,5 +1,18 @@
 # CryptoSHIELD changelog
 
+<!-- navigation:start -->
+[Home](README.md) | [All pages](REPOSITORY-MAP.md) | [Domains](README.md#domains-and-control-counts) | [v2.0 changes](FRAMEWORK-UPDATE.md) | [Machine-readable index](metadata/repository-index.json) | [Automation guide](AUTOMATION.md)
+<!-- navigation:end -->
+
+## Domain navigation and discovery update
+
+- Add ten distinct, accessible SVG domain headers with generated counts and colored NEW/UPDATED/RETAINED control labels.
+- Add consistent return navigation to every Markdown page and a complete page map.
+- Publish a generated machine-readable page/domain/control index and an automation reading guide.
+- Link each domain to related response, research, evidence, taxonomy, and exercise resources.
+- Restore the main README Star History section, including dark/light chart variants.
+- Check generated navigation and indexes in the existing repository validation workflow.
+
 ## README and header presentation update
 
 - Embed the uploaded `assets/CryptoSHIELD v2.0.png` banner at the top of the README.

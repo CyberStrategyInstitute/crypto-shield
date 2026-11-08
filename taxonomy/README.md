@@ -1,5 +1,9 @@
 # Taxonomy and case mapping
 
+<!-- navigation:start -->
+[Home](../README.md) | [All pages](../REPOSITORY-MAP.md) | [Domains](../README.md#domains-and-control-counts) | [v2.0 changes](../FRAMEWORK-UPDATE.md) | [Machine-readable index](../metadata/repository-index.json) | [Automation guide](../AUTOMATION.md)
+<!-- navigation:end -->
+
 The registry defines threat classes; it is not an incident database. Event records belong in `intelligence/events/`, with human reports under `intelligence/reports/`. Mapping a case to a class does not validate every assertion inherited by that class.
 
 | File | Role |

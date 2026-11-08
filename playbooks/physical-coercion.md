@@ -1,5 +1,9 @@
 # Physical coercion response
 
+<!-- navigation:start -->
+[Home](../README.md) | [All pages](../REPOSITORY-MAP.md) | [Domains](../README.md#domains-and-control-counts) | [v2.0 changes](../FRAMEWORK-UPDATE.md) | [Machine-readable index](../metadata/repository-index.json) | [Automation guide](../AUTOMATION.md)
+<!-- navigation:end -->
+
 Physical safety takes priority over assets. During immediate danger, take the safest available path and contact emergency services when safe. This guidance cannot predict an attacker's behavior.
 
 ## During an incident

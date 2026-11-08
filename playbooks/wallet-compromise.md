@@ -1,5 +1,9 @@
 # Wallet compromise response
 
+<!-- navigation:start -->
+[Home](../README.md) | [All pages](../REPOSITORY-MAP.md) | [Domains](../README.md#domains-and-control-counts) | [v2.0 changes](../FRAMEWORK-UPDATE.md) | [Machine-readable index](../metadata/repository-index.json) | [Automation guide](../AUTOMATION.md)
+<!-- navigation:end -->
+
 Use an independently trusted device. If anyone is physically threatened, follow the [physical-coercion playbook](physical-coercion.md) first. A wallet balance, a seed, a token allowance, and a delegated signer are different authority boundaries.
 
 ## Choose the response by exposure

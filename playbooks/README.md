@@ -1,5 +1,9 @@
 # Using the response playbooks
 
+<!-- navigation:start -->
+[Home](../README.md) | [All pages](../REPOSITORY-MAP.md) | [Domains](../README.md#domains-and-control-counts) | [v2.0 changes](../FRAMEWORK-UPDATE.md) | [Machine-readable index](../metadata/repository-index.json) | [Automation guide](../AUTOMATION.md)
+<!-- navigation:end -->
+
 The OODA document routes an incident. A playbook supplies conditional actions. The incident log records the decision, authorization, result, and next owner. A case report explains historical evidence; a tabletop is a synthetic rehearsal. None substitutes for a verified implementation or a qualified responder.
 
 1. Prioritize safety, establish a trusted device/channel, and assign response roles.

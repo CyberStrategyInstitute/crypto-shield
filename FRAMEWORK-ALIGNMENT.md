@@ -1,5 +1,9 @@
 # CryptoSHIELD framework alignment
 
+<!-- navigation:start -->
+[Home](README.md) | [All pages](REPOSITORY-MAP.md) | [Domains](README.md#domains-and-control-counts) | [v2.0 changes](FRAMEWORK-UPDATE.md) | [Machine-readable index](metadata/repository-index.json) | [Automation guide](AUTOMATION.md)
+<!-- navigation:end -->
+
 This is a proposed allocation of responsibilities, not a verified current control crosswalk or compliance determination. The previous companion and external-standard tables lacked version-pinned source evidence; their specific IDs, counts, and coverage assurances are withdrawn pending verification. The [baseline document](https://github.com/CyberStrategyInstitute/crypto-shield/blob/051a317fb72db38f11d8928fddd5c506d24d468a/FRAMEWORK-ALIGNMENT.md) remains available for comparison.
 
 | Responsibility | Primary specification | Integration evidence required |

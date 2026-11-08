@@ -1,5 +1,9 @@
 # Crypto Threat Risk Score (CTRS): suspended
 
+<!-- navigation:start -->
+[Home](../README.md) | [All pages](../REPOSITORY-MAP.md) | [Domains](../README.md#domains-and-control-counts) | [v2.0 changes](../FRAMEWORK-UPDATE.md) | [Machine-readable index](../metadata/repository-index.json) | [Automation guide](../AUTOMATION.md)
+<!-- navigation:end -->
+
 CTRS v1.1 is historical, unvalidated data. Do not issue new scores, rank threats with it, or convert its values to another scale. Qualitative severity in the registry is a separate inherited assessment, not a calculated CTRS tier.
 
 The baseline used incompatible instructions: 0-4 components with both a x5 explanation and a x20 formula, while the README used 0-5 components and a 0-100 scale. Historical rows also contain arithmetic and tier mismatches. No replacement model has been adopted.

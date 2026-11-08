@@ -1,5 +1,9 @@
 # Asset status
 
+<!-- navigation:start -->
+[Home](../README.md) | [All pages](../REPOSITORY-MAP.md) | [Domains](../README.md#domains-and-control-counts) | [v2.0 changes](../FRAMEWORK-UPDATE.md) | [Machine-readable index](../metadata/repository-index.json) | [Automation guide](../AUTOMATION.md)
+<!-- navigation:end -->
+
 [`CryptoSHIELD v2.0.png`](CryptoSHIELD%20v2.0.png) is the published header selected and uploaded by the maintainer. The main README embeds this exact file.
 
 `CryptoSHIELD Framework.png` is an earlier v2.0.0 header variant, redesigned at the user's request with a charcoal/black background, frosted-glass panels, tactile icons, and a three-part interlocking glass-shield sculpture. Blue, violet, and teal distinguish Assets & Authority, Systems & Agents, and People & Trust. These groups organize the existing nine operational domains above the shared Domain 00 sovereignty-governance foundation; they do not introduce replacement domains. Counts: 46 threat classes and 112 controls.
@@ -22,3 +26,7 @@ The seven domain PNGs remain retired historical artwork and are not embedded in 
 | Domain 06 Supply Chain Defense (SCD).png | Unverified trend/score claims, duplicate SCD-10, and an omitted hook-blocking control |
 
 Each image was visually inspected during the November 7, 2026 integrity review. The overall header has since been replaced and checked against the current definitions; the seven domain images still require replacement.
+
+## Domain headers
+
+The ten SVG headers in `domain-headers/` use a distinct accent for each numbered domain, a shared charcoal background, and readable titles. Each SVG includes an accessible title and description. Domain names, control counts, and links also appear as text in the domain README. These generated headers replace the retired domain PNGs in current navigation. Regenerate them with `python tools/generate_reference.py`; do not edit generated SVGs manually.

@@ -1,5 +1,9 @@
 # CryptoSHIELD baseline-integrity review
 
+<!-- navigation:start -->
+[Home](../README.md) | [All pages](../REPOSITORY-MAP.md) | [Domains](../README.md#domains-and-control-counts) | [v2.0 changes](../FRAMEWORK-UPDATE.md) | [Machine-readable index](../metadata/repository-index.json) | [Automation guide](../AUTOMATION.md)
+<!-- navigation:end -->
+
 Review date: November 7, 2026. Baseline: `051a317fb72db38f11d8928fddd5c506d24d468a`, matching current main when work began. Scope: all 47 tracked repository files, including eight PNGs and the SVG. This is a repository consistency and specification review. It does not complete the supplied analysis's broader external investigation.
 
 ## Major framework expansion
