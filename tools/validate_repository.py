@@ -11,6 +11,7 @@ from urllib.parse import unquote, urlsplit
 
 from jsonschema import Draft7Validator, FormatChecker
 from generate_reference import ROOT, controls, generated_files
+from validate_cases import case_errors
 
 FORMATS = FormatChecker()
 
@@ -136,6 +137,9 @@ def link_errors(root):
 
 def validate(root=ROOT):
     errors = []
+    for path in root.rglob('*.json'):
+        if '.git' not in path.parts:
+            load(path)
     data = load(root/'taxonomy/registry.json')
     items = controls(root)
     errors += schema_errors(items, load(root/'metadata/control-schema.json'))
@@ -204,6 +208,7 @@ def validate(root=ROOT):
         if control['related_threats'] and control['id'] not in mapped_controls:
             errors.append(f"New control is not mapped to threats: {control['id']}")
     errors += link_errors(root)
+    errors += case_errors(root, data, items)
     for path in root.rglob('*.md'):
         if '.git' not in path.parts and '\u2014' in path.read_text(encoding='utf-8'):
             errors.append(f'Em dash in generated prose: {path.relative_to(root)}')

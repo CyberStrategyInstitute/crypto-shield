@@ -18,6 +18,14 @@ This is a pull-request proposal, not a tagged release.
 
 See [migration details](metadata/README.md), [historical data](taxonomy/legacy/README.md), and [review coverage and remaining work](reviews/2026-11-07-baseline-integrity.md).
 
+## Operational evidence and examples added to the 2.0.0 proposal
+
+- Write seven scoped research notes instead of leaving research placeholders.
+- Add 13 source-checked report/event pairs across all 12 categories; retain allegation/vendor/provisional status.
+- Add CS-MKT-04 and CS-SOV-03, bringing the active taxonomy to 46 unscored classes.
+- Add six dedicated playbooks, a nine-playbook routing guide, 12 synthetic tabletops, three templates, a filled sample, and local case lookup.
+- Connect taxonomy and bridge analysis to cases and exercises; validate report/event/control/source/playbook coverage in CI.
+
 ## Historical version declarations
 
 The prior changelog declared v1.0 and v1.1 in May 2026 without exact release dates. It claimed 34 then 42 threats and 80 then 95 controls. The examined v1.1 registry actually contains 44 threat objects, and including cross-domain governance yields 100 controls. Those declarations do not establish release tags, research completion, source validation, or control efficacy.

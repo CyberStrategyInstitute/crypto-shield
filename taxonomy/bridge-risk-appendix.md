@@ -25,3 +25,8 @@ Test message forgery, replay, conflicting finality, unbacked minting, malicious 
 ## Evidence limits
 
 Historical case amounts and causal classifications remain discovery leads in the [legacy registry](legacy/registry-v1.1.json). Reconstruct primary disclosures, deployed configuration, transactions, affected value, direct loss, frozen funds, and recovery before using any case as validation. This document supplies no current bridge recommendation or production contract implementation.
+
+
+## Worked case and exercise
+
+The [Ronin reopening account](../intelligence/reports/ronin-bridge.md) illustrates why user backing, DAO liabilities, replacement capital, and stolen-fund recovery need separate accounting. It is an operator account, not independent solvency validation or a current bridge recommendation. Use the DeFi tabletop and [exposure-budget template](../tools/templates/exposure-budget.json) to record an invariant, authorization, expected block, and verification result.

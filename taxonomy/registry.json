@@ -4,7 +4,7 @@
   "last_updated": "2026-11-07",
   "evidence_cutoff": null,
   "scoring_status": "suspended",
-  "total_threats": 44,
+  "total_threats": 46,
   "threat_categories": [
     "Physical",
     "Insider",
@@ -888,6 +888,43 @@
         "Chainalysis 2024 ransomware report $813.55M",
         "FBI IC3 child sextortion stats",
         "Chainabuse blackmail category"
+      ]
+    },
+    {
+      "id": "CS-MKT-04",
+      "name": "Price and collateral manipulation",
+      "category": "Market Manipulation",
+      "description": "Manipulated market prices or illiquid collateral valuations enable excess borrowing or extraction. Distinguish alleged conduct from adjudicated findings.",
+      "ooda_phase": "orient",
+      "severity": "HIGH",
+      "evidence_status": "pending_primary_review",
+      "legacy_ctrs_score": null,
+      "candidate_controls": [
+        "AAS-09",
+        "OCM-09",
+        "OCM-11"
+      ],
+      "references": [
+        "https://www.sec.gov/newsroom/press-releases/2023-13"
+      ]
+    },
+    {
+      "id": "CS-SOV-03",
+      "name": "Policy and third-party access restrictions",
+      "category": "Sovereignty",
+      "description": "Legal or provider decisions change access, redemption, or transaction availability. A restriction is an operational dependency, not automatic evidence of unlawful overreach.",
+      "ooda_phase": "orient",
+      "severity": "HIGH",
+      "evidence_status": "pending_primary_review",
+      "legacy_ctrs_score": null,
+      "candidate_controls": [
+        "GCS-03",
+        "GCS-09",
+        "GCS-13",
+        "CDG-04"
+      ],
+      "references": [
+        "https://home.treasury.gov/news/press-releases/sb0057"
       ]
     }
   ]

@@ -19,10 +19,16 @@ Use qualitative uncertainty and competing hypotheses. Record official allegation
 | Physical coercion or immediate threat | [Physical coercion](playbooks/physical-coercion.md) |
 | Wallet, key, approval, delegation, or endpoint exposure | [Wallet compromise decision tree](playbooks/wallet-compromise.md) |
 | Social engineering or investment fraud | [Consumer fraud](playbooks/consumer-fraud.md) |
-| Protocol or supply-chain compromise | [Protocol and supply-chain response](#protocol-and-supply-chain-response) |
-| Agent or signing-service compromise | [AI agent response](#ai-agent-response) |
+| Protocol, bridge, oracle, or market-integrity incident | [Protocol response](playbooks/protocol-exploit.md) |
+| Endpoint or supply-chain compromise | [Endpoint/supply-chain response](playbooks/endpoint-supply-chain.md) |
+| Agent or signing-service compromise | [AI agent response](playbooks/ai-agent-compromise.md) |
+| Account takeover | [Account response](playbooks/account-takeover.md) |
+| Policy, custody, or redemption restriction | [Policy/custody response](playbooks/policy-custody-event.md) |
+| Extortion | [Extortion response](playbooks/extortion.md) |
 
 There is no universal revoke-and-migrate sequence. Revocation may not invalidate keys or unused permits; migration can race a sweeper. Use the wallet decision tree from a trusted device.
+
+The [playbook guide](playbooks/README.md) explains roles, stop conditions, verification, and handoff. The [case library](intelligence/README.md) supplies historical examples; [tabletops](tools/tabletop-exercises.md) rehearse decisions without live funds. Record actions and results in the [incident log](tools/templates/incident-log.json).
 
 ## Act
 

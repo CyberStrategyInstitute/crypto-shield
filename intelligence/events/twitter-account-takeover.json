@@ -1,0 +1,29 @@
+{
+  "schema_version": "2.0",
+  "id": "CSI-CASE-003",
+  "timestamp": "2023-06-23T00:00:00Z",
+  "timestamp_basis": "publication_date",
+  "source_review_date": "2026-11-07",
+  "threat_id": "CS-SOC-01",
+  "category": "Social Engineering",
+  "severity": "HIGH",
+  "ooda_phase": "orient",
+  "evidence_status": "primary_reviewed",
+  "attribution_status": "unknown",
+  "attribution": null,
+  "insider_vector": null,
+  "ai_assisted": null,
+  "financial_loss_usd": null,
+  "financial_loss_estimated": false,
+  "candidate_controls": [
+    "SMS-01",
+    "SMS-03",
+    "SMS-08",
+    "SMS-06"
+  ],
+  "references": [
+    "https://www.justice.gov/usao-ndca/pr/uk-citizen-sentenced-five-years-cybercrime-offenses"
+  ],
+  "notes": "official_judicial_summary; incident; mapping supported_scope. Source publication date is used at midnight UTC for indexing, not an asserted incident time. The separate offenses are not one loss event. This summary does not establish that hardware authentication alone could have blocked internal administrative abuse.",
+  "control_analysis": "A familiar or verified account is not independent confirmation when the platform administration path is compromised. Candidate mitigations require implementation tests; no prevention counterfactual established."
+}

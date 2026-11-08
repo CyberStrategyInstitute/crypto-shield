@@ -195,6 +195,17 @@
     },
     "schema_version": {
       "const": "2.0"
+    },
+    "timestamp_basis": {
+      "enum": [
+        "publication_date",
+        "occurrence",
+        "detection"
+      ]
+    },
+    "source_review_date": {
+      "type": "string",
+      "format": "date"
     }
   },
   "allOf": [

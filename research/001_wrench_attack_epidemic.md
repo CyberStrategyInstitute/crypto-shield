@@ -1,15 +1,33 @@
-# Research Note 001: Physical coercion
+# Research Note 001: Physical coercion and the limit of transfer controls
 
-Status: Historical draft under revalidation. Integrity review: November 7, 2026. Threats: CS-PHY-01, CS-PHY-02.
+Status: scoped primary-source synthesis, source-checked draft; independent review pending. Review date: 2026-11-07. Scope: the linked teaching cases and control-design implications. This replaces the prior placeholder or unvalidated conclusion without declaring the broader research project complete.
 
-This update does not complete the historical investigation. Earlier incident amounts, attribution conclusions, calibrated-score claims, and prevention estimates are not adopted as verified findings. The [original note](https://github.com/CyberStrategyInstitute/crypto-shield/blob/051a317fb72db38f11d8928fddd5c506d24d468a/research/001_wrench_attack_epidemic.md) remains in Git history for audit.
+## Finding
 
-## Evidence needed
+Physical coercion is an exposure of people as well as assets. A control that delays one transfer path does not establish a safe outcome for a threatened person.
 
-Obtain original incident records and the claimed CertiK report. Define incidents, attempts, victims, ransom demanded, direct loss, recovery, geography, and denominators. Test whether disclosure or breach data supplied the identity link; do not blame victims or assume oversharing is the root cause.
+## Method and evidence
 
-## Interim guidance
+Cases were selected for explanatory value, source accessibility, and category coverage, not population representativeness or loss ranking. The reports link original publisher material and record its dates and limitations. Source review is not independent technical replication.
 
-Physical safety takes priority over assets. Delays and signer separation constrain specific paths; neither guarantees safety. Decoys and deception are optional and may increase danger.
+- [Violent home invasions targeting cryptocurrency](../intelligence/reports/physical-home-invasions.md)
 
-Use the [OODA playbook](../OODA-PLAYBOOK.md) for response and the [evidence ledger](../reviews/evidence-ledger.json) for accepted sources. [Series status](README.md) distinguishes drafts, stubs, and the seed methodology. No incident-rate, protection-efficacy, or attribution-probability estimate is established by this note.
+## Analysis
+
+Separate identity exposure, account access, signer access, physical threats, and family leverage. The inspected judicial summary establishes a serious physical risk, but does not establish a general incident rate, an oversharing root cause, or a successful decoy strategy. Evaluate actual access paths before prescribing a control.
+
+## Control consequences
+
+OPS-05 should define safe help and communication; OPS-06 remains optional; WKS-03 documents only the transactions its delay covers. An inaccessible signer can constrain a transfer while still exposing another person to threats.
+
+## Worked application
+
+Use the physical exercise and incident-log template. Verify that a responder can prioritize safety without being told to refuse, deceive, or complete controls first. Escalate physical-security design to qualified practice.
+
+Use the [tabletop pack](../tools/tabletop-exercises.md), [playbook guide](../playbooks/README.md), and [operating guide](../OPERATING-GUIDE.md). Case facts belong in reports; reusable classes belong in taxonomy; operational decisions belong in incident logs.
+
+## Counterexamples and remaining work
+
+Build an original incident dataset with consistent victim/event definitions, geography, attempted versus completed coercion, financial effects, and reporting bias. Seek cases with strong custody controls and continuing physical harm.
+
+No CTRS rating, calibrated attribution probability, population statistic, or prevention percentage is established. The [original note](https://github.com/CyberStrategyInstitute/crypto-shield/blob/051a317fb72db38f11d8928fddd5c506d24d468a/research/001_wrench_attack_epidemic.md) remains in Git history; its unsupported claims are not adopted here.

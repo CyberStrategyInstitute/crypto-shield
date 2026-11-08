@@ -1,0 +1,29 @@
+{
+  "schema_version": "2.0",
+  "id": "CSI-CASE-002",
+  "timestamp": "2025-05-15T00:00:00Z",
+  "timestamp_basis": "publication_date",
+  "source_review_date": "2026-11-07",
+  "threat_id": "CS-INS-02",
+  "category": "Insider",
+  "severity": "HIGH",
+  "ooda_phase": "orient",
+  "evidence_status": "primary_reviewed",
+  "attribution_status": "unknown",
+  "attribution": null,
+  "insider_vector": true,
+  "ai_assisted": null,
+  "financial_loss_usd": null,
+  "financial_loss_estimated": false,
+  "candidate_controls": [
+    "GCS-04",
+    "GCS-05",
+    "SMS-06",
+    "CDG-06"
+  ],
+  "references": [
+    "https://www.coinbase.com/blog/protecting-our-customers-standing-up-to-extortionists"
+  ],
+  "notes": "vendor_incident_account; incident; mapping supported_scope. Source publication date is used at midnight UTC for indexing, not an asserted incident time. This is the affected company's account, not independent forensics. The ransom demand, reward, remediation costs, and customer losses must not be combined as direct theft.",
+  "control_analysis": "Access to customer identity data can enable downstream fraud without possession of signing keys. Candidate mitigations require implementation tests; no prevention counterfactual established."
+}

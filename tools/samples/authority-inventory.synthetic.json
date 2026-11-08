@@ -1,0 +1,28 @@
+{
+  "template_version": "1.0",
+  "classification": "synthetic_exercise_only",
+  "owner": "EXERCISE-OWNER",
+  "review_date": "2026-11-07",
+  "authorities": [
+    {
+      "principal": "EXERCISE-AGENT",
+      "chain": "simulated",
+      "account_public_identifier": "EXAMPLE-ACCOUNT-A",
+      "authority_type": "session_and_signing_api",
+      "asset_scope": "simulated units",
+      "permitted_effects": [
+        "request transfer"
+      ],
+      "limit": "shared 100 units under OCM-11",
+      "expiry": "exercise end",
+      "dependencies": [
+        "EXERCISE-SIGNER",
+        "EXERCISE-POLICY"
+      ],
+      "invalidation_method": "disable session and API authorization independently of process",
+      "verification_evidence": "NOT RUN: stale session request must be denied",
+      "residual_risk": "previously signed action may remain executable"
+    }
+  ],
+  "warning": "No live accounts, secrets, network calls, or executed result."
+}

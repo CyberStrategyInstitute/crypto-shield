@@ -1,0 +1,30 @@
+{
+  "schema_version": "2.0",
+  "id": "CSI-CASE-007",
+  "timestamp": "2023-12-20T00:00:00Z",
+  "timestamp_basis": "publication_date",
+  "source_review_date": "2026-11-07",
+  "threat_id": "CS-SC-02",
+  "category": "Supply Chain",
+  "severity": "HIGH",
+  "ooda_phase": "orient",
+  "evidence_status": "primary_reviewed",
+  "attribution_status": "unknown",
+  "attribution": null,
+  "insider_vector": null,
+  "ai_assisted": null,
+  "financial_loss_usd": null,
+  "financial_loss_estimated": false,
+  "candidate_controls": [
+    "SCD-02",
+    "SCD-03",
+    "SCD-07",
+    "SCD-09",
+    "WKS-12"
+  ],
+  "references": [
+    "https://www.ledger.com/blog/security-incident-report"
+  ],
+  "notes": "vendor_incident_account; incident; mapping supported_scope. Source publication date is used at midnight UTC for indexing, not an asserted incident time. The operator report was read, but packages, transactions, and the reported freeze were not independently replayed. This account concerns a software distribution path, not proof of hardware key extraction.",
+  "control_analysis": "Review runtime-loaded dependencies and external publishing access, not only the source repository and lockfile. Candidate mitigations require implementation tests; no prevention counterfactual established."
+}

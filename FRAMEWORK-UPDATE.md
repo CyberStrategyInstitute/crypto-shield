@@ -1,6 +1,6 @@
 # CryptoSHIELD 2.0.0 framework update
 
-Proposed major version. This expands the framework from 100 to 112 controls: 105 operational controls plus seven cross-domain governance controls. All 100 existing IDs remain; 12 new IDs make previously embedded or missing requirements independently assessable. The taxonomy retains 44 threats across 12 categories. No replacement CTRS ratings are adopted.
+Proposed major version. This expands the framework from 100 to 112 controls: 105 operational controls plus seven cross-domain governance controls. All 100 existing IDs remain; 12 new IDs make previously embedded or missing requirements independently assessable. The taxonomy expands from 44 to 46 threat classes across 12 categories, adding price/collateral manipulation and policy/provider access restrictions. No replacement CTRS ratings are adopted.
 
 ## Why a major version
 
@@ -52,3 +52,8 @@ Each new domain definition includes a requirement and acceptance criteria. The r
 ## Migration and evidence
 
 Use [data migration](metadata/README.md). Existing IDs are preserved; new controls extend each assessment rather than silently replacing earlier IDs. Treat all new control tests as acceptance requirements, not evidence that an implementation has passed. The [review backlog](reviews/2026-11-07-baseline-integrity.md) remains open for original-source research and implementation qualification.
+
+
+## Research and operational examples
+
+Seven scoped notes, 13 linked historical reports/events, nine response playbooks, 12 synthetic tabletops, three reusable JSON templates and a filled synthetic inventory connect the framework to decisions. See the [operating guide](OPERATING-GUIDE.md). The AI case is adjacent, the sovereignty case is a policy action, and unproved wallet mechanisms remain provisional. No exercise or implementation result is fabricated.

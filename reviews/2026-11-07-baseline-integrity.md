@@ -53,3 +53,8 @@ The supplied Phase 1 assessment correctly limited its research completion claim.
 ## Compatibility and delivery
 
 This proposal intentionally changes data contracts. See [migration](../metadata/README.md). Historical data remains available by immutable commit and snapshots. Existing licensing and all control IDs are preserved. Version 2.0.0 is proposed; no tag, release, merge, or deployment is authorized by these checks. The pull request is the reviewable delivery boundary.
+
+
+## Subsequent operational evidence work
+
+The 2.0.0 proposal now includes seven bounded research syntheses and 13 source-checked historical report/event pairs across all 12 categories. Six additional dedicated procedures bring the playbooks to nine; 12 synthetic exercises, local templates, and a lookup tool connect evidence to practice. The active taxonomy contains 46 classes. Earlier statements about missing samples or research stubs describe the initial review stage. The external backlog and implementation qualification are still incomplete; no independent case review or live exercise result is claimed.

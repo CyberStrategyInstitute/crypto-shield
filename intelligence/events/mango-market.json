@@ -1,0 +1,28 @@
+{
+  "schema_version": "2.0",
+  "id": "CSI-CASE-009",
+  "timestamp": "2023-01-20T00:00:00Z",
+  "timestamp_basis": "publication_date",
+  "source_review_date": "2026-11-07",
+  "threat_id": "CS-MKT-04",
+  "category": "Market Manipulation",
+  "severity": "HIGH",
+  "ooda_phase": "orient",
+  "evidence_status": "primary_reviewed",
+  "attribution_status": "unknown",
+  "attribution": null,
+  "insider_vector": null,
+  "ai_assisted": null,
+  "financial_loss_usd": null,
+  "financial_loss_estimated": false,
+  "candidate_controls": [
+    "AAS-09",
+    "OCM-09",
+    "OCM-11"
+  ],
+  "references": [
+    "https://www.sec.gov/newsroom/press-releases/2023-13"
+  ],
+  "notes": "official_allegation; incident; mapping supported_scope. Source publication date is used at midnight UTC for indexing, not an asserted incident time. This is a historical allegation summary. It does not state the current litigation outcome or adopt the SEC's asset-classification position as universal law. The full complaint and transactions were not reconstructed.",
+  "control_analysis": "Collateral liquidity, valuation, concentration, and withdrawal budgets need joint stress tests. A profitable trade alone does not prove manipulation. Candidate mitigations require implementation tests; no prevention counterfactual established."
+}

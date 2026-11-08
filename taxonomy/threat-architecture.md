@@ -144,12 +144,14 @@ Active exploitation techniques targeting substrate vulnerabilities. Full specifi
 | CS-MKT-01 | MEV / Sandwich Attack | Protocol design |
 | CS-MKT-02 | Tokenomics Weaponization | VS-005, VS-009 |
 | CS-MKT-03 | Influence Operation / FUD | VS-005, VS-009 |
+| CS-MKT-04 | Price and collateral manipulation | Protocol valuation and liquidity |
 
 ### Sovereignty Category (CS-SOV)
 | ID | Technique | VS Exploited |
 |---|---|---|
 | CS-SOV-01 | CBDC Surveillance Architecture | Structural |
 | CS-SOV-02 | CEX KYC Overreach | VS-008, Structural |
+| CS-SOV-03 | Policy and provider access restrictions | Legal and operational dependency |
 
 ### Financial Fraud Category (CS-FRD)
 | ID | Technique | VS Exploited |
@@ -208,3 +210,8 @@ Observed outcomes when attacks succeed:
 
 *Threat Architecture | CSI CryptoSHIELD Framework v1.1*
 *Cyber Strategy Institute | Open-Source*
+
+
+## Worked evidence and mapping
+
+Use the [taxonomy guide](README.md) and [case register](../intelligence/README.md) to connect classes to historical evidence. Layer relationships are analytical hypotheses. Case mappings can be provisional, and policy changes are not automatically criminal or unlawful.

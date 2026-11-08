@@ -1,0 +1,28 @@
+{
+  "template_version": "1.0",
+  "policy_owner": null,
+  "policy_version": null,
+  "principal_scope": [],
+  "chains": [],
+  "gross_exposure_definition": null,
+  "valuation_source": null,
+  "stale_price_policy": "deny_new_exposure",
+  "outage_policy": "deny_new_exposure",
+  "rolling_window": null,
+  "limit": null,
+  "currency": null,
+  "pending_reservation_rule": null,
+  "atomicity_boundary": null,
+  "retry_idempotency_rule": null,
+  "settlement_expiry_rule": null,
+  "independent_exception_approval": null,
+  "tests_required": [
+    "concurrency",
+    "wallet_split",
+    "bridge_route",
+    "replenishment",
+    "retry",
+    "stale_price",
+    "policy_outage"
+  ]
+}

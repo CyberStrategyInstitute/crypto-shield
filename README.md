@@ -3,7 +3,7 @@
 CryptoSHIELD specifies controls for crypto holders, developers, and protocol teams. It covers wallets and financial authority, endpoint defense, physical exposure, social platforms, on-chain activity, supply chains, agents, governance, and consumer fraud.
 
 <!-- summary:start -->
-**Integrity update, proposed version 2.0.0:** 44 threats across 12 categories; 105 operational controls in nine domains, plus 7 cross-domain governance controls, for 112 total. CTRS scoring is suspended. Historical scores are unvalidated and must not drive new rankings or protection claims.
+**Integrity update, proposed version 2.0.0:** 46 threats across 12 categories; 105 operational controls in nine domains, plus 7 cross-domain governance controls, for 112 total. CTRS scoring is suspended. Historical scores are unvalidated and must not drive new rankings or protection claims.
 <!-- summary:end -->
 
 [Review and remaining work](reviews/2026-11-07-baseline-integrity.md) | [Threat registry](taxonomy/registry-table.md) | [Incident response](OODA-PLAYBOOK.md) | [Hardening sprint](tools/30-day-hardening-sprint.md) | [Self-assessment](tools/sovereignty-self-assessment.md)
@@ -57,9 +57,9 @@ The domain files own control definitions. The registry owns threat IDs and candi
 
 [CTRS is suspended](taxonomy/ctrs-scoring.md) because the baseline contains incompatible component ranges, formulas, and published values. Original scores, component rows, trend claims, attribution probabilities, and case leads remain in [historical data](taxonomy/legacy/README.md) and Git history. No replacement scores or rankings are adopted.
 
-Registry severity is inherited qualitative metadata, separate from a CTRS tier. All registry evidence remains `pending_primary_review`. A November 2026 integrity review is not a November 2026 threat-evidence cutoff. No reproducible complete incident corpus, control-effectiveness study, or calibrated attribution model is supplied.
+Registry severity is inherited qualitative metadata, separate from a CTRS tier. All registry evidence remains `pending_primary_review`. A November 2026 integrity review is not a November 2026 threat-evidence cutoff. The curated case library is not a complete incident corpus, control-effectiveness study, or calibrated attribution model.
 
-The seven research files comprise three historical drafts under revalidation (001-003), three stubs (004-006), and one seed methodology under revalidation (007). Their [status register](research/README.md) identifies unresolved work. No research-completion, incident-count, loss-total, market-share, or prevention-percentage claim follows from their presence.
+Seven [scoped research notes](research/README.md) now connect control lessons to a [13-report historical case library](intelligence/README.md), covering all 12 categories. These source-checked drafts are not complete empirical studies. Use the [operating guide](OPERATING-GUIDE.md), [playbook routes](playbooks/README.md), and [practical tools](tools/README.md).
 
 ## Companion frameworks and governance
 

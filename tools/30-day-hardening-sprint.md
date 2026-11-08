@@ -5,6 +5,7 @@ Use this planning checklist for routine improvements. It is not an emergency res
 ## Week 1: Keys, authority, and recovery
 
 - [ ] Inventory wallets, chains, assets, approvals, permits, modules, delegates, sessions, signing services, and recovery authority (WKS-02, WKS-07, WKS-08).
+- [ ] Fill the [authority inventory](templates/authority-inventory.json) under WKS-11/12; verify each invalidation path rather than merely listing keys.
 - [ ] Check hardware procurement and supported authenticity mechanisms; generate recovery material only on trusted hardware (WKS-01, WKS-04).
 - [ ] Test backup recovery with a supported safe method before moving substantial assets. Never enter recovery material into an ordinary computer or website (WKS-04).
 - [ ] Set a hot-wallet and delegated-exposure budget that includes permissions and open positions (WKS-09).
@@ -32,6 +33,8 @@ Use this planning checklist for routine improvements. It is not an emergency res
 - [ ] Bind simulation and independent review to the payload actually signed (OCM-01, OCM-10).
 - [ ] Review bridge backing, custody liabilities, redemption, and upgrade dependencies (OCM-07, GCS-05, CFD-10).
 - [ ] If deploying agents, test independent approval, aggregate budgets, concurrency, replay, stale data, and shutdown effects (AAS-01 through AAS-10).
+- [ ] Complete the [exposure-budget specification](templates/exposure-budget.json) for OCM-11 and rehearse AAS-11/12 approval/shutdown with the [synthetic exercises](tabletop-exercises.md).
+- [ ] Review one relevant [historical case](../intelligence/README.md), run the [source checklist](source-review-checklist.md), and practice the corresponding playbook using an [incident log](templates/incident-log.json).
 - [ ] Complete the [unscored assessment](sovereignty-self-assessment.md), assign owners and dates to gaps, and schedule monthly authority reviews and quarterly reassessment.
 
 Record completed, incomplete, unknown, and not-applicable items with evidence. The previous fixed denominators and readiness tiers are withdrawn; task completion is not a measured security outcome.

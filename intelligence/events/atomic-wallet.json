@@ -1,0 +1,29 @@
+{
+  "schema_version": "2.0",
+  "id": "CSI-CASE-005",
+  "timestamp": "2023-08-22T00:00:00Z",
+  "timestamp_basis": "publication_date",
+  "source_review_date": "2026-11-07",
+  "threat_id": "CS-WAL-01",
+  "category": "Wallet",
+  "severity": "HIGH",
+  "ooda_phase": "orient",
+  "evidence_status": "primary_reviewed",
+  "attribution_status": "reported",
+  "attribution": "TraderTraitor / DPRK, as assessed by the FBI",
+  "insider_vector": null,
+  "ai_assisted": null,
+  "financial_loss_usd": null,
+  "financial_loss_estimated": false,
+  "candidate_controls": [
+    "WKS-11",
+    "WKS-12",
+    "EDD-02"
+  ],
+  "references": [
+    "https://www.fbi.gov/news/press-releases/fbi-identifies-cryptocurrency-funds-stolen-by-dprk",
+    "https://atomicwallet.io/blog/articles/june-3rd-event-statement"
+  ],
+  "notes": "official_attribution; incident; mapping provisional. Source publication date is used at midnight UTC for indexing, not an asserted incident time. The FBI names June 2 while the provider describes June 3 reports. Neither source establishes seed extraction as the cause here. CS-WAL-01 is a provisional triage hypothesis, not a confirmed mechanism.",
+  "control_analysis": "An unexplained transfer requires authority triage; incident existence and actor attribution do not establish how access occurred. Candidate mitigations require implementation tests; no prevention counterfactual established."
+}

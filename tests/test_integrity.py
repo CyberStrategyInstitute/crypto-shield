@@ -10,6 +10,8 @@ import unittest
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]/'tools'))
 from generate_reference import ROOT, controls, generated_files
 from validate_repository import diagnostic, event_errors, link_errors, load, registry_errors, schema_errors, validate
+from case_lookup import find_cases
+from validate_cases import case_errors
 
 
 class Contracts(unittest.TestCase):
@@ -140,6 +142,30 @@ class Contracts(unittest.TestCase):
     def test_event_requires_explicit_contract_version(self):
         self.reject_event(lambda e: e.pop('schema_version'))
         self.reject_event(lambda e: e.update(schema_version='1.2'))
+
+    def test_case_library_covers_categories_and_preserves_scope(self):
+        cases = find_cases()
+        self.assertEqual(len(cases), 13)
+        self.assertEqual({c['category'] for c in cases}, set(self.data['threat_categories']))
+        self.assertEqual(find_cases(threat='CS-MKT-04')[0]['case_type'], 'incident')
+        self.assertEqual(find_cases(category='AI Agent')[0]['case_type'], 'adjacent')
+        self.assertEqual(find_cases(category='Sovereignty')[0]['case_type'], 'policy')
+        self.assertEqual(find_cases(category='Wallet')[0]['mapping_status'], 'provisional')
+        self.assertEqual(find_cases(category='missing'), [])
+
+    def test_new_classes_have_no_legacy_scores(self):
+        for tid in ['CS-MKT-04', 'CS-SOV-03']:
+            threat = next(t for t in self.data['threats'] if t['id'] == tid)
+            self.assertIsNone(threat['legacy_ctrs_score'])
+
+    def test_case_timestamp_and_missing_report_are_rejected(self):
+        with tempfile.TemporaryDirectory(dir=ROOT.parent) as directory:
+            root = Path(directory)
+            shutil.copytree(ROOT, root, dirs_exist_ok=True, ignore=shutil.ignore_patterns('.git', '__pycache__'))
+            register = load(root/'intelligence/case-register.json')
+            register['cases'][0]['report_path'] = 'intelligence/reports/absent.md'
+            (root/'intelligence/case-register.json').write_text(json.dumps(register), encoding='utf-8')
+            self.assertTrue(case_errors(root, self.data, self.items))
 
 
 if __name__ == '__main__':

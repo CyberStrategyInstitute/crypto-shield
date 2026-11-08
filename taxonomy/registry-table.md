@@ -2,7 +2,7 @@
 
 Generated from [registry.json](registry.json). Do not edit this table manually.
 
-44 threat definitions across 12 categories. All evidence is pending primary review. Severity is inherited qualitative metadata, separate from a calculated tier. CTRS is suspended; legacy scores are not current risk ratings. Candidate controls are proposed mitigations, not prevention evidence.
+46 threat definitions across 12 categories. All evidence is pending primary review. Severity is inherited qualitative metadata, separate from a calculated tier. CTRS is suspended; legacy scores are not current risk ratings. Candidate controls are proposed mitigations, not prevention evidence.
 
 | Threat ID | Name | Category | Severity (inherited) | Legacy CTRS (unvalidated) | Candidate controls |
 |---|---|---|---|---|---|
@@ -50,5 +50,7 @@ Generated from [registry.json](registry.json). Do not edit this table manually.
 | CS-SOV-01 | CBDC Surveillance Architecture | Sovereignty | CRITICAL | 15.5 | GCS-02, WKS-01, GCS-01 |
 | CS-SOV-02 | Regulatory Overreach via CEX KYC Data | Sovereignty | HIGH | 12.0 | GCS-04, OPS-02, GCS-13 |
 | CS-EXT-01 | Sextortion, Ransomware, and Crypto Blackmail | Extortion | HIGH | 15.0 | EDD-01, EDD-09 |
+| CS-MKT-04 | Price and collateral manipulation | Market Manipulation | HIGH | Not scored | AAS-09, OCM-09, OCM-11 |
+| CS-SOV-03 | Policy and third-party access restrictions | Sovereignty | HIGH | Not scored | GCS-03, GCS-09, GCS-13, CDG-04 |
 
 See [scoring suspension](ctrs-scoring.md), [migration](../metadata/README.md), and [historical records](legacy/README.md).

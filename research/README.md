@@ -1,15 +1,15 @@
-# Research status
+# Research notes
 
-Seven files do not establish seven completed studies. Earlier forecasts and issue-number placeholders are not delivery evidence.
+Seven scoped research notes now contain findings, methods, linked cases, control consequences, worked applications, counterexamples, and remaining work. They are source-checked drafts awaiting independent review, not completed broad empirical studies. Notes 004-006 are no longer empty research stubs.
 
-| Note | Topic | Status |
-|---|---|---|
-| [001](001_wrench_attack_epidemic.md) | Physical coercion | Historical draft under revalidation |
-| [002](002_rotator_effect.md) | Market manipulation and the Rotator Effect | Historical draft under revalidation |
-| [003](003_dprk_attribution_analysis.md) | Actor attribution and privileged access | Historical draft under revalidation |
-| [004](004_ai_agent_attack_surface.md) | AI agent attack surface | Stub; substantive research incomplete |
-| [005](005_supply_chain_vectors.md) | Supply-chain vectors | Stub; substantive research incomplete |
-| [006](006_pig_butchering_anatomy.md) | Relationship-based investment fraud | Stub; substantive research incomplete |
-| [007](007_false_flag_forensics.md) | Attribution evidence review | Seed methodology under revalidation; full report incomplete |
+| Note | Scope |
+|---|---|
+| [001](001_wrench_attack_epidemic.md) | Physical coercion and the limit of transfer controls |
+| [002](002_rotator_effect.md) | Market manipulation: test mechanisms before inferring coordination |
+| [003](003_dprk_attribution_analysis.md) | Actor attribution and privileged access are separate questions |
+| [004](004_ai_agent_attack_surface.md) | Agent authority, independent approval, and shutdown |
+| [005](005_supply_chain_vectors.md) | Runtime dependencies, publishing sessions, and offboarding |
+| [006](006_pig_butchering_anatomy.md) | Investment fraud: returns, withdrawals, fees, and liability evidence |
+| [007](007_false_flag_forensics.md) | Attribution review without invented probabilities |
 
-Primary-source reconstruction, domain evidence horizons, external incident verification, non-English research, and a dedicated disconfirmation pass remain open. Consult the [review backlog](../reviews/2026-11-07-baseline-integrity.md).
+The [case library](../intelligence/README.md) preserves source classifications and provisional mappings. Full primary reconstruction, recent-incident coverage, non-English research, disconfirmation, domain evidence horizons, and implementation qualification remain open. No claim of research saturation is made.
