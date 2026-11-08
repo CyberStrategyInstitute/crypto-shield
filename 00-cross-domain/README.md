@@ -1,6 +1,6 @@
 # Domain 00: Cross-Domain Sovereignty Governance (CDG)
 
-CSI CryptoSHIELD 2.0.0 proposal | Integrity review: November 7, 2026
+CSI CryptoSHIELD 2.0.0 | Integrity review: November 7, 2026
 
 CSI favors individual control of assets, privacy, and accountable governance. These are policy commitments. They do not establish legal rights in every jurisdiction or override applicable obligations.
 

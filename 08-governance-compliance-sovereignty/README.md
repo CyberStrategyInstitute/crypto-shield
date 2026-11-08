@@ -1,6 +1,6 @@
 # Domain 08: Governance, Compliance, and Sovereignty (GCS)
 
-CSI CryptoSHIELD 2.0.0 proposal | Integrity review: November 7, 2026
+CSI CryptoSHIELD 2.0.0 | Integrity review: November 7, 2026
 
 CSI favors self-custody and privacy. Implementation must account for applicable law, asset rights, operational capability, custody liabilities, and recovery. A policy preference or standards crosswalk does not establish legal compliance.
 

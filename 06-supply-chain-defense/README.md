@@ -1,6 +1,6 @@
 # Domain 06: Supply Chain Defense (SCD)
 
-CSI CryptoSHIELD 2.0.0 proposal | Integrity review: November 7, 2026
+CSI CryptoSHIELD 2.0.0 | Integrity review: November 7, 2026
 
 Inventory dependencies, authenticate artifacts, isolate build credentials, and review changes. A signature or hash establishes a relationship to an expected artifact or signer. It does not establish that the code is safe.
 

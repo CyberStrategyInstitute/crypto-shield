@@ -1,6 +1,6 @@
 # Domain 09: Consumer Fraud and Financial Grooming Defense (CFD)
 
-CSI CryptoSHIELD 2.0.0 proposal | Integrity review: November 7, 2026
+CSI CryptoSHIELD 2.0.0 | Integrity review: November 7, 2026
 
 Relationship-based investment fraud can combine fabricated profits, small successful withdrawals, impersonation, and escalating demands. Pause new payments and verify independently. A single signal warrants investigation without proving every suspected actor is fraudulent.
 

@@ -1,6 +1,6 @@
 # Domain 07: AI Agent and Autonomous System Security (AAS)
 
-CSI CryptoSHIELD 2.0.0 proposal | Integrity review: November 7, 2026
+CSI CryptoSHIELD 2.0.0 | Integrity review: November 7, 2026
 
 An agent without a private key can still cause a signing service to move funds. Enforce financial authority outside the model and outside attacker-controlled prompts, memory, and tools.
 

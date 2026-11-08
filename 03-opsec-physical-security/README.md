@@ -1,6 +1,6 @@
 # Domain 03: OPSEC and Physical Security (OPS)
 
-CSI CryptoSHIELD 2.0.0 proposal | Integrity review: November 7, 2026
+CSI CryptoSHIELD 2.0.0 | Integrity review: November 7, 2026
 
 Physical safety takes priority over assets. Reduce public exposure and plan with trusted contacts before a crisis. Multisig and delays constrain some transfers; they cannot guarantee safety or prevent prolonged coercion.
 

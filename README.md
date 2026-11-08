@@ -1,6 +1,18 @@
-![CryptoSHIELD v2.0.0: assets and authority, systems and agents, people and trust, supported by sovereignty governance](assets/CryptoSHIELD%20Framework.png)
+![CryptoSHIELD v2.0.0: assets and authority, systems and agents, people and trust, supported by sovereignty governance](assets/CryptoSHIELD%20v2.0.png)
 
-# CSI CryptoSHIELD
+# CSI CryptoSHIELD v2.0.0
+
+[![Version: 2.0.0 published](https://img.shields.io/badge/Version-2.0.0_published-orange?style=flat-square)](CHANGELOG.md)
+[![Documentation: CC BY-SA 4.0](https://img.shields.io/badge/Docs-CC_BY--SA_4.0-lightgrey?style=flat-square)](LICENSE)
+[![Code: MIT](https://img.shields.io/badge/Code-MIT-yellow?style=flat-square)](LICENSE)
+[![Scope: 112 controls](https://img.shields.io/badge/Scope-112_controls-2563eb?style=flat-square)](#domains-and-control-counts)
+[![Taxonomy: 46 threats, 12 categories](https://img.shields.io/badge/Taxonomy-46_threats_%7C_12_categories-7c3aed?style=flat-square)](taxonomy/registry-table.md)
+
+[![New: 12 controls](https://img.shields.io/badge/NEW-12_controls-15803d?style=flat-square)](FRAMEWORK-UPDATE.md#added-controls)
+[![Data contracts: 2.0](https://img.shields.io/badge/Data_contracts-2.0-0891b2?style=flat-square)](metadata/README.md)
+[![CTRS: suspended](https://img.shields.io/badge/CTRS-suspended-b45309?style=flat-square)](taxonomy/ctrs-scoring.md)
+[![Mappings: verification pending](https://img.shields.io/badge/Mappings-verification_pending-64748b?style=flat-square)](FRAMEWORK-ALIGNMENT.md)
+[![Repository checks](https://github.com/CyberStrategyInstitute/crypto-shield/actions/workflows/taxonomy-lint.yml/badge.svg?branch=main)](https://github.com/CyberStrategyInstitute/crypto-shield/actions/workflows/taxonomy-lint.yml)
 
 CryptoSHIELD specifies controls for crypto holders, developers, and protocol teams. It covers wallets and financial authority, endpoint defense, physical exposure, social platforms, on-chain activity, supply chains, agents, governance, and consumer fraud.
 
@@ -10,9 +22,23 @@ CryptoSHIELD specifies controls for crypto holders, developers, and protocol tea
 
 [Review and remaining work](reviews/2026-11-07-baseline-integrity.md) | [Threat registry](taxonomy/registry-table.md) | [Incident response](OODA-PLAYBOOK.md) | [Hardening sprint](tools/30-day-hardening-sprint.md) | [Self-assessment](tools/sovereignty-self-assessment.md)
 
-## What changes in 2.0.0
+## What changed in v2.0.0
 
-[Added and updated controls](FRAMEWORK-UPDATE.md): 12 new controls, all 100 existing IDs retained, and material revisions across the nine operational domains and cross-domain governance. This is a major framework specification update with incompatible registry/event contracts.
+**v2.0.0 is published and merged into main.** It is a major framework update: registry, event, scoring, and assessment contracts changed incompatibly. [Full control comparison](FRAMEWORK-UPDATE.md) | [Changelog](CHANGELOG.md) | [Migration guide](metadata/README.md).
+
+The tags below compare v2.0.0 with the prior framework baseline. They describe changes in this version, not continuing publication dates.
+
+| Status | Area | Added or updated in v2.0.0 |
+|---|---|---|
+| ![NEW](https://img.shields.io/badge/NEW-15803d?style=flat-square) | [12 controls](FRAMEWORK-UPDATE.md#added-controls) | Financial authority, revocation, hardware trust, exposure budgets, bridge backing, independent approval, shutdown, emergency powers, governance capture, custody liabilities, and evidence/version governance. |
+| ![UPDATED](https://img.shields.io/badge/UPDATED-b45309?style=flat-square) | [Control framework](FRAMEWORK-UPDATE.md) | All 100 existing IDs retained; requirements revised across nine operational domains and cross-domain governance. Total: 112 controls. |
+| ![NEW](https://img.shields.io/badge/NEW-15803d?style=flat-square) | [Threat classes](taxonomy/registry-table.md) | CS-MKT-04 price/collateral manipulation and CS-SOV-03 policy/provider access restrictions. Total: 46 classes across the existing 12 categories. |
+| ![NEW](https://img.shields.io/badge/NEW-15803d?style=flat-square) | Framework overview | Three visual groups: Assets & Authority, Systems & Agents, and People & Trust, supported by cross-domain governance. These organize the existing domains. |
+| ![NEW](https://img.shields.io/badge/NEW-15803d?style=flat-square) | [Research notes 004-006](research/README.md) | Substantive agent-authority, runtime supply-chain, and investment-fraud notes replaced research stubs. Notes 001-003 and 007 were updated. All seven remain source-checked drafts awaiting independent review. |
+| ![NEW](https://img.shields.io/badge/NEW-15803d?style=flat-square) | [Intelligence library](intelligence/README.md) | 13 source-checked historical report/event pairs covering all 12 categories, with source classifications and provisional mappings preserved. |
+| ![UPDATED](https://img.shields.io/badge/UPDATED-b45309?style=flat-square) | [Playbooks](playbooks/README.md) | Six added response playbooks; nine total, with a routing guide and authority-specific decisions. |
+| ![NEW](https://img.shields.io/badge/NEW-15803d?style=flat-square) | [Exercises and tools](tools/README.md) | 12 synthetic tabletop exercises, three evidence templates, a filled example, and local case lookup. |
+| ![UPDATED](https://img.shields.io/badge/UPDATED-b45309?style=flat-square) | [Taxonomy and data contracts](metadata/README.md) | Separate registry/event contracts, migration guidance, generated references, and blocking consistency checks. CTRS suspended; historical scores preserved without replacement rankings. |
 
 ## Start here
 
@@ -78,7 +104,7 @@ CSI favors self-custody and privacy. Policy alignment does not establish jurisdi
 - `research/`, `reviews/`, and `intelligence/`: research status, integrity findings, evidence records, and event contribution format.
 - `tools/`: hardening and assessment checklists, generation and validation scripts.
 - `tests/`: rejection and consistency tests for the data and documentation contracts.
-- `assets/`: current SVG responsibility map and retired historical PNG artwork.
+- `assets/`: published v2.0 header, SVG responsibility map, and historical artwork.
 
 ## Validate and contribute
 
