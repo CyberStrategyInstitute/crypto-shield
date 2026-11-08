@@ -1,115 +1,19 @@
-# Playbook: Consumer Fraud Defense (Pig Butchering / Investment Scam)
+# Consumer fraud response
 
-**CSI CryptoSHIELD Framework v1.1**
-Threats: CS-FRD-01, CS-FRD-02, CS-FRD-03, CS-FRD-04 | Domain: 09 (CFD)
+Pause further payments and signatures when an investment contact or platform appears fraudulent. A small successful withdrawal, polished interface, familiar voice, or clean database search does not establish legitimacy.
 
----
+## Immediate actions
 
-## Threat Profile
+1. Stop new deposits, suspicious unlock payments, installations, and signature requests. Verify independently before further action.
+2. Preserve conversations, platform addresses, receipts, chain names, wallet addresses, transaction hashes, and UTC timestamps. Record what is observed separately from what the contact claims.
+3. Contact your financial institution and any receiving exchange through independently authenticated channels. Ask about available fraud response; freezes or recovery are not assured.
+4. Report U.S. incidents through [FBI IC3](https://www.ic3.gov/). Contact local authorities or the relevant financial regulator where applicable. Do not send seeds or private keys in reports.
+5. If software, credentials, approvals, or recovery material were exposed, follow the [wallet decision tree](wallet-compromise.md). If physical threats exist, follow the [physical-coercion playbook](physical-coercion.md).
 
-Consumer fraud is the single largest crypto threat by dollar volume: $7.2 billion in U.S. pig butchering losses in 2025 alone. The attack requires no technical capability: only psychology, time investment, and a fake platform. AI has eliminated the traditional red flags (poor grammar, implausible offers) and extended the trust-building phase indefinitely.
+## Fee and recovery checks
 
-The FBI's Operation Level Up found 78% of active victims had no idea they were being scammed.
+Surprise taxes, AML deposits, or repeated upgrade payments to release an existing balance are warning signs. Do not pay the contact while investigating. Independently check published terms and the actual recipient. Ordinary disclosed service fees and network gas are different from fraudulent unlock demands.
 
----
+Do not trust unsolicited recovery offers or guaranteed outcomes. [The FBI warns](https://www.fbi.gov/how-we-can-help-you/victim-services/seeking-victim-information/seeking-victim-information-in-cryptocurrency-recovery-fraud-investigation) that private recovery companies cannot issue seizure orders. Tracing, lawful freezes, seizure, restitution, and voluntary returns are distinct from reversing a finalized transaction. Independently verify any assistance provider's identity, authority, scope, and fees.
 
-## The Kill Chain (Pig Butchering)
-
-```
-Phase 1: CONTACT
-  Random message (WhatsApp, dating app, LinkedIn)
-  "Wrong number" / investment opportunity / "old friend"
-  
-Phase 2: TRUST BUILDING (weeks to months)
-  Relationship develops; investment topic introduced
-  "My uncle/cousin/mentor manages a profitable fund"
-  
-Phase 3: BAIT
-  Small investment; small profitable withdrawal (TRUST TRAP)
-  "See? It works!"
-  
-Phase 4: ESCALATION
-  Pressure to invest more; FOMO manufacturing
-  "This window closes tomorrow"
-  
-Phase 5: LOCK (Withdrawal Block)
-  First withdrawal attempt fails
-  "You owe X% tax to unlock" / "AML verification required"
-  
-Phase 6: FEE EXTRACTION LOOP
-  Each fee paid generates new fee demand
-  Multiple rounds; total fees may exceed original investment
-  
-Phase 7: EXIT
-  Platform disappears; all contact ceases
-```
-
----
-
-## Red Line Indicators (Immediate Stop Conditions)
-
-Any ONE of these is sufficient to classify the situation as fraud and stop all engagement:
-
-| Indicator | Meaning |
-|---|---|
-| Any platform blocking withdrawals pending fee payment | Confirmed fraud |
-| "Tax payment" required to release funds | Confirmed fraud |
-| "AML deposit" or "risk deposit" required | Confirmed fraud |
-| "Account certification" or "upgrade fee" | Confirmed fraud |
-| Support exists only on Telegram/WhatsApp | Fraud signal |
-| Platform not findable via independent web search | Fraud signal |
-| Cannot verify custody of your funds on-chain | Fraud signal |
-| Contact who introduced the platform becomes unavailable | Fraud signal |
-| "Recovery service" offers to get your money back for a fee | Secondary fraud (CS-FRD-02) |
-
-**The absolute rule:** No legitimate platform withholds withdrawals pending external fee payment. This is not a feature. It is the mechanism of the fraud.
-
----
-
-## OODA Response: Active Engagement Suspected
-
-### OBSERVE
-- When did this contact originate?
-- What is the relationship trajectory?
-- When and how was the investment platform introduced?
-- Can you independently verify this platform exists? (DFPI, CryptoScamDB, Chainabuse check)
-
-### ORIENT
-- Apply the Fee Demand Alert Protocol (SMS-14): has any withdrawal been blocked with a fee demand?
-- Apply the 10-Day Rule (SMS-13): have you deposited more than $1,000 within 10 days of first learning about this platform?
-- Apply the AI Persona Detection test (CFD-08): can you verify the identity of this contact through out-of-band means?
-- Pattern match: Does this contact's behavior match the kill chain phases above?
-
-### DECIDE
-- **If any Red Line Indicator above is present:** Stop immediately. Do not pay additional fees. Do not send additional funds.
-- **If trust-building phase only:** Apply 10-day rule; do independent verification before any deposit
-- **If post-deposit, no withdrawal block yet:** Test with small withdrawal; if blocked: confirmed fraud
-
-### ACT
-- Stop all fund transfers immediately
-- Document: screenshots of all conversations, platform name and URL, wallet addresses used, all transaction receipts
-- Report to: FBI IC3 (ic3.gov), Chainabuse, DFPI (California residents), CFTC (futures/derivatives)
-- Do NOT engage any recovery service that contacts you: secondary fraud (CS-FRD-02)
-- If funds moved to CEX: contact CEX support with transaction hashes immediately: freezes possible within hours of reporting
-
----
-
-## If Already Victimized
-
-**Do:**
-- Report to FBI IC3 (most important for statistical tracking and investigations)
-- Contact Chainabuse with all wallet addresses used by the platform
-- Contact DFPI (California): they publish reports that help identify scam platforms
-- Contact CFTC if any derivatives or leveraged products were involved
-- Engage Chainalysis or TRM Labs if losses exceed $25,000 (professional tracing possible)
-
-**Do Not:**
-- Pay any additional fees to anyone for any reason
-- Engage any "crypto recovery specialist" who contacts you after the loss (this is CS-FRD-02)
-- Share this experience only with law enforcement: social media posts can attract secondary scammers
-
-**Prognosis:** Recovery of funds is rare but not impossible, particularly if CEX landing points are identified quickly. The FBI's Operation Level Up successfully stopped $285 million in pig butchering losses in 2024 by acting on early intervention. Reporting matters even when individual recovery is unlikely.
-
----
-
-*Playbook: Consumer Fraud Defense | CSI CryptoSHIELD v1.1 | Open-Source*
+Seek support from a trusted person. Avoid blame and pressure. A cooling-off period for new investment decisions must not delay safety, containment, or reporting. Keep direct loss, affected value, compensation, and actual recovery separate.

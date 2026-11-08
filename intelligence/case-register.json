@@ -1,0 +1,307 @@
+{
+  "schema_version": "1.0",
+  "review_date": "2026-11-07",
+  "selection": "Purposive historical teaching set, not a biggest-loss ranking or representative prevalence sample.",
+  "cases": [
+    {
+      "id": "CSI-CASE-001",
+      "title": "Violent home invasions targeting cryptocurrency",
+      "category": "Physical",
+      "threat_id": "CS-PHY-02",
+      "report_path": "intelligence/reports/physical-home-invasions.md",
+      "event_path": "intelligence/events/physical-home-invasions.json",
+      "publication_date": "2024-09-13",
+      "source_review_date": "2026-11-07",
+      "source_urls": [
+        "https://www.justice.gov/archives/opa/pr/twelve-defendants-sentenced-violent-home-invasion-robberies-steal-cryptocurrency"
+      ],
+      "evidence_class": "official_judicial_summary",
+      "mapping_status": "supported_scope",
+      "case_type": "campaign",
+      "controls": [
+        "OPS-05",
+        "OPS-06",
+        "OPS-10",
+        "SMS-02"
+      ],
+      "playbook_path": "playbooks/physical-coercion.md"
+    },
+    {
+      "id": "CSI-CASE-002",
+      "title": "Coinbase support-data theft and extortion disclosure",
+      "category": "Insider",
+      "threat_id": "CS-INS-02",
+      "report_path": "intelligence/reports/coinbase-support.md",
+      "event_path": "intelligence/events/coinbase-support.json",
+      "publication_date": "2025-05-15",
+      "source_review_date": "2026-11-07",
+      "source_urls": [
+        "https://www.coinbase.com/blog/protecting-our-customers-standing-up-to-extortionists"
+      ],
+      "evidence_class": "vendor_incident_account",
+      "mapping_status": "supported_scope",
+      "case_type": "incident",
+      "controls": [
+        "GCS-04",
+        "GCS-05",
+        "SMS-06",
+        "CDG-06"
+      ],
+      "playbook_path": "playbooks/consumer-fraud.md"
+    },
+    {
+      "id": "CSI-CASE-003",
+      "title": "Twitter administrative-access social engineering",
+      "category": "Social Engineering",
+      "threat_id": "CS-SOC-01",
+      "report_path": "intelligence/reports/twitter-account-takeover.md",
+      "event_path": "intelligence/events/twitter-account-takeover.json",
+      "publication_date": "2023-06-23",
+      "source_review_date": "2026-11-07",
+      "source_urls": [
+        "https://www.justice.gov/usao-ndca/pr/uk-citizen-sentenced-five-years-cybercrime-offenses"
+      ],
+      "evidence_class": "official_judicial_summary",
+      "mapping_status": "supported_scope",
+      "case_type": "incident",
+      "controls": [
+        "SMS-01",
+        "SMS-03",
+        "SMS-08",
+        "SMS-06"
+      ],
+      "playbook_path": "playbooks/account-takeover.md"
+    },
+    {
+      "id": "CSI-CASE-004",
+      "title": "TraderTraitor trojanized-application advisory",
+      "category": "Malware",
+      "threat_id": "CS-MAL-02",
+      "report_path": "intelligence/reports/tradertraitor-malware.md",
+      "event_path": "intelligence/events/tradertraitor-malware.json",
+      "publication_date": "2022-04-18",
+      "source_review_date": "2026-11-07",
+      "source_urls": [
+        "https://www.ic3.gov/CSA/2022/220418.pdf"
+      ],
+      "evidence_class": "official_advisory",
+      "mapping_status": "supported_scope",
+      "case_type": "campaign",
+      "controls": [
+        "EDD-01",
+        "EDD-02",
+        "EDD-07",
+        "WKS-12"
+      ],
+      "playbook_path": "playbooks/endpoint-supply-chain.md"
+    },
+    {
+      "id": "CSI-CASE-005",
+      "title": "Atomic Wallet unauthorized transfers: unresolved mechanism",
+      "category": "Wallet",
+      "threat_id": "CS-WAL-01",
+      "report_path": "intelligence/reports/atomic-wallet.md",
+      "event_path": "intelligence/events/atomic-wallet.json",
+      "publication_date": "2023-08-22",
+      "source_review_date": "2026-11-07",
+      "source_urls": [
+        "https://www.fbi.gov/news/press-releases/fbi-identifies-cryptocurrency-funds-stolen-by-dprk",
+        "https://atomicwallet.io/blog/articles/june-3rd-event-statement"
+      ],
+      "evidence_class": "official_attribution",
+      "mapping_status": "provisional",
+      "case_type": "incident",
+      "controls": [
+        "WKS-11",
+        "WKS-12",
+        "EDD-02"
+      ],
+      "playbook_path": "playbooks/wallet-compromise.md"
+    },
+    {
+      "id": "CSI-CASE-006",
+      "title": "Ronin bridge reopening and backing account",
+      "category": "DeFi Protocol",
+      "threat_id": "CS-DFI-03",
+      "report_path": "intelligence/reports/ronin-bridge.md",
+      "event_path": "intelligence/events/ronin-bridge.json",
+      "publication_date": "2022-06-28",
+      "source_review_date": "2026-11-07",
+      "source_urls": [
+        "https://blog.roninchain.com/p/the-ronin-bridge-is-open-"
+      ],
+      "evidence_class": "vendor_incident_account",
+      "mapping_status": "supported_scope",
+      "case_type": "incident",
+      "controls": [
+        "OCM-07",
+        "OCM-11",
+        "OCM-12",
+        "GCS-11"
+      ],
+      "playbook_path": "playbooks/protocol-exploit.md"
+    },
+    {
+      "id": "CSI-CASE-007",
+      "title": "Ledger Connect Kit malicious-package distribution",
+      "category": "Supply Chain",
+      "threat_id": "CS-SC-02",
+      "report_path": "intelligence/reports/ledger-connect-kit.md",
+      "event_path": "intelligence/events/ledger-connect-kit.json",
+      "publication_date": "2023-12-20",
+      "source_review_date": "2026-11-07",
+      "source_urls": [
+        "https://www.ledger.com/blog/security-incident-report"
+      ],
+      "evidence_class": "vendor_incident_account",
+      "mapping_status": "supported_scope",
+      "case_type": "incident",
+      "controls": [
+        "SCD-02",
+        "SCD-03",
+        "SCD-07",
+        "SCD-09",
+        "WKS-12"
+      ],
+      "playbook_path": "playbooks/endpoint-supply-chain.md"
+    },
+    {
+      "id": "CSI-CASE-008",
+      "title": "Anthropic agentic espionage disclosure: adjacent example",
+      "category": "AI Agent",
+      "threat_id": "CS-AI-04",
+      "report_path": "intelligence/reports/anthropic-agent-misuse.md",
+      "event_path": "intelligence/events/anthropic-agent-misuse.json",
+      "publication_date": "2025-11-13",
+      "source_review_date": "2026-11-07",
+      "source_urls": [
+        "https://www.anthropic.com/news/disrupting-AI-espionage"
+      ],
+      "evidence_class": "vendor_threat_report",
+      "mapping_status": "supported_scope",
+      "case_type": "adjacent",
+      "controls": [
+        "AAS-03",
+        "AAS-08",
+        "AAS-11",
+        "AAS-12"
+      ],
+      "playbook_path": "playbooks/ai-agent-compromise.md"
+    },
+    {
+      "id": "CSI-CASE-009",
+      "title": "Mango Markets price and collateral manipulation allegations",
+      "category": "Market Manipulation",
+      "threat_id": "CS-MKT-04",
+      "report_path": "intelligence/reports/mango-market.md",
+      "event_path": "intelligence/events/mango-market.json",
+      "publication_date": "2023-01-20",
+      "source_review_date": "2026-11-07",
+      "source_urls": [
+        "https://www.sec.gov/newsroom/press-releases/2023-13"
+      ],
+      "evidence_class": "official_allegation",
+      "mapping_status": "supported_scope",
+      "case_type": "incident",
+      "controls": [
+        "AAS-09",
+        "OCM-09",
+        "OCM-11"
+      ],
+      "playbook_path": "playbooks/protocol-exploit.md"
+    },
+    {
+      "id": "CSI-CASE-010",
+      "title": "BitConnect investment-fraud indictment",
+      "category": "Financial Fraud",
+      "threat_id": "CS-FRD-04",
+      "report_path": "intelligence/reports/bitconnect.md",
+      "event_path": "intelligence/events/bitconnect.json",
+      "publication_date": "2022-02-25",
+      "source_review_date": "2026-11-07",
+      "source_urls": [
+        "https://www.justice.gov/archives/opa/pr/bitconnect-founder-indicted-global-24-billion-cryptocurrency-scheme"
+      ],
+      "evidence_class": "official_allegation",
+      "mapping_status": "provisional",
+      "case_type": "incident",
+      "controls": [
+        "CFD-01",
+        "CFD-02",
+        "CFD-03",
+        "CFD-10",
+        "GCS-13"
+      ],
+      "playbook_path": "playbooks/consumer-fraud.md"
+    },
+    {
+      "id": "CSI-CASE-011",
+      "title": "Tornado Cash delisting: policy-dependency example",
+      "category": "Sovereignty",
+      "threat_id": "CS-SOV-03",
+      "report_path": "intelligence/reports/tornado-policy.md",
+      "event_path": "intelligence/events/tornado-policy.json",
+      "publication_date": "2025-03-21",
+      "source_review_date": "2026-11-07",
+      "source_urls": [
+        "https://home.treasury.gov/news/press-releases/sb0057"
+      ],
+      "evidence_class": "official_policy_action",
+      "mapping_status": "supported_scope",
+      "case_type": "policy",
+      "controls": [
+        "GCS-03",
+        "GCS-09",
+        "GCS-13",
+        "CDG-04"
+      ],
+      "playbook_path": "playbooks/policy-custody-event.md"
+    },
+    {
+      "id": "CSI-CASE-012",
+      "title": "Colonial Pipeline ransom-proceeds seizure",
+      "category": "Extortion",
+      "threat_id": "CS-EXT-01",
+      "report_path": "intelligence/reports/colonial-recovery.md",
+      "event_path": "intelligence/events/colonial-recovery.json",
+      "publication_date": "2021-06-07",
+      "source_review_date": "2026-11-07",
+      "source_urls": [
+        "https://www.justice.gov/archives/opa/pr/department-justice-seizes-23-million-cryptocurrency-paid-ransomware-extortionists-darkside"
+      ],
+      "evidence_class": "official_seizure_account",
+      "mapping_status": "supported_scope",
+      "case_type": "incident",
+      "controls": [
+        "GCS-06",
+        "EDD-07",
+        "CDG-06"
+      ],
+      "playbook_path": "playbooks/extortion.md"
+    },
+    {
+      "id": "CSI-CASE-013",
+      "title": "Bybit major theft: official attribution and response boundary",
+      "category": "Wallet",
+      "threat_id": "CS-WAL-04",
+      "report_path": "intelligence/reports/bybit-official.md",
+      "event_path": "intelligence/events/bybit-official.json",
+      "publication_date": "2025-02-26",
+      "source_review_date": "2026-11-07",
+      "source_urls": [
+        "https://www.ic3.gov/PSA/2025/PSA250226"
+      ],
+      "evidence_class": "official_attribution",
+      "mapping_status": "provisional",
+      "case_type": "incident",
+      "controls": [
+        "WKS-05",
+        "WKS-11",
+        "WKS-12",
+        "OCM-11",
+        "CDG-06"
+      ],
+      "playbook_path": "playbooks/wallet-compromise.md"
+    }
+  ]
+}

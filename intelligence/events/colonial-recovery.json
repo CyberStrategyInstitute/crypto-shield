@@ -1,0 +1,28 @@
+{
+  "schema_version": "2.0",
+  "id": "CSI-CASE-012",
+  "timestamp": "2021-06-07T00:00:00Z",
+  "timestamp_basis": "publication_date",
+  "source_review_date": "2026-11-07",
+  "threat_id": "CS-EXT-01",
+  "category": "Extortion",
+  "severity": "HIGH",
+  "ooda_phase": "orient",
+  "evidence_status": "primary_reviewed",
+  "attribution_status": "unknown",
+  "attribution": null,
+  "insider_vector": null,
+  "ai_assisted": null,
+  "financial_loss_usd": null,
+  "financial_loss_estimated": false,
+  "candidate_controls": [
+    "GCS-06",
+    "EDD-07",
+    "CDG-06"
+  ],
+  "references": [
+    "https://www.justice.gov/archives/opa/pr/department-justice-seizes-23-million-cryptocurrency-paid-ransomware-extortionists-darkside"
+  ],
+  "notes": "official_seizure_account; incident; mapping supported_scope. Source publication date is used at midnight UTC for indexing, not an asserted incident time. A seizure is not necessarily completed restitution. It does not reverse the original chain transaction or establish a general recovery success rate.",
+  "control_analysis": "Prompt reporting and preserved evidence can support lawful seizure. Finality alone does not establish that recovery is impossible. Candidate mitigations require implementation tests; no prevention counterfactual established."
+}

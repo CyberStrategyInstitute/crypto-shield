@@ -1,56 +1,33 @@
-# CryptoSHIELD Changelog
+# CryptoSHIELD changelog
 
-## v1.1: Intelligence Amendment (May 2026)
+## Proposed 2.0.0: financial authority and framework integrity (November 7, 2026)
 
-### New Additions
-- **Domain 09: Consumer Fraud and Financial Grooming Defense (CFD)**: 10 new controls addressing the $11.4B+ annual consumer fraud surface entirely absent from v1.0
-- **8 new threat IDs** added to taxonomy: CS-FRD-01 through CS-FRD-04, CS-AI-05, CS-SOC-06, CS-SOC-07, CS-EXT-01
-- **5 new controls** added to Domain 04 (SMS-11 through SMS-15)
-- **Domain 00: Cross-Domain Sovereignty Governance** formalized with CDG-01 through CDG-05
+This is a pull-request proposal, not a tagged release.
 
-### Financial Data Corrections (DefiLlama Baseline)
-- Corrected v1.0 loss estimates to DefiLlama authoritative figures
-- Added FBI IC3 2025 consumer fraud overlay ($11.37B: largest single source)
-- Three-layer loss model introduced: on-chain protocol, consumer fraud, ransomware/extortion
+- Expand to 112 controls: 105 operational and seven cross-domain. Retain all 100 existing IDs and add 12 new IDs. The baseline recount remains 44 threats, 12 categories, 95 operational controls, and five cross-domain controls.
+- Add CDG-06/07, WKS-11/12/13, OCM-11/12, AAS-11/12, and GCS-11/12/13, each with requirements and acceptance criteria. See [the full added/updated comparison](FRAMEWORK-UPDATE.md).
+- Adopt proposed major version 2.0.0 because control scope and assessment/data contracts change incompatibly. The earlier 1.2 proposal is superseded.
+- Suspend CTRS; preserve original registry and component rows without adopting replacement scores.
+- Introduce separate registry and event contracts, synthetic fixtures, migration guidance, and blocking validation.
+- Generate the registry table, README domain counts, and assessment references from canonical definitions.
+- Replace blanket response with authority-specific decisions; put physical safety first and remove mandatory decoys, deception, and refusal.
+- Specify financial authority, aggregate exposure, independent approval, hardware trust boundaries, backing, and bounded emergency powers.
+- Withdraw unsupported statistics, calibrated attribution probabilities, categorical legal guidance, approved-bridge ratings, and unverified mappings from active guidance.
+- Correct research completion status and retire contradictory artwork from active use.
+- Replace unvalidated self-assessment scores and readiness tiers with an evidence-based checklist.
 
-### New Threat Taxonomy Entries
-| Threat ID | Category | Scale |
-|-----------|----------|-------|
-| CS-FRD-01 | Pig Butchering | $7.2B U.S. 2025 |
-| CS-FRD-02 | Recovery Re-Victimization | $1.4B U.S. 2025 |
-| CS-FRD-03 | Bitcoin ATM Coercion | $333M U.S. 2025 |
-| CS-FRD-04 | Investment Group / Professor Scam | Millions per campaign |
-| CS-AI-05 | Synthetic Identity / AI Document Fraud | $893M FBI AI category 2025 |
-| CS-SOC-06 | Forced Labor Compound Operations | Systemic |
-| CS-SOC-07 | Typosquatting / Domain Impersonation | 9,221 URLs tracked |
-| CS-EXT-01 | Sextortion / Blackmail / Ransomware | $813.55M ransomware 2024 |
+See [migration details](metadata/README.md), [historical data](taxonomy/legacy/README.md), and [review coverage and remaining work](reviews/2026-11-07-baseline-integrity.md).
 
-### Control Totals
-- v1.0: 80 controls, 8 domains, 34 threats
-- v1.1: 95 controls, 9 domains, 42 threats
+## Operational evidence and examples added to the 2.0.0 proposal
 
----
+- Write seven scoped research notes instead of leaving research placeholders.
+- Add 13 source-checked report/event pairs across all 12 categories; retain allegation/vendor/provisional status.
+- Add CS-MKT-04 and CS-SOV-03, bringing the active taxonomy to 46 unscored classes.
+- Add six dedicated playbooks, a nine-playbook routing guide, 12 synthetic tabletops, three templates, a filled sample, and local case lookup.
+- Connect taxonomy and bridge analysis to cases and exercises; validate report/event/control/source/playbook coverage in CI.
 
-## v1.0: Initial Release (May 2026)
+## Historical version declarations
 
-### Framework Launch
-- 5-pass multi-round analysis of CSI research corpus (July 2024 – May 2026 weekly series + 2021-2025 deep-dive articles)
-- 8 security domains, 80 controls, 34 categorized threats
-- OODA loop defensive playbook
-- Threat taxonomy with CTRS scoring model
-- Machine-readable JSON metadata schema for SIEM integration
-- 5 creative response alternatives with probability assessment
+The prior changelog declared v1.0 and v1.1 in May 2026 without exact release dates. It claimed 34 then 42 threats and 80 then 95 controls. The examined v1.1 registry actually contains 44 threat objects, and including cross-domain governance yields 100 controls. Those declarations do not establish release tags, research completion, source validation, or control efficacy.
 
-### Initial Domains
-- Domain 01: Wallet and Key Sovereignty (10 controls)
-- Domain 02: Endpoint and Device Defense (10 controls)
-- Domain 03: OPSEC and Physical Security (10 controls)
-- Domain 04: Social Media and Platform Security (10 controls)
-- Domain 05: On-Chain Monitoring and Transaction Defense (10 controls)
-- Domain 06: Supply Chain Defense (10 controls)
-- Domain 07: AI Agent and Autonomous System Security (10 controls)
-- Domain 08: Governance, Compliance, and Sovereignty (10 controls)
-
----
-
-*CSI CryptoSHIELD | Cyber Strategy Institute | Sovereignty-First Crypto Security Architecture*
+The [original changelog](https://github.com/CyberStrategyInstitute/crypto-shield/blob/051a317fb72db38f11d8928fddd5c506d24d468a/CHANGELOG.md) preserves the full historical narrative. Existing licensing remains unchanged.

@@ -1,0 +1,89 @@
+{
+  "classification": "synthetic_not_executed",
+  "scenarios": [
+    {
+      "category": "Physical",
+      "inject": "A trusted person reports an immediate threat during a transfer demand.",
+      "expected_decision": "Choose safety and qualified emergency help when safe; no required refusal, deception, decoy, or evidence collection under danger.",
+      "controls": "OPS-05, OPS-10",
+      "playbook_path": "playbooks/physical-coercion.md"
+    },
+    {
+      "category": "Insider",
+      "inject": "A support operator exports identity records without a business need.",
+      "expected_decision": "Restrict the affected access, preserve audit evidence, assess downstream fraud, and avoid assuming signing keys were stolen.",
+      "controls": "GCS-04, CDG-06",
+      "playbook_path": "playbooks/consumer-fraud.md"
+    },
+    {
+      "category": "Social Engineering",
+      "inject": "A familiar official account posts an urgent wallet-reconnect request.",
+      "expected_decision": "Verify independently; inspect administrative takeover and sessions; reject the request until authenticated.",
+      "controls": "SMS-03, SMS-08",
+      "playbook_path": "playbooks/account-takeover.md"
+    },
+    {
+      "category": "Malware",
+      "inject": "A recruiter assignment was executed on a machine used for signing.",
+      "expected_decision": "Isolate safely, preserve evidence, inventory credentials and financial authority, and use a trusted response device.",
+      "controls": "EDD-02, WKS-11",
+      "playbook_path": "playbooks/endpoint-supply-chain.md"
+    },
+    {
+      "category": "Wallet",
+      "inject": "An unused permit exists and added gas is immediately swept.",
+      "expected_decision": "Do not repeat gas deposits or assume allowance reset invalidates the permit; obtain a chain-specific authority and recovery plan.",
+      "controls": "WKS-08, WKS-12",
+      "playbook_path": "playbooks/wallet-compromise.md"
+    },
+    {
+      "category": "DeFi Protocol",
+      "inject": "A valid bridge message would mint claims beyond recorded backing.",
+      "expected_decision": "Fail the backing/exposure gate and escalate through bounded pause authority; do not accept message validity as economic safety.",
+      "controls": "OCM-12, GCS-11",
+      "playbook_path": "playbooks/protocol-exploit.md"
+    },
+    {
+      "category": "Supply Chain",
+      "inject": "A pinned application fetches an unpinned runtime CDN library.",
+      "expected_decision": "Inventory the runtime dependency and publishing access; quarantine/review the artifact rather than relying only on the lockfile.",
+      "controls": "SCD-02, SCD-07",
+      "playbook_path": "playbooks/endpoint-supply-chain.md"
+    },
+    {
+      "category": "AI Agent",
+      "inject": "Two agents concurrently request 60 units against a shared 100-unit budget.",
+      "expected_decision": "Atomic reservations prevent both requests being authorized; shutdown must also address sessions, delegates, and queued work.",
+      "controls": "OCM-11, AAS-12",
+      "playbook_path": "playbooks/ai-agent-compromise.md"
+    },
+    {
+      "category": "Market Manipulation",
+      "inject": "Thin-market collateral rises sharply while a large borrower requests withdrawal.",
+      "expected_decision": "Stress valuation, liquidity, concentration, and aggregate exposure; preserve evidence without declaring a crime from price movement alone.",
+      "controls": "AAS-09, OCM-11",
+      "playbook_path": "playbooks/protocol-exploit.md"
+    },
+    {
+      "category": "Financial Fraud",
+      "inject": "A small withdrawal succeeds, followed by a demand for an AML deposit.",
+      "expected_decision": "Pause new payments and permissions, verify independently, preserve communications, and report suspected fraud.",
+      "controls": "CFD-03, CFD-04",
+      "playbook_path": "playbooks/consumer-fraud.md"
+    },
+    {
+      "category": "Sovereignty",
+      "inject": "A provider restricts redemption and supplies a policy notice.",
+      "expected_decision": "Authenticate the notice, distinguish key control from legal/redemption rights, obtain scoped review, and do not assume either legality or overreach.",
+      "controls": "GCS-03, GCS-13",
+      "playbook_path": "playbooks/policy-custody-event.md"
+    },
+    {
+      "category": "Extortion",
+      "inject": "A contact promises recovery after a ransom and requests another fee.",
+      "expected_decision": "Preserve evidence, verify assistance independently, and separate tracing/seizure from guaranteed return or restitution.",
+      "controls": "GCS-06, CDG-06",
+      "playbook_path": "playbooks/extortion.md"
+    }
+  ]
+}

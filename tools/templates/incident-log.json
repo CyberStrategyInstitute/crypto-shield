@@ -1,0 +1,37 @@
+{
+  "template_version": "1.0",
+  "incident_id": null,
+  "status": "unassessed",
+  "roles": {
+    "lead": null,
+    "technical": null,
+    "evidence": null,
+    "communications_legal": null
+  },
+  "decisions": [
+    {
+      "time_utc": null,
+      "observation": null,
+      "source": null,
+      "hypothesis": null,
+      "authority_to_act": null,
+      "chosen_action": null,
+      "stop_condition": null,
+      "expected_result": null,
+      "observed_result": null,
+      "evidence_artifact": null,
+      "residual_exposure": null,
+      "next_owner": null
+    }
+  ],
+  "financial_effects": {
+    "direct_loss": null,
+    "affected": null,
+    "frozen": null,
+    "seized": null,
+    "returned": null,
+    "reimbursed": null,
+    "currency": null,
+    "source_time": null
+  }
+}

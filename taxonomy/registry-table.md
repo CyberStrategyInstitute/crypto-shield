@@ -1,99 +1,56 @@
-# CryptoSHIELD Threat Registry: Human-Readable Table
+# CryptoSHIELD threat registry
 
-**CSI CryptoSHIELD Framework v1.1**
-Source of truth: [registry.json](registry.json) | Scoring methodology: [ctrs-scoring.md](ctrs-scoring.md)
+Generated from [registry.json](registry.json). Do not edit this table manually.
 
-This table is the human-readable view of `registry.json`. It renders in the GitHub UI without tooling. For machine-readable ingestion (SIEM, analytics, automation), use the JSON registry directly.
+46 threat definitions across 12 categories. All evidence is pending primary review. Severity is inherited qualitative metadata, separate from a calculated tier. CTRS is suspended; legacy scores are not current risk ratings. Candidate controls are proposed mitigations, not prevention evidence.
 
----
+| Threat ID | Name | Category | Severity (inherited) | Legacy CTRS (unvalidated) | Candidate controls |
+|---|---|---|---|---|---|
+| CS-PHY-01 | Physical Kidnapping and Coercion | Physical | CRITICAL | 15.0 | OPS-01, OPS-02, OPS-05, OPS-06, OPS-10 |
+| CS-PHY-02 | Home Invasion and Physical Assault | Physical | CRITICAL | 15.0 | OPS-01, OPS-04, OPS-07, OPS-08, OPS-09 |
+| CS-INS-01 | Admin Key Abuse by Trusted Developer | Insider | CRITICAL | 17.0 | WKS-02, WKS-03, WKS-05, SCD-10, GCS-11 |
+| CS-INS-02 | CEX Customer Support Bribery | Insider | HIGH | 14.5 | GCS-04, OPS-01, GCS-05 |
+| CS-INS-03 | DPRK Wagemole Infiltration | Insider | CRITICAL | 17.0 | SCD-05, GCS-06, SCD-10, CDG-06 |
+| CS-SOC-01 | AI-Enhanced Phishing | Social Engineering | HIGH | 16.0 | SMS-05, SMS-06, EDD-01 |
+| CS-SOC-02 | Fake Hardware Wallet Mailing | Social Engineering | CRITICAL | 15.5 | WKS-01, EDD-10, GCS-04, WKS-13 |
+| CS-SOC-03 | Fake Cryptocurrency Job Offer | Social Engineering | HIGH | 15.5 | EDD-01, EDD-02, SMS-06 |
+| CS-SOC-04 | Fake Meeting App Malware | Social Engineering | HIGH | 15.5 | EDD-01, EDD-10, SMS-06 |
+| CS-SOC-05 | AI Deepfake Impersonation | Social Engineering | HIGH | 15.5 | CFD-08, SMS-07 |
+| CS-SOC-06 | Forced Labor Scam Compound Operations | Social Engineering | HIGH | 20.0 | CFD-01, CFD-02 |
+| CS-SOC-07 | Typosquatting and Domain Impersonation | Social Engineering | HIGH | 15.0 | SMS-05, SMS-11, SMS-09 |
+| CS-MAL-01 | Clipboard Hijacking (MassJacker Pattern) | Malware | HIGH | 16.0 | EDD-04, EDD-01, EDD-03 |
+| CS-MAL-02 | InfoStealer and Remote Access Trojan | Malware | HIGH | 17.5 | EDD-01, EDD-02, EDD-03 |
+| CS-MAL-03 | Fake Cloudflare / DEX Verification Page | Malware | HIGH | 15.5 | EDD-01, EDD-05, SMS-05 |
+| CS-WAL-01 | Seed Phrase Extraction | Wallet | CRITICAL | 16.0 | WKS-04, WKS-01, EDD-02, WKS-11, WKS-12 |
+| CS-WAL-02 | Address Poisoning | Wallet | MEDIUM | 16.5 | OCM-06, WKS-06, EDD-04 |
+| CS-WAL-03 | DNS Hijack / Frontend Compromise | Wallet | HIGH | 17.0 | SMS-05, OCM-01, SMS-09 |
+| CS-WAL-04 | Malicious Signature / Permit Drain | Wallet | HIGH | 19.0 | WKS-05, WKS-08, OCM-10, OCM-01, WKS-11, WKS-12, AAS-11 |
+| CS-WAL-05 | Low Entropy Seed Generation | Wallet | HIGH | 14.5 | WKS-01, EDD-10, GCS-08, WKS-13 |
+| CS-DFI-01 | Admin Key Exploit via Access Control Failure | DeFi Protocol | CRITICAL | 16.5 | WKS-02, WKS-03, WKS-05, SCD-10, WKS-11, GCS-11, GCS-12 |
+| CS-DFI-02 | Flash Loan Attack | DeFi Protocol | HIGH | 14.5 | AAS-09, OCM-04, GCS-12 |
+| CS-DFI-03 | Cross-Chain Bridge Exploit | DeFi Protocol | CRITICAL | 17.5 | OCM-07, OCM-11, OCM-12, GCS-13 |
+| CS-DFI-04 | Oracle Price Manipulation | DeFi Protocol | HIGH | 14.5 | AAS-09, OCM-08 |
+| CS-DFI-05 | Reentrancy and Smart Contract Logic Exploit | DeFi Protocol | HIGH | 11.5 | OCM-08, SCD-10 |
+| CS-SC-01 | NPM Package Hijacking | Supply Chain | CRITICAL | 19.0 | SCD-01, SCD-02, SCD-07 |
+| CS-SC-02 | SDK and Framework Poisoning | Supply Chain | CRITICAL | 18.0 | SCD-01, SCD-02, SCD-07 |
+| CS-SC-03 | CI/CD Pipeline Compromise | Supply Chain | CRITICAL | 18.0 | SCD-03, SCD-01, SCD-10 |
+| CS-SC-04 | AI Model Backdoor | Supply Chain | HIGH | 17.5 | SCD-08, SCD-01 |
+| CS-AI-01 | AI Agent Memory Poisoning | AI Agent | CRITICAL | 17.5 | AAS-02, AAS-03, AAS-12 |
+| CS-AI-02 | Prompt Injection / Logic Redefinition | AI Agent | HIGH | 18.0 | AAS-03, AAS-08, WKS-12, OCM-11, AAS-11, AAS-12 |
+| CS-AI-03 | Data Chain Poisoning via Runtime Browsing | AI Agent | HIGH | 15.0 | AAS-03, AAS-02 |
+| CS-AI-04 | AI Swarm Coordinated Attack | AI Agent | CRITICAL | 17.5 | AAS-10, AAS-06, AAS-08, OCM-11, AAS-11, AAS-12 |
+| CS-AI-05 | Synthetic Identity and AI Document Fraud | AI Agent | HIGH | 15.5 | CFD-08, SMS-07 |
+| CS-MKT-01 | MEV and Sandwich Attack | Market Manipulation | HIGH | 15.5 | OCM-04, OCM-05 |
+| CS-MKT-02 | Tokenomics Weaponization | Market Manipulation | HIGH | 17.5 | SMS-10, GCS-12 |
+| CS-MKT-03 | Coordinated Influence Operation | Market Manipulation | MEDIUM | 13.5 | SMS-10, CFD-09, CDG-06 |
+| CS-FRD-01 | Pig Butchering / Financial Grooming | Financial Fraud | CRITICAL | 20.0 | CFD-01, CFD-02, CFD-03, CFD-04, SMS-13, GCS-13 |
+| CS-FRD-02 | Asset Recovery Re-Victimization | Financial Fraud | HIGH | 15.5 | CFD-07, SMS-15 |
+| CS-FRD-03 | Bitcoin ATM / QR Code Coercion Fraud | Financial Fraud | HIGH | 15.0 | CFD-05, CFD-06 |
+| CS-FRD-04 | Investment Group / Professor Scam | Financial Fraud | HIGH | 15.5 | CFD-02, CFD-09, SMS-06 |
+| CS-SOV-01 | CBDC Surveillance Architecture | Sovereignty | CRITICAL | 15.5 | GCS-02, WKS-01, GCS-01 |
+| CS-SOV-02 | Regulatory Overreach via CEX KYC Data | Sovereignty | HIGH | 12.0 | GCS-04, OPS-02, GCS-13 |
+| CS-EXT-01 | Sextortion, Ransomware, and Crypto Blackmail | Extortion | HIGH | 15.0 | EDD-01, EDD-09 |
+| CS-MKT-04 | Price and collateral manipulation | Market Manipulation | HIGH | Not scored | AAS-09, OCM-09, OCM-11 |
+| CS-SOV-03 | Policy and third-party access restrictions | Sovereignty | HIGH | Not scored | GCS-03, GCS-09, GCS-13, CDG-04 |
 
-## Complete Threat Registry: 42 Entries
-
-| Threat ID | Name | Category | CTRS | Severity | Trend | AI-Assisted | Insider Vector | False Flag Prob |
-|---|---|---|---|---|---|---|---|---|
-| CS-PHY-01 | Kidnapping and Physical Coercion | Physical | 15.0 | HIGH | Rising +75% YoY | No | Possible | 0.10 |
-| CS-PHY-02 | Home Invasion / Targeted Robbery | Physical | 15.0 | HIGH | Rising | No | No | 0.05 |
-| CS-INS-01 | Admin Key Abuse by Trusted Actor | Insider | 17.0 | CRITICAL | Stable (endemic) | Possible | Yes | 0.75 |
-| CS-INS-02 | CEX Support Team Bribery | Insider | 14.5 | HIGH | Rising | No | Yes | 0.30 |
-| CS-INS-03 | DPRK Wagemole Identity Infiltration | Insider | 17.0 | CRITICAL | Rising | Yes | Yes | 0.65 |
-| CS-SOC-01 | Phishing (AI-Enhanced) | Social Engineering | 16.0 | CRITICAL | Rising +1400% AI component | Yes | No | 0.10 |
-| CS-SOC-02 | Fake Hardware Wallet Supply | Social Engineering | 15.5 | HIGH | Stable | No | No | 0.05 |
-| CS-SOC-03 | Fake Job Offer / Malware Delivery | Social Engineering | 15.5 | HIGH | Rising (DPRK primary) | Yes | Possible | 0.55 |
-| CS-SOC-04 | Fake Meeting Application (Meeten) | Social Engineering | 15.5 | HIGH | Rising | Yes | No | 0.15 |
-| CS-SOC-05 | AI Deepfake CFO Impersonation | Social Engineering | 15.5 | HIGH | Rising rapidly | Yes | Possible | 0.25 |
-| CS-SOC-06 | Forced Labor Compound Operations | Social Engineering | 20.0 | CRITICAL | Rising | Yes | No | 0.10 |
-| CS-SOC-07 | Typosquatting / Domain Impersonation | Social Engineering | 15.0 | HIGH | Stable | Partial | No | 0.05 |
-| CS-MAL-01 | Clipboard Hijacking | Malware | 16.0 | CRITICAL | Stable | No | No | 0.05 |
-| CS-MAL-02 | InfoStealer / Remote Access Trojan | Malware | 17.5 | CRITICAL | Rising (DPRK primary) | Yes | Possible | 0.45 |
-| CS-MAL-03 | Fake Cloudflare / Drive-By PowerShell | Malware | 15.5 | HIGH | Rising | Yes | No | 0.10 |
-| CS-WAL-01 | Seed Phrase Theft / Extraction | Wallet | 16.0 | CRITICAL | Stable | Partial | Possible | 0.15 |
-| CS-WAL-02 | Address Poisoning | Wallet | 16.5 | CRITICAL | Rising | Partial | No | 0.05 |
-| CS-WAL-03 | DNS Hijack / Frontend Compromise | Wallet | 17.0 | CRITICAL | Stable | No | Possible | 0.25 |
-| CS-WAL-04 | Malicious Signature (Permit2 / ERC-20) | Wallet | 19.0 | CRITICAL | Rising | Yes | No | 0.10 |
-| CS-WAL-05 | Low Entropy Seed Generation | Wallet | 14.5 | HIGH | Declining (tooling improving) | No | No | 0.05 |
-| CS-DFI-01 | Admin Key Exploit | DeFi Protocol | 16.5 | CRITICAL | Stable | Partial | Yes | 0.60 |
-| CS-DFI-02 | Flash Loan Attack | DeFi Protocol | 14.5 | HIGH | Declining (oracle hardening) | Partial | No | 0.10 |
-| CS-DFI-03 | Bridge Exploit | DeFi Protocol | 17.5 | CRITICAL | Rising (new bridges) | Partial | Possible | 0.35 |
-| CS-DFI-04 | Oracle Manipulation | DeFi Protocol | 14.5 | HIGH | Stable | Partial | No | 0.15 |
-| CS-DFI-05 | Reentrancy | DeFi Protocol | 11.5 | ELEVATED | Declining | No | No | 0.05 |
-| CS-SC-01 | NPM Package Hijacking | Supply Chain | 19.0 | CRITICAL | Rising | Yes | Possible | 0.30 |
-| CS-SC-02 | SDK / Library Poisoning | Supply Chain | 18.0 | CRITICAL | Rising | Yes | Possible | 0.35 |
-| CS-SC-03 | CI/CD Pipeline Compromise | Supply Chain | 18.0 | CRITICAL | Rising | Yes | Possible | 0.40 |
-| CS-SC-04 | AI Model Backdoor | Supply Chain | 17.5 | CRITICAL | Emerging (new vector) | Yes | Possible | 0.40 |
-| CS-AI-01 | Memory Poisoning (Agent Vector DB) | AI Agent | 17.5 | CRITICAL | Emerging | Yes | No | 0.20 |
-| CS-AI-02 | Prompt Injection (Agent Logic Override) | AI Agent | 18.0 | CRITICAL | Emerging | Yes | No | 0.15 |
-| CS-AI-03 | Data Chain Poisoning (Training/Context) | AI Agent | 15.0 | HIGH | Emerging | Yes | Possible | 0.25 |
-| CS-AI-04 | AI Swarm Coordinated Attack | AI Agent | 17.5 | CRITICAL | Emerging | Yes | No | 0.20 |
-| CS-AI-05 | Synthetic Identity / Document Fraud | AI Agent | 15.5 | HIGH | Rising rapidly | Yes | No | 0.25 |
-| CS-MKT-01 | MEV / Sandwich Attack | Market Manipulation | 15.5 | HIGH | Stable (structural) | Partial | No | 0.05 |
-| CS-MKT-02 | Tokenomics Weaponization (Rotator Effect) | Market Manipulation | 17.5 | CRITICAL | Rising with AI | Yes | Yes | 0.55 |
-| CS-MKT-03 | Influence Operation / FUD Campaign | Market Manipulation | 13.5 | HIGH | Rising with AI | Yes | Possible | 0.45 |
-| CS-SOV-01 | CBDC Surveillance Architecture | Sovereignty | 15.5 | HIGH | Political (dormant in US 2025-26) | No | No | 0.05 |
-| CS-SOV-02 | CEX KYC Overreach / Data Breach | Sovereignty | 12.0 | ELEVATED | Rising (Coinbase 2025 incident) | No | Yes | 0.10 |
-| CS-FRD-01 | Pig Butchering / Financial Grooming | Financial Fraud | 20.0 | CRITICAL | Rising +50% YoY | Yes | No | 0.05 |
-| CS-FRD-02 | Recovery Re-Victimization Scam | Financial Fraud | 15.5 | HIGH | Rising | Yes | No | 0.05 |
-| CS-FRD-03 | Bitcoin ATM / QR Code Coercion | Financial Fraud | 15.0 | HIGH | Rising (senior targeting) | Partial | No | 0.05 |
-| CS-FRD-04 | Investment Group / Fake Alpha Scam | Financial Fraud | 15.5 | HIGH | Rising | Yes | No | 0.05 |
-| CS-EXT-01 | Sextortion / Blackmail / Ransomware | Extortion | 15.0 | HIGH | Stable | Partial | No | 0.05 |
-
----
-
-## Quick Reference: CTRS Critical Threats (Score 17.0+)
-
-| CTRS | Threat ID | Name | Primary Control |
-|---|---|---|---|
-| 20.0 | CS-FRD-01 | Pig Butchering | SMS-14 (Fee Demand Stop) |
-| 20.0 | CS-SOC-06 | Forced Labor Compounds | CFD-01 (Platform Verification) |
-| 19.0 | CS-WAL-04 | Malicious Signature | WKS-08 (Never sign unsolicited) |
-| 19.0 | CS-SC-01 | NPM Package Hijacking | SCD-07 (Lock pinning) |
-| 18.0 | CS-SC-02 | SDK/Library Poisoning | SCD-01 (SBOM) |
-| 18.0 | CS-SC-03 | CI/CD Compromise | SCD-03 (Secret isolation) |
-| 18.0 | CS-AI-02 | Prompt Injection | AAS-03 (Immutable instructions) |
-| 17.5 | CS-MAL-02 | InfoStealer/RAT | EDD-01 (Kernel default-deny) |
-| 17.5 | CS-DFI-03 | Bridge Exploit | OCM-07 (Bridge risk matrix) |
-| 17.5 | CS-SC-04 | AI Model Backdoor | SCD-08 (Model provenance) |
-| 17.5 | CS-AI-01 | Memory Poisoning | AAS-02 (Memory integrity) |
-| 17.5 | CS-AI-04 | AI Swarm Attack | AAS-10 (Swarm isolation) |
-| 17.5 | CS-MKT-02 | Tokenomics Weaponization | SMS-10 (Rotator Effect analysis) |
-| 17.0 | CS-INS-01 | Admin Key Abuse | WKS-02 + WKS-03 (Multisig + Timelock) |
-| 17.0 | CS-INS-03 | DPRK Wagemole | Personnel vetting + WKS-02 |
-| 17.0 | CS-WAL-03 | DNS/Frontend Hijack | SMS-05 + SMS-11 (URL verification) |
-
----
-
-## Column Definitions
-
-| Column | Definition |
-|---|---|
-| CTRS | Crypto Threat Risk Score (0-20). Formula: `(L×0.25 + I×0.30 + R×0.20 + D×0.15 + RecD×0.10) × 20` |
-| Trend | Observed trajectory of this threat category in 2024-2026 |
-| AI-Assisted | Whether AI tools are meaningfully used to scale, personalize, or enhance this attack |
-| Insider Vector | Whether insider access is required or significantly increases probability |
-| False Flag Prob | Probability that official attribution post-incident does not reflect primary responsible actor (0.0-1.0) |
-
-Full methodology: [ctrs-scoring.md](ctrs-scoring.md) | Full architecture: [threat-architecture.md](threat-architecture.md)
-
----
-
-*Threat Registry Table | CSI CryptoSHIELD Framework v1.1 | Auto-generated from registry.json*
-*Cyber Strategy Institute | Open-Source | Sovereignty-First*
+See [scoring suspension](ctrs-scoring.md), [migration](../metadata/README.md), and [historical records](legacy/README.md).

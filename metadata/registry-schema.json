@@ -1,0 +1,155 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CryptoSHIELD registry 2.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "framework",
+    "last_updated",
+    "evidence_cutoff",
+    "scoring_status",
+    "total_threats",
+    "threat_categories",
+    "threats"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "2.0"
+    },
+    "framework": {
+      "const": "CSI CryptoSHIELD"
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date"
+    },
+    "evidence_cutoff": {
+      "type": "null"
+    },
+    "scoring_status": {
+      "const": "suspended"
+    },
+    "total_threats": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "threat_categories": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "Physical",
+          "Insider",
+          "Social Engineering",
+          "Malware",
+          "Wallet",
+          "DeFi Protocol",
+          "Supply Chain",
+          "AI Agent",
+          "Market Manipulation",
+          "Financial Fraud",
+          "Sovereignty",
+          "Extortion"
+        ]
+      },
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "threats": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "name",
+          "category",
+          "description",
+          "ooda_phase",
+          "severity",
+          "evidence_status",
+          "legacy_ctrs_score",
+          "candidate_controls",
+          "references"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^CS-[A-Z]{2,4}-[0-9]{2}$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "category": {
+            "enum": [
+              "Physical",
+              "Insider",
+              "Social Engineering",
+              "Malware",
+              "Wallet",
+              "DeFi Protocol",
+              "Supply Chain",
+              "AI Agent",
+              "Market Manipulation",
+              "Financial Fraud",
+              "Sovereignty",
+              "Extortion"
+            ]
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "ooda_phase": {
+            "enum": [
+              "observe",
+              "orient",
+              "decide",
+              "decide_act",
+              "act",
+              "all"
+            ]
+          },
+          "severity": {
+            "enum": [
+              "CRITICAL",
+              "HIGH",
+              "MEDIUM",
+              "LOW"
+            ]
+          },
+          "evidence_status": {
+            "const": "pending_primary_review"
+          },
+          "legacy_ctrs_score": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0,
+            "maximum": 20
+          },
+          "candidate_controls": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Z]{2,4}-[0-9]{2}$"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "references": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          }
+        }
+      }
+    }
+  }
+}

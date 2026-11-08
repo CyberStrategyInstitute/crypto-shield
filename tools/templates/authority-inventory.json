@@ -1,0 +1,23 @@
+{
+  "template_version": "1.0",
+  "classification": "template_no_secrets",
+  "owner": null,
+  "review_date": null,
+  "authorities": [
+    {
+      "principal": null,
+      "chain": null,
+      "account_public_identifier": null,
+      "authority_type": null,
+      "asset_scope": null,
+      "permitted_effects": [],
+      "limit": null,
+      "expiry": null,
+      "dependencies": [],
+      "invalidation_method": null,
+      "verification_evidence": null,
+      "residual_risk": null
+    }
+  ],
+  "warning": "Never store seeds, private keys, passwords, or bearer tokens here."
+}

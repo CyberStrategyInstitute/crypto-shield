@@ -1,58 +1,34 @@
-# Research Note 006: Pig Butchering: Full Anatomy of a $7.2B Industry
+# Research Note 006: Investment fraud: returns, withdrawals, fees, and liability evidence
 
-**Classification:** Open-Source Intelligence | CSI CryptoSHIELD Framework
-**Status:** FORTHCOMING: Track progress at GitHub Issue #006
-**Date:** Expected Q3 2026 | **Version:** Stub 0.1
-**Threat IDs:** CS-FRD-01, CS-FRD-02, CS-SOC-06
-**Domain:** 09: Consumer Fraud and Financial Grooming Defense
+Status: scoped primary-source synthesis, source-checked draft; independent review pending. Review date: 2026-11-07. Scope: the linked teaching cases and control-design implications. This replaces the prior placeholder or unvalidated conclusion without declaring the broader research project complete.
 
----
+## Finding
 
-## Scope (Planned)
+Displayed returns, an early withdrawal, and a convincing identity do not establish a legitimate investment or a recoverable custodial claim.
 
-Full-depth anatomy of the pig butchering (sha zhu pan) ecosystem, including:
+## Method and evidence
 
-- Complete industrial operation model: Myanmar/Cambodia/Laos compound infrastructure
-- Forced labor supply chain (CS-SOC-06): recruitment, trafficking, operational deployment
-- AI personalization at scale: how compound operators use AI to manage thousands of simultaneous "relationships"
-- Platform lifecycle: platform creation, brand establishment, fake review seeding, takedown and pivot
-- Kill chain by victim demographic: romance targets, professional network targets, community targets
-- The fee escalation cycle: psychological mechanics of each phase
-- Recovery re-victimization (CS-FRD-02): how secondary scammers target victims post-loss
-- FBI IC3 Operation Level Up: methodology and success metrics ($285M stopped in 2024)
-- Structural differences between SE Asian compounds and Eastern European "boiler room" operations
-- Defense for individuals: detection at each kill chain phase
-- Defense for platforms: account pattern recognition, deposit velocity alerts, jurisdiction mapping
+Cases were selected for explanatory value, source accessibility, and category coverage, not population representativeness or loss ranking. The reports link original publisher material and record its dates and limitations. Source review is not independent technical replication.
 
-## Key Questions This Note Will Answer
+- [BitConnect investment-fraud indictment](../intelligence/reports/bitconnect.md)
+- [Coinbase support-data theft and extortion disclosure](../intelligence/reports/coinbase-support.md)
 
-1. How has AI changed the pig butchering operation model since 2022?
-2. What distinguishes a pig butchering platform from a legitimate investment platform at the backend infrastructure level?
-3. What is the psychological mechanism that keeps victims depositing after withdrawal is blocked?
-4. What happened to the $285M that Operation Level Up "stopped" and how was it identified?
-5. How do pig butchering compounds interact with the broader DPRK and organized crime ecosystem?
+## Analysis
 
----
+The selected cases concern investment-platform allegations and a vendor-reported impersonation pathway. They are not a representative pig-butchering dataset, and they do not establish that the campaigns are connected. Separate persuasion and payment behavior from the factual status of the platform, funds, and legal claim.
 
-## The $7.2 Billion Number
+## Control consequences
 
-FBI IC3 2025 Annual Report: $7.2 billion in investment fraud losses in the United States, of which the majority is attributable to pig butchering and related platforms. This is the single largest category of crypto-related financial crime by dollar volume: larger than all DeFi hacks combined.
+CFD-01/02 require independent verification; CFD-03 treats a small withdrawal as insufficient evidence; CFD-04 pauses suspicious external unlock payments. GCS-13 and CFD-10 require liabilities and redemption evidence, not just a personal deposit address. Disclosed network fees are not themselves proof of fraud.
 
-CTRS score: 20.0 out of 20.0. Maximum across all five components.
+## Worked application
 
----
+Use the fraud exercise and incident log. Record the demand, actual recipient, published terms, payment history, permissions, independent verification path, and reporting action. Do not send another payment or signature to prove a platform is legitimate.
 
-## Interim Guidance
+Use the [tabletop pack](../tools/tabletop-exercises.md), [playbook guide](../playbooks/README.md), and [operating guide](../OPERATING-GUIDE.md). Case facts belong in reports; reusable classes belong in taxonomy; operational decisions belong in incident logs.
 
-Until this research note is published, see:
+## Counterexamples and remaining work
 
-- [Domain 09: Consumer Fraud Defense](../09-consumer-fraud-defense/README.md): current control set
-- [Playbook: Consumer Fraud Defense](../playbooks/consumer-fraud.md): incident response
-- [taxonomy/registry-table.md](../taxonomy/registry-table.md): CS-FRD-01 entry
+Obtain original complaint datasets, cohort definitions, case outcomes, net-loss accounting, and campaign-link evidence. Verify trafficking and forced-labor claims separately. Do not substitute a Ponzi case for proof of every romance/grooming tactic.
 
-**To contribute:** Open an issue labeled `research-006`.
-
----
-
-*Research Note 006 Stub | CSI CryptoSHIELD Framework v1.1*
-*Cyber Strategy Institute | Open-Source | Expected Q3 2026*
+No CTRS rating, calibrated attribution probability, population statistic, or prevention percentage is established. The [original note](https://github.com/CyberStrategyInstitute/crypto-shield/blob/051a317fb72db38f11d8928fddd5c506d24d468a/research/006_pig_butchering_anatomy.md) remains in Git history; its unsupported claims are not adopted here.

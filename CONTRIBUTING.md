@@ -1,55 +1,32 @@
-# Contributing to CSI CryptoSHIELD
+# Contributing to CryptoSHIELD
 
-CryptoSHIELD is a living framework. The threat landscape evolves weekly. Contributions must meet the same adversarial-reproduction standard applied to the initial framework: independent analysts using the same data and methodology must arrive at comparable assessments.
+Contributions need evidence that another reviewer can inspect and reproduce. Distinguish documented facts, publisher allegations, hypotheses, proposed controls, and tested results. Disclose conflicts of interest.
 
-## Contribution Types
+## Threats and controls
 
-### New Threat Entry
-Use the issue template: `.github/ISSUE_TEMPLATE/new-threat-entry.md`
+Use the [new-threat template](.github/ISSUE_TEMPLATE/new-threat-entry.md) or [control-update template](.github/ISSUE_TEMPLATE/control-update.md). Supply primary artifacts where available, dates, scope, contrary evidence, and limitations. Two articles repeating one disclosure are one evidence chain. A proposed threat class may be submitted as a hypothesis, but must not be called an observed incident.
 
-Required for all new threat submissions:
-- Proposed Threat ID (CS-[CATEGORY]-[##])
-- CTRS scoring with component breakdown (L, Ia, R, D, RecD)
-- Documented evidence (at minimum: 2 independent sources)
-- OODA phase classification
-- At least one deterministic defense control reference
-- False flag probability with justification
+Do not submit new CTRS scores during [suspension](taxonomy/ctrs-scoring.md). Qualitative priority needs a scenario and rationale. Do not invent attribution probabilities, forced binary involvement labels, or prevention guarantees. Keep unknowns explicit.
 
-### Control Update
-Use the issue template: `.github/ISSUE_TEMPLATE/control-update.md`
+Domain READMEs own control IDs and priorities. The registry owns threat IDs, categories, and candidate control references. Explain implementation, authority boundaries, recovery, bypasses, residual harm, and acceptance tests for any control revision. Pin companion and standard references before claiming exact alignment.
 
-For modifications to existing controls:
-- Specify control ID and current text
-- Evidence that current control is insufficient or incorrect
-- Proposed revision with implementation guidance
+## Events and evidence
 
-### Research Submission
-- Add peer-testable evidence to `/research/` with full sourcing
-- Must include JSON metadata block with threat IDs covered
-- Must pass the adversarial reproduction test: state your methodology explicitly
+Use the [intelligence template](intelligence/TEMPLATE.md) and [event contract](metadata/README.md). One JSON event per file belongs in `intelligence/events/`. Do not place event records in the threat-definition registry. Separate direct loss, affected value, freezes, compensation, and recovery. Omit victim secrets and unnecessary personal details.
 
-### Intelligence Contribution
-- Weekly intelligence submissions: format per `/intelligence/TEMPLATE.md`
-- Must specify threat ID, date range, and source references
+For source verification, extend the [evidence ledger](reviews/evidence-ledger.json) with an exact supported claim, primary source URL, publisher, publication and review dates, evidence class, method, population, limits, and status. Discovery leads remain pending until the original artifact is examined. A source title is not verification.
 
-## Standards
+## Checks
 
-**No speculation.** Every threat entry must be backed by documented incidents, not hypothetical scenarios.
+```sh
+python -m pip install -r requirements-validation.txt
+python tools/generate_reference.py
+python tools/validate_repository.py
+python -m unittest discover -s tests -v
+```
 
-**No undisclosed conflicts.** If you have a financial interest in any platform, protocol, or product mentioned, disclose it.
-
-**No promotional content.** Framework contributions are security analysis, not marketing.
-
-**Adversarial reproduction test:** Before submitting, ask: "Could an independent analyst with the same evidence arrive at the same CTRS score and control recommendations within ±15%?" If not, strengthen the evidence base.
+Review generated diffs. Invalid schemas, unresolved IDs, missing local links, stale generated tables, invalid dates, and regression-test failures block CI. These checks do not validate external claims or deployed controls.
 
 ## Licensing
 
-All contributions are submitted under the same dual license as the framework:
-- Code: MIT License
-- Documentation and methodology: CC-BY-SA 4.0
-
-By submitting a pull request, you confirm you have the right to contribute the material under these licenses.
-
----
-
-*Cyber Strategy Institute | CryptoSHIELD Contributing Guide*
+The existing [LICENSE](LICENSE) applies: code under MIT; framework and documentation under CC BY-SA 4.0. Confirm your right to contribute the material. Do not change licensing through a metadata cleanup.

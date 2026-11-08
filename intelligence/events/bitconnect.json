@@ -1,0 +1,30 @@
+{
+  "schema_version": "2.0",
+  "id": "CSI-CASE-010",
+  "timestamp": "2022-02-25T00:00:00Z",
+  "timestamp_basis": "publication_date",
+  "source_review_date": "2026-11-07",
+  "threat_id": "CS-FRD-04",
+  "category": "Financial Fraud",
+  "severity": "HIGH",
+  "ooda_phase": "orient",
+  "evidence_status": "primary_reviewed",
+  "attribution_status": "unknown",
+  "attribution": null,
+  "insider_vector": null,
+  "ai_assisted": null,
+  "financial_loss_usd": null,
+  "financial_loss_estimated": false,
+  "candidate_controls": [
+    "CFD-01",
+    "CFD-02",
+    "CFD-03",
+    "CFD-10",
+    "GCS-13"
+  ],
+  "references": [
+    "https://www.justice.gov/archives/opa/pr/bitconnect-founder-indicted-global-24-billion-cryptocurrency-scheme"
+  ],
+  "notes": "official_allegation; incident; mapping provisional. Source publication date is used at midnight UTC for indexing, not an asserted incident time. Allegations are not findings of guilt. Investor funds obtained, market capitalization, direct net loss, and later restitution are distinct. CS-FRD-04 is a broad platform-promotion mapping, not a claim about professor-group tactics.",
+  "control_analysis": "Successful early withdrawals and displayed returns do not establish sustainable backing or redemption rights. Candidate mitigations require implementation tests; no prevention counterfactual established."
+}

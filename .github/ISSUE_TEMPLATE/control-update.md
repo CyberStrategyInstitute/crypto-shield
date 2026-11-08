@@ -1,47 +1,27 @@
 ---
 name: Control Update
-about: Propose an update to an existing CryptoSHIELD control
-title: "[CONTROL] [DOMAIN-ID]: Control Update"
-labels: control-update
-assignees: ''
-
+about: Propose an evidence-backed CryptoSHIELD update
+title: "[CONTROL] "
+labels: "control-update"
+assignees: ""
 ---
 
-## Control Update Proposal
+## Control and proposed change
 
-**Control ID:** (e.g., WKS-03)
-**Domain:** (e.g., Domain 01: Wallet and Key Sovereignty)
-**Update Type:**
-- [ ] Implementation guidance update
-- [ ] Priority change (with justification)
-- [ ] New failure mode identified
-- [ ] Threat coverage expansion
-- [ ] Deprecation
+Control ID, owning domain, current definition, proposed definition, and reason:
 
-## Current Control Text
+## Supporting and contrary evidence
 
-> Paste the existing control definition and implementation guidance here.
+Primary sources, dated artifacts, observed failures, hypothesis status, conflicts, and limitations:
 
-## Proposed Change
+## Implementation boundary
 
-Describe what should change and why.
+Authority paths, dependencies, recovery, emergency powers, bypasses, and residual harm:
 
-## Evidence for Change
+## Verification and compatibility
 
-What has changed in the threat landscape, technology, or available tooling that requires this update?
+Acceptance and failure tests, playbook updates, registry-reference changes, and companion mappings with pinned versions. No new CTRS scores during suspension. Identify deliberate data-contract changes and migration guidance.
 
-1. [Evidence source 1]
-2. [Evidence source 2]
+## Checks
 
-## Impact Assessment
-
-- Does this change affect CTRS scores for related threats?
-- Does this change require updates to related playbooks?
-- Does this create compatibility issues with AI SAFE² or CSF companion controls?
-
-## Adversarial Reproduction Test
-
-An independent analyst should arrive at the same proposed change using the same evidence. Confirm: [ ] Evidence is publicly verifiable
-
----
-*CSI CryptoSHIELD Framework | Contributor: @yourhandle*
+Generated references refreshed; schema and repository validation; relevant regression tests:

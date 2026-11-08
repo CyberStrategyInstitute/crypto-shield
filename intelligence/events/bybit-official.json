@@ -1,0 +1,30 @@
+{
+  "schema_version": "2.0",
+  "id": "CSI-CASE-013",
+  "timestamp": "2025-02-26T00:00:00Z",
+  "timestamp_basis": "publication_date",
+  "source_review_date": "2026-11-07",
+  "threat_id": "CS-WAL-04",
+  "category": "Wallet",
+  "severity": "HIGH",
+  "ooda_phase": "orient",
+  "evidence_status": "primary_reviewed",
+  "attribution_status": "reported",
+  "attribution": "TraderTraitor / DPRK, as assessed by the FBI",
+  "insider_vector": null,
+  "ai_assisted": null,
+  "financial_loss_usd": 1500000000,
+  "financial_loss_estimated": true,
+  "candidate_controls": [
+    "WKS-05",
+    "WKS-11",
+    "WKS-12",
+    "OCM-11",
+    "CDG-06"
+  ],
+  "references": [
+    "https://www.ic3.gov/PSA/2025/PSA250226"
+  ],
+  "notes": "official_attribution; incident; mapping provisional. Source publication date is used at midnight UTC for indexing, not an asserted incident time. The advisory does not reconstruct the signing mechanism. CS-WAL-04 is provisional; this report does not infer a malicious approval, compromised hardware, or insider malice from attribution alone.",
+  "control_analysis": "Treat the advisory as an attribution/reporting source while separately obtaining payload, authority, device, and custody evidence. Candidate mitigations require implementation tests; no prevention counterfactual established."
+}

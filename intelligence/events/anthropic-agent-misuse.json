@@ -1,0 +1,29 @@
+{
+  "schema_version": "2.0",
+  "id": "CSI-CASE-008",
+  "timestamp": "2025-11-13T00:00:00Z",
+  "timestamp_basis": "publication_date",
+  "source_review_date": "2026-11-07",
+  "threat_id": "CS-AI-04",
+  "category": "AI Agent",
+  "severity": "HIGH",
+  "ooda_phase": "orient",
+  "evidence_status": "primary_reviewed",
+  "attribution_status": "unknown",
+  "attribution": null,
+  "insider_vector": null,
+  "ai_assisted": true,
+  "financial_loss_usd": null,
+  "financial_loss_estimated": false,
+  "candidate_controls": [
+    "AAS-03",
+    "AAS-08",
+    "AAS-11",
+    "AAS-12"
+  ],
+  "references": [
+    "https://www.anthropic.com/news/disrupting-AI-espionage"
+  ],
+  "notes": "vendor_threat_report; adjacent; mapping supported_scope. Source publication date is used at midnight UTC for indexing, not an asserted incident time. The company's telemetry was not independently reconstructed. This is an adjacent cyber example, not evidence of a crypto theft, autonomous wallet drain, or a specific financial loss.",
+  "control_analysis": "Test agent authority and stopping boundaries independently of prompt behavior. Crypto approval and budget exercises remain synthetic. Candidate mitigations require implementation tests; no prevention counterfactual established."
+}

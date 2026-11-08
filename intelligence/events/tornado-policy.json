@@ -1,0 +1,29 @@
+{
+  "schema_version": "2.0",
+  "id": "CSI-CASE-011",
+  "timestamp": "2025-03-21T00:00:00Z",
+  "timestamp_basis": "publication_date",
+  "source_review_date": "2026-11-07",
+  "threat_id": "CS-SOV-03",
+  "category": "Sovereignty",
+  "severity": "HIGH",
+  "ooda_phase": "orient",
+  "evidence_status": "primary_reviewed",
+  "attribution_status": "unknown",
+  "attribution": null,
+  "insider_vector": null,
+  "ai_assisted": null,
+  "financial_loss_usd": null,
+  "financial_loss_estimated": false,
+  "candidate_controls": [
+    "GCS-03",
+    "GCS-09",
+    "GCS-13",
+    "CDG-04"
+  ],
+  "references": [
+    "https://home.treasury.gov/news/press-releases/sb0057"
+  ],
+  "notes": "official_policy_action; policy; mapping supported_scope. Source publication date is used at midnight UTC for indexing, not an asserted incident time. This is a dated policy action, not a theft or a finding that every related activity is lawful. Current sanctions, criminal cases, transaction facts, and jurisdiction need separate review.",
+  "control_analysis": "Operational access may depend on legal and third-party decisions even when key custody remains unchanged. Candidate mitigations require implementation tests; no prevention counterfactual established."
+}

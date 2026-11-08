@@ -1,49 +1,34 @@
-# Research Note 005: Supply Chain Vectors: The Full Attack Surface
+# Research Note 005: Runtime dependencies, publishing sessions, and offboarding
 
-**Classification:** Open-Source Intelligence | CSI CryptoSHIELD Framework
-**Status:** FORTHCOMING: Track progress at GitHub Issue #005
-**Date:** Expected Q3 2026 | **Version:** Stub 0.1
-**Threat IDs:** CS-SC-01, CS-SC-02, CS-SC-03, CS-SC-04
-**Domain:** 06: Supply Chain Defense
+Status: scoped primary-source synthesis, source-checked draft; independent review pending. Review date: 2026-11-07. Scope: the linked teaching cases and control-design implications. This replaces the prior placeholder or unvalidated conclusion without declaring the broader research project complete.
 
----
+## Finding
 
-## Scope (Planned)
+Supply-chain review must reach the code actually loaded and the credentials that can publish it. A clean source repository and committed lockfile can leave external paths unassessed.
 
-Full-depth analysis of the crypto and Web3 supply chain attack surface, including:
+## Method and evidence
 
-- Shai-Hulud npm worm (September 2025) complete forensic reconstruction
-- Ledger Connect Kit compromise kill chain and cascade analysis
-- Ultralytics YOLO11 AI model backdoor: GitHub Actions as attack vector
-- ThirdWeb vulnerability and dependent protocol cascade
-- Malicious VS Code extension ecosystem: wallet targeting
-- JavaScript ecosystem attack surface: npm, CDN, import maps
-- Python ecosystem: PyPI poisoning, requirements.txt exploitation
-- CI/CD attack taxonomy: GitHub Actions, GitLab CI, Jenkins
-- AI model supply chain: Hugging Face, PyPI, GitHub Releases
-- SBOM enforcement: tooling comparison, integration patterns, CI/CD hooks
-- Developer machine as the new perimeter
+Cases were selected for explanatory value, source accessibility, and category coverage, not population representativeness or loss ranking. The reports link original publisher material and record its dates and limitations. Source review is not independent technical replication.
 
-## Key Questions This Note Will Answer
+- [Ledger Connect Kit malicious-package distribution](../intelligence/reports/ledger-connect-kit.md)
+- [TraderTraitor trojanized-application advisory](../intelligence/reports/tradertraitor-malware.md)
 
-1. What are the five highest-probability supply chain attack paths against a crypto developer today?
-2. What does Shai-Hulud tell us about the systemic vulnerability of the npm ecosystem?
-3. How does an AI model backdoor differ from traditional software supply chain compromise?
-4. What does a minimal viable SBOM enforcement stack look like for a 3-person DeFi team?
-5. How do supply chain attacks interact with insider threats (CS-SC-03 and CS-INS-01)?
+## Analysis
 
----
+Separate installed packages, runtime CDN loading, build modification, signing, publishing, and model loading. The selected affected-party account supports examining external publisher sessions; the campaign advisory supports examining software installation and follow-on authority. Neither establishes a universal default-deny outcome.
 
-## Interim Guidance
+## Control consequences
 
-Until this research note is published, see:
+SCD-02/07 govern artifact identity and dependency review; SCD-03 separates credentials and production signing; SCD-09 constrains install scripts. Extend offboarding to external registries, sessions, and tokens, and use WKS-12 for financial authority affected by credential loss.
 
-- [Domain 06: Supply Chain Defense](../06-supply-chain-defense/README.md): current control set
-- [taxonomy/registry-table.md](../taxonomy/registry-table.md): CS-SC-01 through CS-SC-04 entries
+## Worked application
 
-**To contribute:** Open an issue labeled `research-005`.
+Use the runtime-CDN exercise. Inventory the dependency actually delivered, publisher access, cache behavior, deployment versions, and how a clean rebuild will be verified. Compare expected versus observed containment before resuming.
 
----
+Use the [tabletop pack](../tools/tabletop-exercises.md), [playbook guide](../playbooks/README.md), and [operating guide](../OPERATING-GUIDE.md). Case facts belong in reports; reusable classes belong in taxonomy; operational decisions belong in incident logs.
 
-*Research Note 005 Stub | CSI CryptoSHIELD Framework v1.1*
-*Cyber Strategy Institute | Open-Source | Expected Q3 2026*
+## Counterexamples and remaining work
+
+Inspect malicious artifacts, versioned loader behavior, registry audit logs, build provenance, and deployed hashes. Distinguish software-package malware from model-weight poisoning. Current package versions and live service health require separate checks.
+
+No CTRS rating, calibrated attribution probability, population statistic, or prevention percentage is established. The [original note](https://github.com/CyberStrategyInstitute/crypto-shield/blob/051a317fb72db38f11d8928fddd5c506d24d468a/research/005_supply_chain_vectors.md) remains in Git history; its unsupported claims are not adopted here.

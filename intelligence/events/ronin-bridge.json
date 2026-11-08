@@ -1,0 +1,29 @@
+{
+  "schema_version": "2.0",
+  "id": "CSI-CASE-006",
+  "timestamp": "2022-06-28T00:00:00Z",
+  "timestamp_basis": "publication_date",
+  "source_review_date": "2026-11-07",
+  "threat_id": "CS-DFI-03",
+  "category": "DeFi Protocol",
+  "severity": "HIGH",
+  "ooda_phase": "orient",
+  "evidence_status": "primary_reviewed",
+  "attribution_status": "unknown",
+  "attribution": null,
+  "insider_vector": null,
+  "ai_assisted": null,
+  "financial_loss_usd": null,
+  "financial_loss_estimated": false,
+  "candidate_controls": [
+    "OCM-07",
+    "OCM-11",
+    "OCM-12",
+    "GCS-11"
+  ],
+  "references": [
+    "https://blog.roninchain.com/p/the-ronin-bridge-is-open-"
+  ],
+  "notes": "vendor_incident_account; incident; mapping supported_scope. Source publication date is used at midnight UTC for indexing, not an asserted incident time. These are operator statements. User reimbursement, backing, DAO liabilities, and recovered stolen funds are different quantities. The post's March 29 incident wording does not resolve exploit-versus-discovery timing.",
+  "control_analysis": "Message security, economic backing, liability scope, and post-incident reimbursement require separate evidence. Candidate mitigations require implementation tests; no prevention counterfactual established."
+}

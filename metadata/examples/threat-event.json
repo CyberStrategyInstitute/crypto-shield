@@ -1,0 +1,21 @@
+{
+  "id": "SYNTHETIC-APPROVAL-001",
+  "timestamp": "2026-11-07T00:00:00Z",
+  "threat_id": "CS-WAL-04",
+  "category": "Wallet",
+  "severity": "HIGH",
+  "ooda_phase": "act",
+  "evidence_status": "synthetic",
+  "attribution_status": "unknown",
+  "attribution": null,
+  "insider_vector": null,
+  "ai_assisted": null,
+  "financial_loss_usd": null,
+  "candidate_controls": [
+    "WKS-07",
+    "WKS-08"
+  ],
+  "references": [],
+  "notes": "Synthetic validation fixture. No real incident or loss asserted.",
+  "schema_version": "2.0"
+}
