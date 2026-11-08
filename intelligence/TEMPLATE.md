@@ -1,105 +1,43 @@
-# Intelligence Report Template
+# Intelligence report template
 
-**CSI CryptoSHIELD Framework v1.1**
-Use this template for weekly or incident-based intelligence reports.
+Report ID, author, review status, coverage period, actual source-review dates, and conflicts:
 
----
+## Findings
 
-## Report Header
+State observed facts, official or vendor claims, and analyst inference separately. Record competing explanations and disconfirming evidence. Unknown actor, insider involvement, or AI involvement must remain unknown. No calibrated false-flag probabilities or universal prevention claims are supported.
 
-```
-Report ID: CSI-INT-[YYYY-MM-DD]-[SEQ]
-Date: 
-Coverage Period: 
-Classification: Open-Source
-Author: 
-Review Status: [ ] Draft  [ ] Reviewed  [ ] Published
-```
+## Event record
 
----
-
-## Executive Summary (3-5 sentences)
-
-State the most important finding and its implication for crypto holders.
-
----
-
-## Threat Events (this period)
-
-For each notable event:
-
-```
-Incident ID: CS-[CAT]-[NUM]-[DATE]-[LOC]
-Threat ID: [taxonomy ID]
-Date: 
-Platform/Target: 
-Loss (USD): 
-Attack Vector: 
-Official Attribution: 
-CSI Attribution Assessment:
-  false_flag_prob: [0.0-1.0]
-  insider_vector: [true/false]
-  ai_assisted: [true/false]
-Controls That Would Have Prevented:
-  - [CTRL-ID]: [brief explanation]
-Summary: [2-3 sentences]
-Source: [URL or reference]
-```
-
----
-
-## Trend Analysis
-
-What patterns are emerging across this period's events?
-
-- Threat ID frequency changes:
-- New attack vectors identified:
-- Geographic concentration shifts:
-- AI involvement trajectory:
-
----
-
-## High-Priority Warnings
-
-List any threats that require immediate holder attention this period.
-
-| Threat | Urgency | Recommended Action |
-|---|---|---|
-| | | |
-
----
-
-## Control Effectiveness Review
-
-Are any existing controls proving insufficient against new attack variants? Recommend updates.
-
----
-
-## Companion Framework Alerts
-
-**AI SAFE² cross-reference:** Any crypto incidents with AI agent governance implications?
-**CSF cross-reference:** Any social engineering or cognitive manipulation patterns worth flagging to CSF?
-
----
-
-## DefiLlama Cross-Reference
-
-| Protocol | DefiLlama Incident ID | CSI Enrichment |
-|---|---|---|
-| | | |
-
----
-
-## Appendix: Raw Data
-
-Paste raw threat event JSON records here for registry integration.
+Use one record per JSON file under `intelligence/events/`, validated against [the event schema](../metadata/threat-event-schema.json). This example is synthetic:
 
 ```json
 {
-  "threat_events": []
+  "id": "SYNTHETIC-REPORT-001",
+  "timestamp": "2026-11-07T00:00:00Z",
+  "threat_id": "CS-WAL-04",
+  "category": "Wallet",
+  "severity": "HIGH",
+  "ooda_phase": "orient",
+  "evidence_status": "synthetic",
+  "attribution_status": "unknown",
+  "attribution": null,
+  "insider_vector": null,
+  "ai_assisted": null,
+  "financial_loss_usd": null,
+  "references": [],
+  "candidate_controls": ["WKS-07"],
+  "control_analysis": "Proposed mitigation only; record mechanism, assumptions, bypasses, and controls already present."
 }
 ```
 
----
+## Supporting evidence
 
-*Intelligence Template | CSI CryptoSHIELD Framework v1.1 | Open-Source*
+Primary artifacts and URLs, publisher, event and publication dates, actual review date, population, method, uncertainty, and contrary evidence. Reported or primary-reviewed events require source references. Synthetic examples are not incident evidence.
+
+## Financial effects
+
+Record direct loss, affected assets, frozen assets, seized assets, returns, reimbursement, and estimated future exposure separately, each with currency, source, date, and uncertainty. Avoid combining complaint totals with on-chain incident totals without overlap analysis.
+
+## Control review and follow-up
+
+Controls present; candidate mitigation; enforcement boundary; authority-specific response; bypass tests; residual harm; accountable owner; evidence needed before closure. A model shutdown does not necessarily revoke on-chain authority.

@@ -1,0 +1,7 @@
+{
+  "source_commit": "051a317fb72db38f11d8928fddd5c506d24d468a",
+  "sha256": {
+    "taxonomy/legacy/registry-v1.1.json": "1b8d3ee4d7ad190bf442fd79c76de4bf8ea7f6160c9c9fd68f9c57c4857c4d2d",
+    "taxonomy/legacy/scoring-v1.1.json": "00ed96bcfd481ce84e43004f31f6272e95b247f2df796f44f955225ae02cbcdb"
+  }
+}

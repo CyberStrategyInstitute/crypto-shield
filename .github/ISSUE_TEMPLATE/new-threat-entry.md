@@ -1,72 +1,29 @@
 ---
 name: New Threat Entry
-about: Submit a new threat for inclusion in the CryptoSHIELD taxonomy
-title: "[THREAT] CS-XXX-00: Threat Name"
-labels: new-threat, taxonomy
-assignees: ''
-
+about: Propose an evidence-backed CryptoSHIELD update
+title: "[THREAT] "
+labels: "taxonomy"
+assignees: ""
 ---
 
-## Threat Proposal
+## Proposed threat
 
-**Proposed Threat ID:** (follow existing convention: CS-[CATEGORY]-[NUMBER])
-**Category:** (PHY / INS / SOC / MAL / WAL / DFI / SC / AI / MKT / SOV / FRD / EXT)
-**Threat Name:**
-
-## Threat Description
-
-Describe the attack in concrete terms. What does the attacker do? What is the victim's experience?
-
-## Attack Vector
-
-How is this attack delivered to the victim?
-
-## OODA Phase
-
-Which OODA phase does this attack primarily operate in?
-- [ ] Observe
-- [ ] Orient
-- [ ] Decide
-- [ ] Act
+ID, category, name, scenario, attacker action, affected authority, and OODA phase:
 
 ## Evidence
 
-**Documented Cases (minimum 2 required):**
-1. [Case 1: date, platform/target, loss amount, source link]
-2. [Case 2: date, platform/target, loss amount, source link]
+Primary source URLs and immutable artifacts; event and publication dates; exact supported facts; independent corroboration; contrary evidence; unresolved claims:
 
-**Financial Scale:**
-Estimated annual losses or incident volume:
+Mark the proposal observed, reported, or hypothetical. Identify shared reporting chains. Separate loss, affected value, freezes, compensation, and recovery.
 
-## CTRS Scoring Proposal
+## Mitigation and limits
 
-Rate each component (0-4):
-- Likelihood (L): ___ | Rationale:
-- Impact on Sovereignty (I): ___ | Rationale:
-- Reach/Scale (R): ___ | Rationale:
-- Detection Difficulty (D): ___ | Rationale:
-- Recovery Difficulty (RecD): ___ | Rationale:
+Candidate control IDs, implementation boundary, bypasses, controls present when harm occurred, and acceptance tests:
 
-**Proposed CTRS:** (use formula from taxonomy/ctrs-scoring.md)
+## Priority and attribution
 
-## Proposed Controls
+Qualitative severity rationale for the defined scenario. No new CTRS score during suspension. Actor, insider involvement, and AI involvement may remain unknown. Do not infer malice from privileged access.
 
-What 1-3 controls would mitigate this threat? Refer to existing controls where possible.
+## Data and validation
 
-1.
-2.
-3.
-
-## Adversarial Reproduction Test
-
-An independent analyst using the same sources and methodology should arrive at the same threat classification and CTRS score. Provide sufficient documentation for this test to pass.
-
-## Metadata Tags
-
-- `false_flag_prob`: (float 0.0-1.0)
-- `insider_vector`: (true/false)
-- `ai_assisted`: (true/false)
-- `sovereignty_impact`: (LOW/MEDIUM/HIGH/CRITICAL)
-
----
-*CSI CryptoSHIELD Framework | Contributor: @yourhandle*
+Registry definition or event record? State schema version, generated-reference updates, and validation results. Exact companion mappings require pinned versions and semantic evidence.

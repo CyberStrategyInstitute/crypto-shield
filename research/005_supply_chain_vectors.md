@@ -1,49 +1,15 @@
-# Research Note 005: Supply Chain Vectors: The Full Attack Surface
+# Research Note 005: Supply-chain vectors
 
-**Classification:** Open-Source Intelligence | CSI CryptoSHIELD Framework
-**Status:** FORTHCOMING: Track progress at GitHub Issue #005
-**Date:** Expected Q3 2026 | **Version:** Stub 0.1
-**Threat IDs:** CS-SC-01, CS-SC-02, CS-SC-03, CS-SC-04
-**Domain:** 06: Supply Chain Defense
+Status: Stub; substantive research incomplete. Integrity review: November 7, 2026. Threats: CS-SC-01 through CS-SC-04.
 
----
+This update does not complete the historical investigation. Earlier incident amounts, attribution conclusions, calibrated-score claims, and prevention estimates are not adopted as verified findings. The [original note](https://github.com/CyberStrategyInstitute/crypto-shield/blob/051a317fb72db38f11d8928fddd5c506d24d468a/research/005_supply_chain_vectors.md) remains in Git history for audit.
 
-## Scope (Planned)
+## Evidence needed
 
-Full-depth analysis of the crypto and Web3 supply chain attack surface, including:
+Reconstruct individual campaigns without combining package counts, weekly download exposure, executed downloads, affected users, or actual theft. Pin malicious artifact versions and distinguish package, build-pipeline, frontend, model-loader, and model-weight compromise.
 
-- Shai-Hulud npm worm (September 2025) complete forensic reconstruction
-- Ledger Connect Kit compromise kill chain and cascade analysis
-- Ultralytics YOLO11 AI model backdoor: GitHub Actions as attack vector
-- ThirdWeb vulnerability and dependent protocol cascade
-- Malicious VS Code extension ecosystem: wallet targeting
-- JavaScript ecosystem attack surface: npm, CDN, import maps
-- Python ecosystem: PyPI poisoning, requirements.txt exploitation
-- CI/CD attack taxonomy: GitHub Actions, GitLab CI, Jenkins
-- AI model supply chain: Hugging Face, PyPI, GitHub Releases
-- SBOM enforcement: tooling comparison, integration patterns, CI/CD hooks
-- Developer machine as the new perimeter
+## Interim guidance
 
-## Key Questions This Note Will Answer
+SBOMs, signatures, provenance, and pinning serve different purposes and do not prove benign behavior. Test credential and signing boundaries independently.
 
-1. What are the five highest-probability supply chain attack paths against a crypto developer today?
-2. What does Shai-Hulud tell us about the systemic vulnerability of the npm ecosystem?
-3. How does an AI model backdoor differ from traditional software supply chain compromise?
-4. What does a minimal viable SBOM enforcement stack look like for a 3-person DeFi team?
-5. How do supply chain attacks interact with insider threats (CS-SC-03 and CS-INS-01)?
-
----
-
-## Interim Guidance
-
-Until this research note is published, see:
-
-- [Domain 06: Supply Chain Defense](../06-supply-chain-defense/README.md): current control set
-- [taxonomy/registry-table.md](../taxonomy/registry-table.md): CS-SC-01 through CS-SC-04 entries
-
-**To contribute:** Open an issue labeled `research-005`.
-
----
-
-*Research Note 005 Stub | CSI CryptoSHIELD Framework v1.1*
-*Cyber Strategy Institute | Open-Source | Expected Q3 2026*
+Use the [OODA playbook](../OODA-PLAYBOOK.md) for response and the [evidence ledger](../reviews/evidence-ledger.json) for accepted sources. [Series status](README.md) distinguishes drafts, stubs, and the seed methodology. No incident-rate, protection-efficacy, or attribution-probability estimate is established by this note.

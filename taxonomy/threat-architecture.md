@@ -1,6 +1,8 @@
 # CryptoSHIELD Threat Architecture: Five-Layer Causal Stack
 
-**CSI CryptoSHIELD Framework v1.1**
+**CSI CryptoSHIELD 1.2 proposal**
+
+This is a conceptual threat model, not a complete causal proof or incident dataset. Companion references are provisional; see [mapping requirements](../FRAMEWORK-ALIGNMENT.md).
 Cyber Strategy Institute | Open-Source
 
 ---
@@ -28,7 +30,7 @@ Layer -2: Structural Drivers (SD)
       (root forces generating the threat environment)
 ```
 
-**Critical Insight:** Controls that operate only at Layer 0 (technique blocking) are permanently reactive. New techniques continuously emerge from the same Layer -2 structural drivers. Addressing Layer -1 substrate vulnerabilities is the minimum effective defense posture.
+Controls can address techniques, preconditions, and consequences. Assess each path and its evidence; this layer model does not establish that one control class always succeeds.
 
 ---
 
@@ -38,7 +40,7 @@ Root forces that generate the threat environment. These cannot be eliminated by 
 
 | ID | Driver | Description |
 |---|---|---|
-| SD-001 | Irreversibility by Design | Blockchain finality means there are no chargebacks, no fraud departments, no recovery mechanisms. Every theft is permanent. This is a structural vulnerability that all other layers exploit. |
+| SD-001 | Irreversibility by Design | Finalized transfers generally lack a unilateral chargeback. Tracing, freezes, lawful seizure, restitution, and voluntary returns remain separate recovery paths with uncertain outcomes. |
 | SD-002 | Pseudonymity Asymmetry | Attackers can operate pseudonymously with very low identity risk. Defenders must often expose identity to participate in the ecosystem (CEX KYC, social media presence). |
 | SD-003 | Regulatory Vacuum and Overreach | Regulatory uncertainty creates exploitable gaps (no enforcement) and illegitimate surveillance threats (overreach). Both create adversarial conditions. |
 | SD-004 | Wealth Concentration Visibility | On-chain wealth is partially transparent. Large wallets are permanently identifiable OSINT targets. |
@@ -199,7 +201,7 @@ Observed outcomes when attacks succeed:
 **Cognitive layer:** Layer -1 VS-009 (Cognitive Vulnerability) and VS-005 (Social Trust) are addressed by the Cognitive Sovereignty Framework. CryptoSHIELD provides the technical controls; CSF addresses the human cognition layer that all social engineering attacks exploit.
 → [Cognitive Sovereignty Framework](https://github.com/CyberStrategyInstitute/cognitive-sovereignty)
 
-**AI agent layer:** CS-AI-01 through CS-AI-05, VS-007, and the full AI governance model are addressed in detail by AI SAFE² v3.0. CryptoSHIELD defers to AI SAFE² for comprehensive AI agent governance.
+**AI agent layer:** CS-AI-01 through CS-AI-05, VS-007, and the full AI governance model are addressed in detail by AI SAFE². CryptoSHIELD defers to AI SAFE² for comprehensive AI agent governance.
 → [AI SAFE² Framework v3.0](https://github.com/CyberStrategyInstitute/ai-safe2-framework)
 
 ---

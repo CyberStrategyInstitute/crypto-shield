@@ -1,50 +1,15 @@
-# Research Note 004: AI Agent Attack Surface in DeFi
+# Research Note 004: AI agent attack surface
 
-**Classification:** Open-Source Intelligence | CSI CryptoSHIELD Framework
-**Status:** FORTHCOMING: Track progress at GitHub Issue #004
-**Date:** Expected Q3 2026 | **Version:** Stub 0.1
-**Threat IDs:** CS-AI-01, CS-AI-02, CS-AI-03, CS-AI-04, CS-AI-05
-**Domain:** 07: AI Agent and Autonomous System Security
+Status: Stub; substantive research incomplete. Integrity review: November 7, 2026. Threats: CS-AI-01 through CS-AI-05.
 
----
+This update does not complete the historical investigation. Earlier incident amounts, attribution conclusions, calibrated-score claims, and prevention estimates are not adopted as verified findings. The [original note](https://github.com/CyberStrategyInstitute/crypto-shield/blob/051a317fb72db38f11d8928fddd5c506d24d468a/research/004_ai_agent_attack_surface.md) remains in Git history for audit.
 
-## Scope (Planned)
+## Evidence needed
 
-This research note will provide full-depth analysis of the AI agent attack surface in DeFi environments, including:
+Obtain original artifacts for memory poisoning, prompt injection, signing-service misuse, persistent delegation, and agent shutdown. Define the population before publishing market-share or loss statistics. Separate software-package compromise from model-weight backdoors and distinguish challenge demonstrations from operational theft.
 
-- Complete attack surface mapping for AI agents holding or managing crypto assets
-- Case study analysis: Step Finance ($40M, January 2026), ClawJacked vulnerability class, Freysa exploit
-- Memory poisoning attack methodology and detection indicators
-- Prompt injection kill chains for DeFi-connected agents
-- AI swarm attack architecture: GTG-1002 campaign anatomy (November 2025)
-- Agent wallet architecture recommendations with code examples
-- Integration with AI SAFE² v3.0 ACT Capability Tier framework
+## Interim guidance
 
-## Why This Note Matters
+A keyless agent may retain financial authority through a signer. Test independent approval, aggregate exposure, replay, concurrency, recovery, and revocation.
 
-By Q1 2026, AI agent wallets represented 8-12% of EVM DeFi transaction volume. The attack surface did not exist at meaningful scale eighteen months ago. The threat models, attack patterns, and governance gaps are all actively being discovered in production: not in academic research. This note will document what is known from real incidents and extrapolate the emerging threat landscape.
-
-## Key Questions This Note Will Answer
-
-1. What percentage of major DeFi losses in 2025-2026 involved an AI agent as a contributing factor?
-2. What is the definitive taxonomy of prompt injection attack classes against DeFi agents?
-3. How does Freysa-class logic redefinition work and how is it defended?
-4. What does a safe keyless agent architecture look like in production?
-5. Where does CryptoSHIELD Domain 07 end and AI SAFE² begin for agents at different ACT tiers?
-
----
-
-## Interim Guidance
-
-Until this research note is published, see:
-
-- [Domain 07: AI Agent Security](../07-ai-agent-security/README.md): current control set
-- [AI SAFE² Framework v3.0](https://github.com/CyberStrategyInstitute/ai-safe2-framework): full agentic AI governance
-- [taxonomy/registry-table.md](../taxonomy/registry-table.md): CS-AI-01 through CS-AI-05 entries
-
-**To contribute to this research note:** Open an issue with the label `research-004` and provide documented incident analysis, technical findings, or peer-reviewed sources.
-
----
-
-*Research Note 004 Stub | CSI CryptoSHIELD Framework v1.1*
-*Cyber Strategy Institute | Open-Source | Expected Q3 2026*
+Use the [OODA playbook](../OODA-PLAYBOOK.md) for response and the [evidence ledger](../reviews/evidence-ledger.json) for accepted sources. [Series status](README.md) distinguishes drafts, stubs, and the seed methodology. No incident-rate, protection-efficacy, or attribution-probability estimate is established by this note.

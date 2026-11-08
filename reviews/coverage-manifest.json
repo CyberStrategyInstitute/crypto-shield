@@ -1,0 +1,241 @@
+{
+  "baseline_commit": "051a317fb72db38f11d8928fddd5c506d24d468a",
+  "review_date": "2026-11-07",
+  "files": [
+    {
+      "path": ".github/ISSUE_TEMPLATE/control-update.md",
+      "review_mode": "text",
+      "finding": "Full template reviewed; align evidence, scoring suspension, unknown attribution, and migration requirements."
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/new-threat-entry.md",
+      "review_mode": "text",
+      "finding": "Full template reviewed; align evidence, scoring suspension, unknown attribution, and migration requirements."
+    },
+    {
+      "path": ".github/workflows/taxonomy-lint.yml",
+      "review_mode": "text",
+      "finding": "Schema failure suppressed; limited triggers; incomplete existence checks; replace with blocking schema, reference, link, generation, and regression checks."
+    },
+    {
+      "path": "00-cross-domain/README.md",
+      "review_mode": "text",
+      "finding": "Full control definitions and implementation prose reviewed. Preserve IDs/priorities; replace unbounded claims and inconsistent procedures with scoped implementation and verification requirements."
+    },
+    {
+      "path": "01-wallet-key-sovereignty/README.md",
+      "review_mode": "text",
+      "finding": "Full control definitions and implementation prose reviewed. Preserve IDs/priorities; replace unbounded claims and inconsistent procedures with scoped implementation and verification requirements."
+    },
+    {
+      "path": "02-endpoint-device-defense/README.md",
+      "review_mode": "text",
+      "finding": "Full control definitions and implementation prose reviewed. Preserve IDs/priorities; replace unbounded claims and inconsistent procedures with scoped implementation and verification requirements."
+    },
+    {
+      "path": "03-opsec-physical-security/README.md",
+      "review_mode": "text",
+      "finding": "Full control definitions and implementation prose reviewed. Preserve IDs/priorities; replace unbounded claims and inconsistent procedures with scoped implementation and verification requirements."
+    },
+    {
+      "path": "04-social-media-platform-security/README.md",
+      "review_mode": "text",
+      "finding": "Full control definitions and implementation prose reviewed. Preserve IDs/priorities; replace unbounded claims and inconsistent procedures with scoped implementation and verification requirements."
+    },
+    {
+      "path": "05-on-chain-monitoring/README.md",
+      "review_mode": "text",
+      "finding": "Full control definitions and implementation prose reviewed. Preserve IDs/priorities; replace unbounded claims and inconsistent procedures with scoped implementation and verification requirements."
+    },
+    {
+      "path": "06-supply-chain-defense/README.md",
+      "review_mode": "text",
+      "finding": "Full control definitions and implementation prose reviewed. Preserve IDs/priorities; replace unbounded claims and inconsistent procedures with scoped implementation and verification requirements."
+    },
+    {
+      "path": "07-ai-agent-security/README.md",
+      "review_mode": "text",
+      "finding": "Full control definitions and implementation prose reviewed. Preserve IDs/priorities; replace unbounded claims and inconsistent procedures with scoped implementation and verification requirements."
+    },
+    {
+      "path": "08-governance-compliance-sovereignty/README.md",
+      "review_mode": "text",
+      "finding": "Full control definitions and implementation prose reviewed. Preserve IDs/priorities; replace unbounded claims and inconsistent procedures with scoped implementation and verification requirements."
+    },
+    {
+      "path": "09-consumer-fraud-defense/README.md",
+      "review_mode": "text",
+      "finding": "Full control definitions and implementation prose reviewed. Preserve IDs/priorities; replace unbounded claims and inconsistent procedures with scoped implementation and verification requirements."
+    },
+    {
+      "path": "CHANGELOG.md",
+      "review_mode": "text",
+      "finding": "Declared counts and research completion exceed observed inventory; preserve historical narrative by immutable link."
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "review_mode": "text",
+      "finding": "Required uncalibrated scores/probabilities; replace with evidence and uncertainty rules."
+    },
+    {
+      "path": "FRAMEWORK-ALIGNMENT.md",
+      "review_mode": "text",
+      "finding": "Unpinned companion and external-standard mappings cannot certify compliance; withdraw exact claims pending verification."
+    },
+    {
+      "path": "LICENSE",
+      "review_mode": "text",
+      "finding": "Read in full. Mixed code/documentation licensing retained verbatim; no relicensing conclusion or change."
+    },
+    {
+      "path": "OODA-PLAYBOOK.md",
+      "review_mode": "text",
+      "finding": "Six broken response targets, universal revoke/migrate steps, insider-first probability rule, unsafe coercion actions, and unrestricted emergency override; replace."
+    },
+    {
+      "path": "README.md",
+      "review_mode": "text",
+      "finding": "Incorrect counts, incompatible score scales, unsupported guarantees/statistics, nonexistent deliverables, and stale mapping claims; replace active summary."
+    },
+    {
+      "path": "assets/CryptoSHIELD Framework.png",
+      "review_mode": "visual",
+      "finding": "Visually inspected; conflicting IDs, unsupported claims, or unsafe assumptions detailed in assets/README.md. Retire from active guidance; retain bytes."
+    },
+    {
+      "path": "assets/Domain 00 Cross-Domain Sovereignty Governance (CDG).png",
+      "review_mode": "visual",
+      "finding": "Visually inspected; conflicting IDs, unsupported claims, or unsafe assumptions detailed in assets/README.md. Retire from active guidance; retain bytes."
+    },
+    {
+      "path": "assets/Domain 01 Wallet and Key Sovereignty (WKS).png",
+      "review_mode": "visual",
+      "finding": "Visually inspected; conflicting IDs, unsupported claims, or unsafe assumptions detailed in assets/README.md. Retire from active guidance; retain bytes."
+    },
+    {
+      "path": "assets/Domain 02 Endpoint and Device Defense (EDD).png",
+      "review_mode": "visual",
+      "finding": "Visually inspected; conflicting IDs, unsupported claims, or unsafe assumptions detailed in assets/README.md. Retire from active guidance; retain bytes."
+    },
+    {
+      "path": "assets/Domain 03 OPSEC and Physical Security (OPS).png",
+      "review_mode": "visual",
+      "finding": "Visually inspected; conflicting IDs, unsupported claims, or unsafe assumptions detailed in assets/README.md. Retire from active guidance; retain bytes."
+    },
+    {
+      "path": "assets/Domain 04 Social Media and Platform Security (SMS).png",
+      "review_mode": "visual",
+      "finding": "Visually inspected; conflicting IDs, unsupported claims, or unsafe assumptions detailed in assets/README.md. Retire from active guidance; retain bytes."
+    },
+    {
+      "path": "assets/Domain 05 On-Chain Monitoring and Transaction Defense (OCM).png",
+      "review_mode": "visual",
+      "finding": "Visually inspected; conflicting IDs, unsupported claims, or unsafe assumptions detailed in assets/README.md. Retire from active guidance; retain bytes."
+    },
+    {
+      "path": "assets/Domain 06 Supply Chain Defense (SCD).png",
+      "review_mode": "visual",
+      "finding": "Visually inspected; conflicting IDs, unsupported claims, or unsafe assumptions detailed in assets/README.md. Retire from active guidance; retain bytes."
+    },
+    {
+      "path": "assets/framework-architecture.svg",
+      "review_mode": "text",
+      "finding": "Wrong counts, omitted AAS domain, stale companion metrics and proof implications; replace text-native responsibility diagram."
+    },
+    {
+      "path": "intelligence/TEMPLATE.md",
+      "review_mode": "text",
+      "finding": "Forced probability, involvement, and prevention claims plus registry/event conflation; replace with unknowns and event contract."
+    },
+    {
+      "path": "metadata/threat-event-schema.json",
+      "review_mode": "text_and_structure",
+      "finding": "Wrong contract used for registry; forced certainty, stale score semantics, null mismatch, and apparent real-case examples; replace with distinct strict contract and synthetic fixture."
+    },
+    {
+      "path": "playbooks/consumer-fraud.md",
+      "review_mode": "text",
+      "finding": "Full procedure reviewed; replace blanket actions, unsafe mandates, and unsupported outcome/fee assertions with scenario-specific response."
+    },
+    {
+      "path": "playbooks/physical-coercion.md",
+      "review_mode": "text",
+      "finding": "Full procedure reviewed; replace blanket actions, unsafe mandates, and unsupported outcome/fee assertions with scenario-specific response."
+    },
+    {
+      "path": "playbooks/wallet-compromise.md",
+      "review_mode": "text",
+      "finding": "Full procedure reviewed; replace blanket actions, unsafe mandates, and unsupported outcome/fee assertions with scenario-specific response."
+    },
+    {
+      "path": "research/001_wrench_attack_epidemic.md",
+      "review_mode": "text",
+      "finding": "Substantive content/status reviewed; missing primary artifacts and uncalibrated conclusions. Retain topic and stable path; publish status and evidence-needed note with immutable original link."
+    },
+    {
+      "path": "research/002_rotator_effect.md",
+      "review_mode": "text",
+      "finding": "Substantive content/status reviewed; missing primary artifacts and uncalibrated conclusions. Retain topic and stable path; publish status and evidence-needed note with immutable original link."
+    },
+    {
+      "path": "research/003_dprk_attribution_analysis.md",
+      "review_mode": "text",
+      "finding": "Substantive content/status reviewed; missing primary artifacts and uncalibrated conclusions. Retain topic and stable path; publish status and evidence-needed note with immutable original link."
+    },
+    {
+      "path": "research/004_ai_agent_attack_surface.md",
+      "review_mode": "text",
+      "finding": "Substantive content/status reviewed; missing primary artifacts and uncalibrated conclusions. Retain topic and stable path; publish status and evidence-needed note with immutable original link."
+    },
+    {
+      "path": "research/005_supply_chain_vectors.md",
+      "review_mode": "text",
+      "finding": "Substantive content/status reviewed; missing primary artifacts and uncalibrated conclusions. Retain topic and stable path; publish status and evidence-needed note with immutable original link."
+    },
+    {
+      "path": "research/006_pig_butchering_anatomy.md",
+      "review_mode": "text",
+      "finding": "Substantive content/status reviewed; missing primary artifacts and uncalibrated conclusions. Retain topic and stable path; publish status and evidence-needed note with immutable original link."
+    },
+    {
+      "path": "research/007_false_flag_forensics.md",
+      "review_mode": "text",
+      "finding": "Substantive content/status reviewed; missing primary artifacts and uncalibrated conclusions. Retain topic and stable path; publish status and evidence-needed note with immutable original link."
+    },
+    {
+      "path": "taxonomy/bridge-risk-appendix.md",
+      "review_mode": "text",
+      "finding": "Safe/approved labels and additive heuristics do not prove security; backing and aggregate exposure missing; replace."
+    },
+    {
+      "path": "taxonomy/ctrs-scoring.md",
+      "review_mode": "text",
+      "finding": "All 44 component rows examined; incompatible ranges/scaling and unreproducible values; suspend rather than choose a model."
+    },
+    {
+      "path": "taxonomy/registry-table.md",
+      "review_mode": "text",
+      "finding": "Hand-maintained values and labels differ from registry; replace with deterministic generation."
+    },
+    {
+      "path": "taxonomy/registry.json",
+      "review_mode": "text_and_structure",
+      "finding": "All 44 objects parsed, descriptions and control references reviewed; false total and unsupported numeric metadata; preserve original snapshot and explicit migration."
+    },
+    {
+      "path": "taxonomy/threat-architecture.md",
+      "review_mode": "text",
+      "finding": "Finality described as universal loss permanence; correct recovery boundary and qualify conceptual/companion status."
+    },
+    {
+      "path": "tools/30-day-hardening-sprint.md",
+      "review_mode": "text",
+      "finding": "Fixed denominators do not match task inventory; broken OSINT reference, mandatory decoy, blanket thresholds; replace and remove scored readiness."
+    },
+    {
+      "path": "tools/sovereignty-self-assessment.md",
+      "review_mode": "text",
+      "finding": "Unvalidated point/tier assurance, inapplicable automatic credit, wrong CFD IDs, inconsistent audit cadence, partial-address and coercion assumptions; replace with canonical unscored evidence checklist."
+    }
+  ]
+}

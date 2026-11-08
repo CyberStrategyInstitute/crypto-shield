@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Extracted domain control inventory",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "id",
+      "name",
+      "priority",
+      "path"
+    ],
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^[A-Z]{2,4}-[0-9]{2}$"
+      },
+      "name": {
+        "type": "string",
+        "minLength": 1
+      },
+      "priority": {
+        "enum": [
+          "CRITICAL",
+          "HIGH",
+          "MEDIUM",
+          "LOW"
+        ]
+      },
+      "path": {
+        "type": "string",
+        "pattern": "^[0-9]{2}-[^/]+/README[.]md$"
+      }
+    }
+  }
+}

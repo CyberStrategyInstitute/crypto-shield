@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "records": [
+    {
+      "id": "E01",
+      "claim": "The baseline commit contains 44 registry objects and 12 declared categories; domain definitions contain 95 operational plus five cross-domain control IDs.",
+      "source": "https://github.com/CyberStrategyInstitute/crypto-shield/tree/051a317fb72db38f11d8928fddd5c506d24d468a",
+      "publisher": "Cyber Strategy Institute",
+      "publication_date": null,
+      "review_date": "2026-11-07",
+      "evidence_class": "repository_observation",
+      "status": "reviewed",
+      "method": "Parse complete registry and domain-owned control definitions; run consistency validator.",
+      "population": "One repository commit; inventory counts only.",
+      "limitations": "Does not establish deployed controls, incident validity, efficacy, or current companion mappings."
+    },
+    {
+      "id": "E02",
+      "claim": "npm documents audit signatures as a command for verifying signatures and provenance attestations.",
+      "source": "https://docs.npmjs.com/cli/v11/commands/npm-audit/",
+      "publisher": "npm",
+      "publication_date": null,
+      "review_date": "2026-11-07",
+      "evidence_class": "publisher_documentation",
+      "status": "reviewed",
+      "method": "Read official command documentation.",
+      "population": "Documented npm CLI behavior.",
+      "limitations": "Not a complete provenance-required policy or proof of benign code; examples were not executed against a dependency project."
+    },
+    {
+      "id": "E03",
+      "claim": "ERC-2612 permits set allowances using a signed message and include a nonce and deadline.",
+      "source": "https://eips.ethereum.org/EIPS/eip-2612",
+      "publisher": "Ethereum Improvement Proposals",
+      "publication_date": "2020-04-13",
+      "review_date": "2026-11-07",
+      "evidence_class": "primary_specification",
+      "status": "reviewed",
+      "method": "Read permit method conditions in the standard.",
+      "population": "ERC-2612; not all permit, module, or delegation implementations.",
+      "limitations": "Implementation-specific invalidation and other authority types need separate review."
+    },
+    {
+      "id": "E04",
+      "claim": "Private recovery companies cannot issue seizure orders; recovery promises require scrutiny.",
+      "source": "https://www.fbi.gov/how-we-can-help-you/victim-services/seeking-victim-information/seeking-victim-information-in-cryptocurrency-recovery-fraud-investigation",
+      "publisher": "Federal Bureau of Investigation",
+      "publication_date": "2024-09-03",
+      "review_date": "2026-11-07",
+      "evidence_class": "official_advisory",
+      "status": "reviewed",
+      "method": "Read official investigation and recovery-fraud guidance.",
+      "population": "Advisory scope; no recovery success-rate estimate.",
+      "limitations": "Does not establish that every fee-charging professional is fraudulent or that lawful recovery is impossible."
+    },
+    {
+      "id": "E05",
+      "claim": "FinCEN announced an interim BOI rule exempting U.S. companies and U.S. persons while retaining obligations for covered foreign reporting entities.",
+      "source": "https://www.fincen.gov/news/news-releases/fincen-removes-beneficial-ownership-reporting-requirements-us-companies-and-us",
+      "publisher": "Financial Crimes Enforcement Network",
+      "publication_date": "2025-03-21",
+      "review_date": "2026-11-07",
+      "evidence_class": "official_announcement",
+      "status": "reviewed",
+      "method": "Read the agency announcement to identify the defect in blanket CTA-suspension guidance.",
+      "population": "The announced interim rule and covered entity distinctions.",
+      "limitations": "Not a complete November 2026 legal-status review or advice for any particular entity."
+    }
+  ]
+}

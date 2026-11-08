@@ -1,46 +1,24 @@
-<div align="center">
-
-<img src="../assets/Domain 00 Cross-Domain Sovereignty Governance (CDG).png" alt="Domain 00 Cross-Domain Sovereignty Governance (CDG)" width="100%" />
-</div>
-
 # Domain 00: Cross-Domain Sovereignty Governance (CDG)
 
-**CSI CryptoSHIELD Framework v1.1 | May 2026**
+CSI CryptoSHIELD 1.2 proposal | Integrity review: November 7, 2026
 
----
-
-## Philosophy
-
-Sovereignty is not a feature. It is the architecture.
-
-Every control in every other domain derives its legitimacy from this domain's foundational commitment: individual sovereignty over financial assets is a constitutional right, not a privilege granted by regulatory permission. The January 2025 Executive Order, the Fifth Circuit Tornado Cash ruling, and the CTA enforcement blocks by federal courts are not policy preferences: they are legal affirmations of what CryptoSHIELD operationalizes.
-
-This domain sets the governance context that all other domains operate within. It does not replace legal counsel. It establishes the constitutional and philosophical alignment of the entire framework.
-
----
+CSI favors individual control of assets, privacy, and accountable governance. These are policy commitments. They do not establish legal rights in every jurisdiction or override applicable obligations.
 
 ## Controls
 
-| Control | Description | Priority |
-|---------|-------------|---------|
+| Control ID | Control | Priority |
+|---|---|---|
 | CDG-01 | Sovereignty-First Policy Declaration: explicit written commitment to self-custody as the default | CRITICAL |
 | CDG-02 | U.S. Constitutional Alignment Protocol: framework review against applicable court rulings quarterly | HIGH |
 | CDG-03 | CBDC Non-Adoption Commitment: documented organizational policy against CBDC participation | CRITICAL |
 | CDG-04 | Self-Custody Rights Documentation: maintain documented record of self-custody rights per jurisdiction | HIGH |
 | CDG-05 | Annual Sovereignty Architecture Review: annual comprehensive review of all framework controls against updated threat and regulatory landscape | HIGH |
 
----
+## Governance evidence
 
-## U.S. Constitutional Alignment Reference
+CDG-01 records custody policy, exceptions, accountable owners, and recovery needs. CDG-02 and CDG-04 maintain a dated legal-source register per jurisdiction, entity, activity, and asset. CDG-03 records CSI's non-adoption policy as a policy choice, not a legal conclusion. CDG-05 reviews control evidence and unresolved exceptions annually and after material change.
 
-| Legal Precedent | Relevance | CryptoSHIELD Alignment |
-|----------------|-----------|------------------------|
-| Trump EO, January 2025 | Self-custody rights protected; CBDC prohibited | CDG-01, CDG-03, GCS-01, GCS-02 |
-| Fifth Circuit: Tornado Cash (November 2024) | Immutable smart contracts not "property" under IEEPA | GCS-03 (legal awareness) |
-| FinCEN CTA enforcement blocked (January 2025) | Reporting overreach blocked by courts | GCS-03, GCS-04 |
-| March 2026 SEC/CFTC joint interpretation | Most crypto assets confirmed not securities | GCS-03 |
-| GENIUS Act | AML at CEX boundary; innovation-preserving | GCS-04 |
+Use [Domain 08](../08-governance-compliance-sovereignty/README.md) for legal-source handling. No current constitutional or statutory conclusion follows from this domain's policy alignment.
 
----
 
-*Domain 00: Cross-Domain Sovereignty Governance | CryptoSHIELD v1.1*
+These are control specifications, not deployed protections. The [review and evidence backlog](../reviews/2026-11-07-baseline-integrity.md) records verification limits. Historical artwork is retired from active guidance; see the [asset register](../assets/README.md).

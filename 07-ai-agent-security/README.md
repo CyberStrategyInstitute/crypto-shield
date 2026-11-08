@@ -1,73 +1,43 @@
 # Domain 07: AI Agent and Autonomous System Security (AAS)
 
-**CSI CryptoSHIELD Framework v1.1 | May 2026**
+CSI CryptoSHIELD 1.2 proposal | Integrity review: November 7, 2026
 
----
-
-## Scope and Companion Framework Reference
-
-This domain provides **crypto-specific AI agent security controls** for DeFi environments. It covers the immediate, wallet-facing risks of AI agents transacting on-chain.
-
-**Full agentic AI governance is maintained by [AI SAFE² v3.0](https://github.com/CyberStrategyInstitute/ai-safe2-framework).** When deploying a DeFi AI agent beyond the controls in this domain, navigate to AI SAFE² as follows:
-
-| Your Governance Need | AI SAFE² Destination |
-|---|---|
-| Classify what your agent is allowed to do autonomously | **ACT Capability Tiers (1-4)**: determines which governance requirements apply |
-| Harden agent inputs against poisoned data | **Pillar 1: Sanitize and Isolate (S)**: input validation, context boundary enforcement |
-| Secure your MCP server integration | **CP.5.MCP**: STDIO transport security, bearer token auth, supply chain attestation |
-| Ensure a human can always override / kill-switch | **CP.10: HEAR Doctrine**: cryptographically enforced Human Ethical Agent of Record |
-| Prevent agent self-replication or unauthorized spawning | **CP.9: Agent Replication Governance**: first-in-field control for this threat class |
-| Map controls to ISO 42001, NIST AI RMF, EU AI Act | **Compliance Crosswalk**: 32-framework mapping in the AI SAFE² appendix |
-| Govern Non-Human Identity (NHI) lifecycle | **Pillar 2: Audit and Inventory (A)**: NHI enumeration, access control, deprovisioning |
-
-If your DeFi agent is ACT-3 or ACT-4 (material autonomous financial decisions or swarm coordination), the HEAR Doctrine (CP.10) is mandatory: not optional. An agent that can drain a wallet must have a cryptographically enforced human override that cannot be social-engineered away. CryptoSHIELD AAS controls alone are insufficient at that capability tier.
-
-**Full agentic AI governance covers:**
-
-- ACT Capability Tier classification (ACT-1 through ACT-4)
-- CP.10: HEAR Doctrine (Human Ethical Agent of Record: cryptographically enforced fail-closed)
-- CP.9: Agent Replication Governance (first-in-field control for agent self-replication scenarios)
-- 151 pillar controls across five operational pillars
-- 10 cross-pillar governance controls (CP.1-CP.10)
-- OWASP AIVSS v0.8 AAF composite risk scoring
-- NEXUS-A2A protocol governance
-- Non-Human Identity (NHI) full lifecycle management
-- 32-framework compliance mapping including ISO 42001, NIST AI RMF, EU AI Act
-
----
-
-## Current Threat Context (2026)
-
-By Q1 2026, AI agent wallets represented 8-12% of EVM DeFi transaction volume. This is not a future risk. It is the current attack surface.
-
-**Confirmed operational threats:**
-- **Memory poisoning**: Vector database injection creating sleeper agents (CS-AI-01)
-- **Prompt injection / logic redefinition**: Freysa exploit: hardcoded "never transfer funds" directive overridden by redefining function logic (CS-AI-02)
-- **Data chain poisoning**: GitHub documentation poisoned causing AI coding agent to generate private key-stealing code (CS-AI-03)
-- **AI swarm attacks**: GTG-1002 (November 2025): 30 organizations simultaneously, 80-90% human-out-of-loop (CS-AI-04)
-- **ClawJacked class**: Remote takeover of self-hosted trading agents via WebSocket vulnerabilities
-- **Step Finance ($40M, January 2026)**: Device compromise + AI trading agent amplification
-
----
+An agent without a private key can still cause a signing service to move funds. Enforce financial authority outside the model and outside attacker-controlled prompts, memory, and tools.
 
 ## Controls
 
 | Control ID | Control | Priority |
-|-----------|---------|---------|
-| AAS-01 | Keyless agent architecture: AI agents never hold private keys; authenticated signing only | CRITICAL |
-| AAS-02 | Memory integrity monitoring: regular hash verification of vector database contents | CRITICAL |
-| AAS-03 | Prompt injection hardening: immutable core instructions; multi-layer validation | CRITICAL |
+|---|---|---|
+| AAS-01 | Separate agent decisions from signing authority | CRITICAL |
+| AAS-02 | Memory provenance and integrity | CRITICAL |
+| AAS-03 | Prompt injection containment | CRITICAL |
 | AAS-04 | Agent wallet isolation: minimal-balance dedicated wallets per strategy | HIGH |
 | AAS-05 | Testnet simulation first: no mainnet deployment without sandbox validation | HIGH |
-| AAS-06 | Hard transaction rate limits per time window | CRITICAL |
+| AAS-06 | Aggregate financial exposure limits | CRITICAL |
 | AAS-07 | Real-time agent behavior anomaly detection | HIGH |
 | AAS-08 | Tool call allowlisting: permitted smart contracts and endpoints only | CRITICAL |
-| AAS-09 | Oracle diversity: minimum three independent sources | HIGH |
-| AAS-10 | Swarm isolation: no shared memory between swarm agent instances | HIGH |
+| AAS-09 | Independent oracle inputs and outage policy | HIGH |
+| AAS-10 | Swarm isolation and shared exposure limits | HIGH |
 
-Full control specifications and AI SAFE² cross-references: [FRAMEWORK-ALIGNMENT.md](../FRAMEWORK-ALIGNMENT.md)
+## Enforceable financial authority
 
----
+AAS-01: Put signing and policy enforcement outside the agent's runtime and credentials. Authenticate the caller and bind each authorization to chain, account, target, calldata, asset, amount, nonce, expiry, and policy version. A remote signer that accepts every agent request provides no financial separation.
 
-*Domain 07: AI Agent and Autonomous System Security | CryptoSHIELD v1.1*
-*Full agentic governance: [AI SAFE² v3.0](https://github.com/CyberStrategyInstitute/ai-safe2-framework)*
+AAS-02: Authenticate memory sources, track changes, and review poisoned content. Hashing poisoned content does not make it trustworthy. AAS-03: Treat retrieved text and model output as untrusted. Prompt wording alone cannot enforce permission boundaries.
+
+AAS-04: Isolate wallets and strategies while tracking their combined exposure. AAS-05: Test the exact policy and failure paths before deployment; testnet success does not establish mainnet economics or safety.
+
+AAS-06: Enforce cumulative value and exposure limits across wallets, sessions, chains, retries, bridges, pending actions, and concurrent requests. Define valuation sources, stale-price handling, rolling windows, atomic reservation, settlement, expiry, and idempotency. Rate limits alone do not bound loss. Fail closed when valuation or policy is unavailable.
+
+AAS-07: Monitor decisions, approvals, policy denials, and resulting chain actions. Human intervention can only stop future actions unless a tested cancellation path exists. AAS-08: Validate tool arguments and downstream effects; an allowed target may execute arbitrary batches, upgrades, or delegatecalls.
+
+AAS-09: Assess oracle source and infrastructure independence, stale or manipulated data, outages, and disagreement. Three correlated feeds are one shared failure path. AAS-10: Separate credentials, memory-write authority, and execution paths while enforcing one aggregate budget across the swarm.
+
+## Independent approval and acceptance
+
+High-consequence actions require approval through a separately authenticated channel that the agent cannot approve, rewrite, or replay. Bind it to the complete intent and expiry, and invalidate it after material changes. Test replay, changed calldata, concurrent requests, wallet splitting, bridge routing, stale prices, dependency outages, and emergency shutdown. Record controls present when a test still causes harm.
+
+[AI SAFE²](https://github.com/CyberStrategyInstitute/ai-safe2-framework) is a companion reference. Current IDs, versions, counts, and enforcement behavior have not been certified by this repository update. Use the [alignment contract](../FRAMEWORK-ALIGNMENT.md) before claiming coverage.
+
+
+These are control specifications, not deployed protections. The [review and evidence backlog](../reviews/2026-11-07-baseline-integrity.md) records verification limits. Historical artwork is retired from active guidance; see the [asset register](../assets/README.md).
