@@ -38,6 +38,8 @@ Do not deploy a generic timelock override. Emergency powers need independent aut
 
 Stop new authorizations and revoke agent sessions, delegates, API credentials, and signing-service permissions. Halt spawning and shared workflows. Inspect pending and already signed intents, approvals, and all affected chains. Stopping a process does not cancel a broadcast transaction or revoke a permit. Apply the wallet decision tree to remaining authority. Preserve policy versions, prompts, memory changes, tool calls, approval records, and chain effects.
 
+Use AAS-12 for shutdown scope, WKS-11/12 for authority inventory and invalidation, and GCS-11 for bounded emergency powers. Their domain definitions provide acceptance criteria; an incident responder must verify the actual implementation and residual authority.
+
 ## Review and reporting
 
 For U.S. theft or fraud, report through [FBI IC3](https://www.ic3.gov/) and relevant authorities. Seek emergency help for immediate physical danger. Verify receiving-service contacts independently. Do not disclose seeds, private keys, or victim details publicly. No tracing provider or reporting path guarantees recovery.

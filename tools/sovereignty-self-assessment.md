@@ -14,6 +14,8 @@ For each applicable control, record **verified**, **partial**, **absent**, or **
 | [CDG-03](../00-cross-domain/README.md) | CBDC Non-Adoption Commitment: documented organizational policy against CBDC participation | |
 | [CDG-04](../00-cross-domain/README.md) | Self-Custody Rights Documentation: maintain documented record of self-custody rights per jurisdiction | |
 | [CDG-05](../00-cross-domain/README.md) | Annual Sovereignty Architecture Review: annual comprehensive review of all framework controls against updated threat and regulatory landscape | |
+| [CDG-06](../00-cross-domain/README.md) | Evidence provenance and claim lifecycle | |
+| [CDG-07](../00-cross-domain/README.md) | Versioned assessment and compatibility governance | |
 | [WKS-01](../01-wallet-key-sovereignty/README.md) | Hardware wallet and device-integrity review | |
 | [WKS-02](../01-wallet-key-sovereignty/README.md) | Multisig with Geographic Diversity | |
 | [WKS-03](../01-wallet-key-sovereignty/README.md) | Tiered Timelock on Governance Transactions | |
@@ -24,6 +26,9 @@ For each applicable control, record **verified**, **partial**, **absent**, or **
 | [WKS-08](../01-wallet-key-sovereignty/README.md) | Permit Scam Recognition | |
 | [WKS-09](../01-wallet-key-sovereignty/README.md) | Cold storage and total accessible exposure | |
 | [WKS-10](../01-wallet-key-sovereignty/README.md) | Watch-Only Wallet for Household Members | |
+| [WKS-11](../01-wallet-key-sovereignty/README.md) | Financial authority inventory | |
+| [WKS-12](../01-wallet-key-sovereignty/README.md) | Authority revocation and recovery verification | |
+| [WKS-13](../01-wallet-key-sovereignty/README.md) | Hardware procurement and whole-device trust | |
 | [EDD-01](../02-endpoint-device-defense/README.md) | Kernel-Level Default-Deny Endpoint Protection | |
 | [EDD-02](../02-endpoint-device-defense/README.md) | Dedicated Signing Device | |
 | [EDD-03](../02-endpoint-device-defense/README.md) | Verified Software and SBOM for Developers | |
@@ -69,6 +74,8 @@ For each applicable control, record **verified**, **partial**, **absent**, or **
 | [OCM-08](../05-on-chain-monitoring/README.md) | Smart Contract Audit Verification | |
 | [OCM-09](../05-on-chain-monitoring/README.md) | Anomaly Detection | |
 | [OCM-10](../05-on-chain-monitoring/README.md) | Permit/Signature Intelligence | |
+| [OCM-11](../05-on-chain-monitoring/README.md) | Aggregate exposure budget enforcement | |
+| [OCM-12](../05-on-chain-monitoring/README.md) | Bridge backing and redemption invariants | |
 | [SCD-01](../06-supply-chain-defense/README.md) | SBOM Enforcement | |
 | [SCD-02](../06-supply-chain-defense/README.md) | Dependency Allowlisting | |
 | [SCD-03](../06-supply-chain-defense/README.md) | CI/CD Secret Isolation | |
@@ -89,6 +96,8 @@ For each applicable control, record **verified**, **partial**, **absent**, or **
 | [AAS-08](../07-ai-agent-security/README.md) | Tool call allowlisting: permitted smart contracts and endpoints only | |
 | [AAS-09](../07-ai-agent-security/README.md) | Independent oracle inputs and outage policy | |
 | [AAS-10](../07-ai-agent-security/README.md) | Swarm isolation and shared exposure limits | |
+| [AAS-11](../07-ai-agent-security/README.md) | Independent human financial authorization | |
+| [AAS-12](../07-ai-agent-security/README.md) | Agent shutdown and persistent-authority containment | |
 | [GCS-01](../08-governance-compliance-sovereignty/README.md) | Self-Custody First Policy | |
 | [GCS-02](../08-governance-compliance-sovereignty/README.md) | CBDC Resistance Protocol | |
 | [GCS-03](../08-governance-compliance-sovereignty/README.md) | Legal Awareness | |
@@ -99,6 +108,9 @@ For each applicable control, record **verified**, **partial**, **absent**, or **
 | [GCS-08](../08-governance-compliance-sovereignty/README.md) | Open Source Preference | |
 | [GCS-09](../08-governance-compliance-sovereignty/README.md) | Privacy Tool Assessment | |
 | [GCS-10](../08-governance-compliance-sovereignty/README.md) | Annual Framework Review | |
+| [GCS-11](../08-governance-compliance-sovereignty/README.md) | Bounded emergency authority | |
+| [GCS-12](../08-governance-compliance-sovereignty/README.md) | Governance capture and lasting-authority review | |
+| [GCS-13](../08-governance-compliance-sovereignty/README.md) | Custody liabilities and asset-rights assessment | |
 | [CFD-01](../09-consumer-fraud-defense/README.md) | Platform Legitimacy Stack Check | |
 | [CFD-02](../09-consumer-fraud-defense/README.md) | Unsolicited Investment Offer Zero Trust | |
 | [CFD-03](../09-consumer-fraud-defense/README.md) | Profitable Test Withdrawal Recognition | |

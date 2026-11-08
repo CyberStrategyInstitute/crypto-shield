@@ -66,7 +66,7 @@ def generated_files(root=ROOT):
     items = controls(root)
     operational = sum(not c['path'].startswith('00-') for c in items)
     governance = len(items) - operational
-    summary = f"**Integrity update, proposed version 1.2:** {len(data['threats'])} threats across {len(data['threat_categories'])} categories; {operational} operational controls in nine domains, plus {governance} cross-domain governance controls, for {len(items)} total. CTRS scoring is suspended. Historical scores are unvalidated and must not drive new rankings or protection claims."
+    summary = f"**Integrity update, proposed version 2.0.0:** {len(data['threats'])} threats across {len(data['threat_categories'])} categories; {operational} operational controls in nine domains, plus {governance} cross-domain governance controls, for {len(items)} total. CTRS scoring is suspended. Historical scores are unvalidated and must not drive new rankings or protection claims."
     readme = replace_region((root/'README.md').read_text(encoding='utf-8'), 'summary', summary)
     return {
         'taxonomy/registry-table.md': registry_table(data),

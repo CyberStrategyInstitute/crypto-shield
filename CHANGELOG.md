@@ -1,10 +1,12 @@
 # CryptoSHIELD changelog
 
-## Proposed 1.2: baseline integrity (November 7, 2026)
+## Proposed 2.0.0: financial authority and framework integrity (November 7, 2026)
 
 This is a pull-request proposal, not a tagged release.
 
-- Recount 44 threats, 12 categories, 95 operational controls, and five cross-domain controls.
+- Expand to 112 controls: 105 operational and seven cross-domain. Retain all 100 existing IDs and add 12 new IDs. The baseline recount remains 44 threats, 12 categories, 95 operational controls, and five cross-domain controls.
+- Add CDG-06/07, WKS-11/12/13, OCM-11/12, AAS-11/12, and GCS-11/12/13, each with requirements and acceptance criteria. See [the full added/updated comparison](FRAMEWORK-UPDATE.md).
+- Adopt proposed major version 2.0.0 because control scope and assessment/data contracts change incompatibly. The earlier 1.2 proposal is superseded.
 - Suspend CTRS; preserve original registry and component rows without adopting replacement scores.
 - Introduce separate registry and event contracts, synthetic fixtures, migration guidance, and blocking validation.
 - Generate the registry table, README domain counts, and assessment references from canonical definitions.

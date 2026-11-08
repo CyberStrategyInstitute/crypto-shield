@@ -1,6 +1,6 @@
 # Domain 01: Wallet and Key Sovereignty (WKS)
 
-CSI CryptoSHIELD 1.2 proposal | Integrity review: November 7, 2026
+CSI CryptoSHIELD 2.0.0 proposal | Integrity review: November 7, 2026
 
 Protect keys, verify what is signed, and inventory every authority that can move assets. An uncompromised key does not prevent misuse of a valid approval, compromised delegate, or unsafe contract.
 
@@ -18,6 +18,9 @@ Protect keys, verify what is signed, and inventory every authority that can move
 | WKS-08 | Permit Scam Recognition | HIGH |
 | WKS-09 | Cold storage and total accessible exposure | CRITICAL |
 | WKS-10 | Watch-Only Wallet for Household Members | HIGH |
+| WKS-11 | Financial authority inventory | CRITICAL |
+| WKS-12 | Authority revocation and recovery verification | CRITICAL |
+| WKS-13 | Hardware procurement and whole-device trust | HIGH |
 
 ## Wallet implementation boundaries
 
@@ -41,5 +44,32 @@ WKS-10: Watch-only access avoids granting signing authority but can expose balan
 
 Test setup and recovery with non-production funds. Demonstrate that a compromised ordinary signer cannot bypass threshold, delay, revocation, or recovery boundaries. Record unsupported paths and residual exposure. For an active incident, use the [wallet decision tree](../playbooks/wallet-compromise.md).
 
+
+
+## New controls in 2.0.0
+
+### WKS-11: Financial authority inventory
+
+Finding: Key inventories omit approvals, permits, modules, delegates, sessions, signers, and recovery powers.
+
+Requirement: Inventory every principal and path that can transfer, approve, freeze, upgrade, redeem, or recover assets, including ERC-20/NFT grants, unused permits, Permit2, smart-account modules, session keys, signing APIs, and recovery administrators. Record chains, accounts, assets, scope, limits, expiry, owner, dependencies, and invalidation mechanism. Review monthly and after authority changes.
+
+Acceptance: Reconcile the inventory against deployed configuration and observed grants. A deliberately added module or unused permit must be found; unknown authority prevents declaring the account fully assessed.
+
+### WKS-12: Authority revocation and recovery verification
+
+Finding: Revoking an allowance or stopping an app can leave keys, signatures, or delegates active.
+
+Requirement: Specify a supported invalidation and recovery procedure for each WKS-11 authority. Distinguish seed migration, allowance removal, permit nonce/expiry handling, module/session removal, credential rotation, and recovery-role changes. Verify the resulting chain state and pending signatures. Preserve recovery evidence; use the wallet decision tree for sweeper and gas races.
+
+Acceptance: After revocation, attempts through each removed path fail under its documented semantics. Test unused signatures, a pending request, alternate chains, and compromised recovery credentials. Record paths that cannot be invalidated immediately.
+
+### WKS-13: Hardware procurement and whole-device trust
+
+Finding: Authentic firmware or a secure element does not establish whole-device integrity.
+
+Requirement: Authenticate the procurement channel and supported device/firmware checks; initialize fresh recovery material on trusted hardware. Record what each attestation covers and excludes, including display, input, enclosure, firmware, and key storage. Reject pre-generated recovery material or untrusted setup instructions. Do not treat manufacturer-direct purchase as a complete integrity test.
+
+Acceptance: Document the result and coverage of each supported check. A genuine component with an unassessed display or altered setup process cannot pass a claim of whole-device integrity.
 
 These are control specifications, not deployed protections. The [review and evidence backlog](../reviews/2026-11-07-baseline-integrity.md) records verification limits. Historical artwork is retired from active guidance; see the [asset register](../assets/README.md).

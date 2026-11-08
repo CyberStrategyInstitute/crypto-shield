@@ -12,6 +12,7 @@ Use one record per JSON file under `intelligence/events/`, validated against [th
 
 ```json
 {
+  "schema_version": "2.0",
   "id": "SYNTHETIC-REPORT-001",
   "timestamp": "2026-11-07T00:00:00Z",
   "threat_id": "CS-WAL-04",

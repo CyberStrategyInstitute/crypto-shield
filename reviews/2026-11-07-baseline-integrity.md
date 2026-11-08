@@ -2,6 +2,10 @@
 
 Review date: November 7, 2026. Baseline: `051a317fb72db38f11d8928fddd5c506d24d468a`, matching current main when work began. Scope: all 47 tracked repository files, including eight PNGs and the SVG. This is a repository consistency and specification review. It does not complete the supplied analysis's broader external investigation.
 
+## Major framework expansion
+
+The initial consistency revision retained 100 controls and added no IDs. The 2.0.0 revision adds 12 explicit controls with requirements and acceptance criteria, for 112 total. See [the added/updated comparison](../FRAMEWORK-UPDATE.md). Baseline counts below describe the reviewed commit, not the expanded control inventory.
+
 ## Findings and disposition
 
 | Finding | Disposition in this proposal |
@@ -48,4 +52,4 @@ The supplied Phase 1 assessment correctly limited its research completion claim.
 
 ## Compatibility and delivery
 
-This proposal intentionally changes data contracts. See [migration](../metadata/README.md). Historical data remains available by immutable commit and snapshots. Existing licensing and all control IDs are preserved. Version 1.2 is proposed; no tag, release, merge, or deployment is authorized by these checks. The pull request is the reviewable delivery boundary.
+This proposal intentionally changes data contracts. See [migration](../metadata/README.md). Historical data remains available by immutable commit and snapshots. Existing licensing and all control IDs are preserved. Version 2.0.0 is proposed; no tag, release, merge, or deployment is authorized by these checks. The pull request is the reviewable delivery boundary.

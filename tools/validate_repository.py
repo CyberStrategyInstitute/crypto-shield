@@ -143,8 +143,9 @@ def validate(root=ROOT):
     if len(ids) != len(set(ids)):
         errors.append('Duplicate domain-owned control ID')
     prefixes = ['CDG', 'WKS', 'EDD', 'OPS', 'SMS', 'OCM', 'SCD', 'AAS', 'GCS', 'CFD']
+    expected_counts = [7, 13, 10, 10, 15, 12, 10, 12, 13, 10]
     for num, prefix in enumerate(prefixes):
-        expected = 5 if num == 0 else 15 if prefix == 'SMS' else 10
+        expected = expected_counts[num]
         paths = list(root.glob(f'{num:02d}-*/README.md'))
         if len(paths) != 1:
             errors.append(f'Missing or ambiguous domain {num:02d}')
@@ -190,6 +191,18 @@ def validate(root=ROOT):
     rows = load(root/'taxonomy/legacy/scoring-v1.1.json')['rows']
     if len(rows) != 44 or diagnostic(rows) != (36, 12):
         errors.append('Historical arithmetic diagnostic differs from documented baseline')
+    change_log = load(root/'reviews/control-changes-v2.json')
+    added_ids = {c['id'] for c in change_log['new_controls']}
+    baseline_ids = {f'{prefix}-{n:02d}' for num, prefix in enumerate(prefixes) for n in range(1, (5 if num == 0 else 15 if prefix == 'SMS' else 10)+1)}
+    if set(ids) != baseline_ids | added_ids or baseline_ids & added_ids or len(added_ids) != 12:
+        errors.append('Major-version control additions or retained baseline IDs differ from change register')
+    mapped_controls = {cid for t in data['threats'] for cid in t['candidate_controls']}
+    for control in change_log['new_controls']:
+        text = (root/control['path']).read_text(encoding='utf-8')
+        if f"### {control['id']}:" not in text or control['acceptance'] not in text:
+            errors.append(f"New control lacks registered acceptance criteria: {control['id']}")
+        if control['related_threats'] and control['id'] not in mapped_controls:
+            errors.append(f"New control is not mapped to threats: {control['id']}")
     errors += link_errors(root)
     for path in root.rglob('*.md'):
         if '.git' not in path.parts and '\u2014' in path.read_text(encoding='utf-8'):
@@ -206,4 +219,4 @@ if __name__ == '__main__':
     if errors:
         print('\n'.join(errors), file=sys.stderr)
         sys.exit(1)
-    print('Repository validation passed: registry, events, evidence, 100 controls, generated views, local links, and historical diagnostics.')
+    print('Repository validation passed: registry, events, evidence, 112 controls, added-control acceptance criteria, generated views, local links, and historical diagnostics.')

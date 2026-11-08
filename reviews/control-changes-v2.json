@@ -1,0 +1,142 @@
+{
+  "framework_version": "2.0.0",
+  "baseline_commit": "051a317fb72db38f11d8928fddd5c506d24d468a",
+  "existing_control_ids_retained": 100,
+  "new_controls": [
+    {
+      "id": "CDG-06",
+      "name": "Evidence provenance and claim lifecycle",
+      "path": "00-cross-domain/README.md",
+      "finding": "Unsupported incident, loss, attribution, and efficacy claims lack reproducible provenance.",
+      "acceptance": "A reviewer can reproduce each accepted claim from its artifacts. Missing or contradictory evidence leaves the claim pending; two articles repeating one disclosure are one evidence chain.",
+      "related_threats": [
+        "CS-INS-03",
+        "CS-MKT-03"
+      ]
+    },
+    {
+      "id": "CDG-07",
+      "name": "Versioned assessment and compatibility governance",
+      "path": "00-cross-domain/README.md",
+      "finding": "Conflicting CTRS models, ranges, schemas, and tables produce incompatible decisions.",
+      "acceptance": "Reject missing model versions, out-of-range inputs, incompatible consumers, and unpublished formula changes. Reproduce historical records without silently recalculating them.",
+      "related_threats": []
+    },
+    {
+      "id": "WKS-11",
+      "name": "Financial authority inventory",
+      "path": "01-wallet-key-sovereignty/README.md",
+      "finding": "Key inventories omit approvals, permits, modules, delegates, sessions, signers, and recovery powers.",
+      "acceptance": "Reconcile the inventory against deployed configuration and observed grants. A deliberately added module or unused permit must be found; unknown authority prevents declaring the account fully assessed.",
+      "related_threats": [
+        "CS-WAL-04",
+        "CS-WAL-01",
+        "CS-DFI-01"
+      ]
+    },
+    {
+      "id": "WKS-12",
+      "name": "Authority revocation and recovery verification",
+      "path": "01-wallet-key-sovereignty/README.md",
+      "finding": "Revoking an allowance or stopping an app can leave keys, signatures, or delegates active.",
+      "acceptance": "After revocation, attempts through each removed path fail under its documented semantics. Test unused signatures, a pending request, alternate chains, and compromised recovery credentials. Record paths that cannot be invalidated immediately.",
+      "related_threats": [
+        "CS-WAL-01",
+        "CS-WAL-04",
+        "CS-AI-02"
+      ]
+    },
+    {
+      "id": "WKS-13",
+      "name": "Hardware procurement and whole-device trust",
+      "path": "01-wallet-key-sovereignty/README.md",
+      "finding": "Authentic firmware or a secure element does not establish whole-device integrity.",
+      "acceptance": "Document the result and coverage of each supported check. A genuine component with an unassessed display or altered setup process cannot pass a claim of whole-device integrity.",
+      "related_threats": [
+        "CS-SOC-02",
+        "CS-WAL-05"
+      ]
+    },
+    {
+      "id": "OCM-11",
+      "name": "Aggregate exposure budget enforcement",
+      "path": "05-on-chain-monitoring/README.md",
+      "finding": "Per-wallet balances and transaction-count limits do not bound principal-wide financial exposure.",
+      "acceptance": "Two concurrent requests that are individually allowed but exceed the combined budget cannot both succeed. Test wallet splitting, replenishment, retries, bridge routes, pending reservations, stale prices, and policy outages.",
+      "related_threats": [
+        "CS-AI-02",
+        "CS-AI-04",
+        "CS-DFI-03"
+      ]
+    },
+    {
+      "id": "OCM-12",
+      "name": "Bridge backing and redemption invariants",
+      "path": "05-on-chain-monitoring/README.md",
+      "finding": "A valid cross-chain message can still create an unbacked or nonredeemable claim.",
+      "acceptance": "A correctly authenticated message that mints beyond supported backing must fail the exposure gate. Test replay, conflicting finality, collateral shortfall, unavailable redemption, and a malicious upgrade. Do not infer solvency from a reserve snapshot.",
+      "related_threats": [
+        "CS-DFI-03"
+      ]
+    },
+    {
+      "id": "AAS-11",
+      "name": "Independent human financial authorization",
+      "path": "07-ai-agent-security/README.md",
+      "finding": "A human gate is ineffective if the agent controls approval, recovery, or policy administration.",
+      "acceptance": "Reject agent self-approval, compromised approval-session reuse, replay, changed calldata, expired approval, and attempts to recover or replace the approver. Record the exact signing payload and approval evidence.",
+      "related_threats": [
+        "CS-AI-02",
+        "CS-AI-04",
+        "CS-WAL-04"
+      ]
+    },
+    {
+      "id": "AAS-12",
+      "name": "Agent shutdown and persistent-authority containment",
+      "path": "07-ai-agent-security/README.md",
+      "finding": "Process shutdown leaves on-chain permissions, signed intents, and signing-service credentials usable.",
+      "acceptance": "After shutdown, new requests, queued retries, spawned workers, cached credentials, and delegated sessions cannot create new unauthorized exposure. Explicitly report uncancellable signed or broadcast actions and residual harm.",
+      "related_threats": [
+        "CS-AI-01",
+        "CS-AI-02",
+        "CS-AI-04"
+      ]
+    },
+    {
+      "id": "GCS-11",
+      "name": "Bounded emergency authority",
+      "path": "08-governance-compliance-sovereignty/README.md",
+      "finding": "Generic timelock overrides can become unrestricted transfer or upgrade authority.",
+      "acceptance": "An emergency actor can perform only the intended pause/cancel actions. Arbitrary transfers, upgrades, self-extension, and removal of oversight fail. Test expiry, loss of a responder, and safe restoration.",
+      "related_threats": [
+        "CS-INS-01",
+        "CS-DFI-01"
+      ]
+    },
+    {
+      "id": "GCS-12",
+      "name": "Governance capture and lasting-authority review",
+      "path": "08-governance-compliance-sovereignty/README.md",
+      "finding": "Temporary voting power or delegated influence may grant lasting control.",
+      "acceptance": "Exercise a temporary voting-power scenario that attempts to install a lasting admin, module, or emergency role. Demonstrate the prevention or detection/cancellation boundary and record any residual capture path.",
+      "related_threats": [
+        "CS-DFI-01",
+        "CS-DFI-02",
+        "CS-MKT-02"
+      ]
+    },
+    {
+      "id": "GCS-13",
+      "name": "Custody liabilities and asset-rights assessment",
+      "path": "08-governance-compliance-sovereignty/README.md",
+      "finding": "On-chain balances and custody labels do not establish liabilities, legal title, or redemption.",
+      "acceptance": "Test an omnibus-custody case, reserve/liability mismatch, issuer freeze, redemption suspension, and insolvency scenario. Missing evidence remains unknown rather than receiving a safe rating.",
+      "related_threats": [
+        "CS-SOV-02",
+        "CS-FRD-01",
+        "CS-DFI-03"
+      ]
+    }
+  ]
+}

@@ -6,7 +6,7 @@
 <text x="480" y="44" fill="#f6921e" font-size="25">CSI CryptoSHIELD</text>
 <rect x="40" y="70" width="880" height="120" rx="10" fill="#303134" stroke="#f6921e"/>
 <text x="480" y="105" fill="#ffffff" font-size="21">Financial authority and asset-specific controls</text>
-<text x="480" y="137" fill="#ffffff" font-size="17">44 threats / 12 categories / 95 operational + 5 governance controls</text>
+<text x="480" y="137" fill="#ffffff" font-size="17">44 threats / 12 categories / 105 operational + 7 governance controls</text>
 <text x="480" y="168" fill="#f6921e" font-size="16">Wallets, devices, physical exposure, platforms, chains, supply, agents, governance, fraud</text>
 <rect x="40" y="220" width="420" height="110" rx="10" fill="#303134" stroke="#808080"/>
 <rect x="500" y="220" width="420" height="110" rx="10" fill="#303134" stroke="#808080"/>

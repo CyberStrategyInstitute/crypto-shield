@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.2",
+  "schema_version": "2.0",
   "framework": "CSI CryptoSHIELD",
   "last_updated": "2026-11-07",
   "evidence_cutoff": null,
@@ -77,7 +77,8 @@
         "WKS-02",
         "WKS-03",
         "WKS-05",
-        "SCD-10"
+        "SCD-10",
+        "GCS-11"
       ],
       "references": [
         "Radiant Capital $50M executive summary CSI",
@@ -116,7 +117,8 @@
       "candidate_controls": [
         "SCD-05",
         "GCS-06",
-        "SCD-10"
+        "SCD-10",
+        "CDG-06"
       ],
       "references": [
         "TraderTraitor/Lazarus analysis",
@@ -155,7 +157,8 @@
       "candidate_controls": [
         "WKS-01",
         "EDD-10",
-        "GCS-04"
+        "GCS-04",
+        "WKS-13"
       ],
       "references": [
         "Ledger 2020 data breach",
@@ -324,7 +327,9 @@
       "candidate_controls": [
         "WKS-04",
         "WKS-01",
-        "EDD-02"
+        "EDD-02",
+        "WKS-11",
+        "WKS-12"
       ],
       "references": [
         "CSI seed phrase protection guide",
@@ -383,7 +388,10 @@
         "WKS-05",
         "WKS-08",
         "OCM-10",
-        "OCM-01"
+        "OCM-01",
+        "WKS-11",
+        "WKS-12",
+        "AAS-11"
       ],
       "references": [
         "CSI permit scams article",
@@ -403,7 +411,8 @@
       "candidate_controls": [
         "WKS-01",
         "EDD-10",
-        "GCS-08"
+        "GCS-08",
+        "WKS-13"
       ],
       "references": [
         "Profanity vulnerability analysis",
@@ -423,7 +432,10 @@
         "WKS-02",
         "WKS-03",
         "WKS-05",
-        "SCD-10"
+        "SCD-10",
+        "WKS-11",
+        "GCS-11",
+        "GCS-12"
       ],
       "references": [
         "Radiant Capital $50M Oct 2024",
@@ -441,7 +453,8 @@
       "legacy_ctrs_score": 14.5,
       "candidate_controls": [
         "AAS-09",
-        "OCM-04"
+        "OCM-04",
+        "GCS-12"
       ],
       "references": [
         "CSI AMM article",
@@ -458,7 +471,10 @@
       "evidence_status": "pending_primary_review",
       "legacy_ctrs_score": 17.5,
       "candidate_controls": [
-        "OCM-07"
+        "OCM-07",
+        "OCM-11",
+        "OCM-12",
+        "GCS-13"
       ],
       "references": [
         "KelpDAO $292M March 2026",
@@ -588,7 +604,8 @@
       "legacy_ctrs_score": 17.5,
       "candidate_controls": [
         "AAS-02",
-        "AAS-03"
+        "AAS-03",
+        "AAS-12"
       ],
       "references": [
         "AI SAFE² v3.0 S1.5",
@@ -607,7 +624,11 @@
       "legacy_ctrs_score": 18.0,
       "candidate_controls": [
         "AAS-03",
-        "AAS-08"
+        "AAS-08",
+        "WKS-12",
+        "OCM-11",
+        "AAS-11",
+        "AAS-12"
       ],
       "references": [
         "Freysa exploit analysis",
@@ -645,7 +666,10 @@
       "candidate_controls": [
         "AAS-10",
         "AAS-06",
-        "AAS-08"
+        "AAS-08",
+        "OCM-11",
+        "AAS-11",
+        "AAS-12"
       ],
       "references": [
         "GTG-1002 November 2025",
@@ -699,7 +723,8 @@
       "evidence_status": "pending_primary_review",
       "legacy_ctrs_score": 17.5,
       "candidate_controls": [
-        "SMS-10"
+        "SMS-10",
+        "GCS-12"
       ],
       "references": [
         "CSI Rotator Effect research note 002",
@@ -717,7 +742,8 @@
       "legacy_ctrs_score": 13.5,
       "candidate_controls": [
         "SMS-10",
-        "CFD-09"
+        "CFD-09",
+        "CDG-06"
       ],
       "references": [
         "CSI Rotator Effect research",
@@ -739,7 +765,8 @@
         "CFD-02",
         "CFD-03",
         "CFD-04",
-        "SMS-13"
+        "SMS-13",
+        "GCS-13"
       ],
       "references": [
         "DFPI Scam Tracker analysis",
@@ -835,7 +862,8 @@
       "legacy_ctrs_score": 12.0,
       "candidate_controls": [
         "GCS-04",
-        "OPS-02"
+        "OPS-02",
+        "GCS-13"
       ],
       "references": [
         "Coinbase KYC breach May 2025",

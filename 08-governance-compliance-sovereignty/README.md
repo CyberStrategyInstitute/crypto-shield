@@ -1,6 +1,6 @@
 # Domain 08: Governance, Compliance, and Sovereignty (GCS)
 
-CSI CryptoSHIELD 1.2 proposal | Integrity review: November 7, 2026
+CSI CryptoSHIELD 2.0.0 proposal | Integrity review: November 7, 2026
 
 CSI favors self-custody and privacy. Implementation must account for applicable law, asset rights, operational capability, custody liabilities, and recovery. A policy preference or standards crosswalk does not establish legal compliance.
 
@@ -18,6 +18,9 @@ CSI favors self-custody and privacy. Implementation must account for applicable 
 | GCS-08 | Open Source Preference | HIGH |
 | GCS-09 | Privacy Tool Assessment | MEDIUM |
 | GCS-10 | Annual Framework Review | HIGH |
+| GCS-11 | Bounded emergency authority | CRITICAL |
+| GCS-12 | Governance capture and lasting-authority review | HIGH |
+| GCS-13 | Custody liabilities and asset-rights assessment | HIGH |
 
 ## Legal-source handling
 
@@ -37,5 +40,32 @@ GCS-07 reviews voting power, quorum, delegation, borrowing, upgrade paths, and e
 
 Record the owner, applicable sources, date, unresolved uncertainty, and implementation evidence for each decision. No standards mapping, jurisdiction label, custody score, or framework adoption establishes compliance, solvency, or safety.
 
+
+
+## New controls in 2.0.0
+
+### GCS-11: Bounded emergency authority
+
+Finding: Generic timelock overrides can become unrestricted transfer or upgrade authority.
+
+Requirement: Predefine pause/cancel powers, independent authorization, least privilege, expiry, immutable audit evidence, and restoration. Separate incident containment from ordinary upgrade and transfer authority. Inventory all bypass paths; exceptional changes require an independently reviewed procedure and explicit scope.
+
+Acceptance: An emergency actor can perform only the intended pause/cancel actions. Arbitrary transfers, upgrades, self-extension, and removal of oversight fail. Test expiry, loss of a responder, and safe restoration.
+
+### GCS-12: Governance capture and lasting-authority review
+
+Finding: Temporary voting power or delegated influence may grant lasting control.
+
+Requirement: Review quorum, voting snapshots, delegation, borrowed voting power, proposal execution, timelocks, upgrades, guardians, and role assignments as one privilege graph. Evaluate whether temporary influence can install persistent authority. Apply independent review, bounded role grants, monitoring, and cancellation to policy-defined high-risk changes.
+
+Acceptance: Exercise a temporary voting-power scenario that attempts to install a lasting admin, module, or emergency role. Demonstrate the prevention or detection/cancellation boundary and record any residual capture path.
+
+### GCS-13: Custody liabilities and asset-rights assessment
+
+Finding: On-chain balances and custody labels do not establish liabilities, legal title, or redemption.
+
+Requirement: For custodial, stablecoin, bridged, and tokenized exposures, document the holder claim, issuer/custodian obligations, segregation, liabilities, insolvency priority, redemption terms, freeze/upgrade powers, jurisdiction, and evidence date. Separate reserve attestations from a complete solvency assessment. Route unresolved legal rights to qualified review.
+
+Acceptance: Test an omnibus-custody case, reserve/liability mismatch, issuer freeze, redemption suspension, and insolvency scenario. Missing evidence remains unknown rather than receiving a safe rating.
 
 These are control specifications, not deployed protections. The [review and evidence backlog](../reviews/2026-11-07-baseline-integrity.md) records verification limits. Historical artwork is retired from active guidance; see the [asset register](../assets/README.md).

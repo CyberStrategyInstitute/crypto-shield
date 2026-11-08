@@ -125,6 +125,22 @@ class Contracts(unittest.TestCase):
         event['financial_effects']['frozen_usd'] = -1
         self.assertTrue(event_errors(event, self.event_schema, self.data, self.items))
 
+    def test_major_version_adds_twelve_controls(self):
+        changes = load(ROOT/'reviews/control-changes-v2.json')
+        self.assertEqual(changes['framework_version'], '2.0.0')
+        self.assertEqual(len(changes['new_controls']), 12)
+        self.assertEqual(len(self.items), 112)
+        self.assertEqual(sum(not c['path'].startswith('00-') for c in self.items), 105)
+        for control in changes['new_controls']:
+            self.assertIn(control['id'], {c['id'] for c in self.items})
+            for tid in control['related_threats']:
+                threat = next(t for t in self.data['threats'] if t['id'] == tid)
+                self.assertIn(control['id'], threat['candidate_controls'])
+
+    def test_event_requires_explicit_contract_version(self):
+        self.reject_event(lambda e: e.pop('schema_version'))
+        self.reject_event(lambda e: e.update(schema_version='1.2'))
+
 
 if __name__ == '__main__':
     unittest.main()

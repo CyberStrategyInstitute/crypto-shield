@@ -3,10 +3,14 @@
 CryptoSHIELD specifies controls for crypto holders, developers, and protocol teams. It covers wallets and financial authority, endpoint defense, physical exposure, social platforms, on-chain activity, supply chains, agents, governance, and consumer fraud.
 
 <!-- summary:start -->
-**Integrity update, proposed version 1.2:** 44 threats across 12 categories; 95 operational controls in nine domains, plus 5 cross-domain governance controls, for 100 total. CTRS scoring is suspended. Historical scores are unvalidated and must not drive new rankings or protection claims.
+**Integrity update, proposed version 2.0.0:** 44 threats across 12 categories; 105 operational controls in nine domains, plus 7 cross-domain governance controls, for 112 total. CTRS scoring is suspended. Historical scores are unvalidated and must not drive new rankings or protection claims.
 <!-- summary:end -->
 
 [Review and remaining work](reviews/2026-11-07-baseline-integrity.md) | [Threat registry](taxonomy/registry-table.md) | [Incident response](OODA-PLAYBOOK.md) | [Hardening sprint](tools/30-day-hardening-sprint.md) | [Self-assessment](tools/sovereignty-self-assessment.md)
+
+## What changes in 2.0.0
+
+[Added and updated controls](FRAMEWORK-UPDATE.md): 12 new controls, all 100 existing IDs retained, and material revisions across the nine operational domains and cross-domain governance. This is a major framework specification update with incompatible registry/event contracts.
 
 ## Start here
 
@@ -34,17 +38,17 @@ Physical safety takes priority over assets. Timelocks cover specified paths and 
 <!-- inventory:start -->
 | Domain | Controls | Scope |
 |---|---|---|
-| [00-cross-domain](00-cross-domain/README.md) | 5 | Cross-domain governance |
-| [01-wallet-key-sovereignty](01-wallet-key-sovereignty/README.md) | 10 | Operational |
+| [00-cross-domain](00-cross-domain/README.md) | 7 | Cross-domain governance |
+| [01-wallet-key-sovereignty](01-wallet-key-sovereignty/README.md) | 13 | Operational |
 | [02-endpoint-device-defense](02-endpoint-device-defense/README.md) | 10 | Operational |
 | [03-opsec-physical-security](03-opsec-physical-security/README.md) | 10 | Operational |
 | [04-social-media-platform-security](04-social-media-platform-security/README.md) | 15 | Operational |
-| [05-on-chain-monitoring](05-on-chain-monitoring/README.md) | 10 | Operational |
+| [05-on-chain-monitoring](05-on-chain-monitoring/README.md) | 12 | Operational |
 | [06-supply-chain-defense](06-supply-chain-defense/README.md) | 10 | Operational |
-| [07-ai-agent-security](07-ai-agent-security/README.md) | 10 | Operational |
-| [08-governance-compliance-sovereignty](08-governance-compliance-sovereignty/README.md) | 10 | Operational |
+| [07-ai-agent-security](07-ai-agent-security/README.md) | 12 | Operational |
+| [08-governance-compliance-sovereignty](08-governance-compliance-sovereignty/README.md) | 13 | Operational |
 | [09-consumer-fraud-defense](09-consumer-fraud-defense/README.md) | 10 | Operational |
-| Total | 100 | 95 operational + 5 cross-domain |
+| Total | 112 | 105 operational + 7 cross-domain |
 <!-- inventory:end -->
 
 The domain files own control definitions. The registry owns threat IDs and candidate control references. Counts, this domain summary, and the [registry table](taxonomy/registry-table.md) are generated and checked by the repository validator. A listed mitigation is not proof it prevented an incident.
