@@ -1,12 +1,21 @@
 # CryptoSHIELD changelog
 
-## Proposed 2.0.0: financial authority and framework integrity (November 7, 2026)
+## README and header presentation update
 
-This is a pull-request proposal, not a tagged release.
+- Embed the uploaded `assets/CryptoSHIELD v2.0.png` banner at the top of the README.
+- Add linked colored version, licensing, scope, taxonomy, contract, scoring, mapping, and check badges.
+- Label new and updated controls, research, intelligence, playbooks, and tools.
+- Correct stale proposal labels across current framework documentation.
+
+Replace the overall-framework PNG with a charcoal-background header, three frosted-glass groups, a three-part glass-shield sculpture, and a shared sovereignty-governance foundation. Use published v2.0.0 status as confirmed by the user. Restore README header placement and align its current version label.
+
+## 2.0.0: financial authority and framework integrity (November 7, 2026)
+
+Published framework update, merged in [PR #3](https://github.com/CyberStrategyInstitute/crypto-shield/pull/3).
 
 - Expand to 112 controls: 105 operational and seven cross-domain. Retain all 100 existing IDs and add 12 new IDs. The baseline recount remains 44 threats, 12 categories, 95 operational controls, and five cross-domain controls.
 - Add CDG-06/07, WKS-11/12/13, OCM-11/12, AAS-11/12, and GCS-11/12/13, each with requirements and acceptance criteria. See [the full added/updated comparison](FRAMEWORK-UPDATE.md).
-- Adopt proposed major version 2.0.0 because control scope and assessment/data contracts change incompatibly. The earlier 1.2 proposal is superseded.
+- Adopt major version 2.0.0 because control scope and assessment/data contracts change incompatibly. The earlier 1.2 proposal is superseded.
 - Suspend CTRS; preserve original registry and component rows without adopting replacement scores.
 - Introduce separate registry and event contracts, synthetic fixtures, migration guidance, and blocking validation.
 - Generate the registry table, README domain counts, and assessment references from canonical definitions.
@@ -18,7 +27,7 @@ This is a pull-request proposal, not a tagged release.
 
 See [migration details](metadata/README.md), [historical data](taxonomy/legacy/README.md), and [review coverage and remaining work](reviews/2026-11-07-baseline-integrity.md).
 
-## Operational evidence and examples added to the 2.0.0 proposal
+## Operational evidence and examples included in 2.0.0
 
 - Write seven scoped research notes instead of leaving research placeholders.
 - Add 13 source-checked report/event pairs across all 12 categories; retain allegation/vendor/provisional status.

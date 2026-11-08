@@ -1,10 +1,10 @@
 # CryptoSHIELD 2.0.0 framework update
 
-Proposed major version. This expands the framework from 100 to 112 controls: 105 operational controls plus seven cross-domain governance controls. All 100 existing IDs remain; 12 new IDs make previously embedded or missing requirements independently assessable. The taxonomy expands from 44 to 46 threat classes across 12 categories, adding price/collateral manipulation and policy/provider access restrictions. No replacement CTRS ratings are adopted.
+Published major version, merged in [PR #3](https://github.com/CyberStrategyInstitute/crypto-shield/pull/3). This expanded the framework from 100 to 112 controls: 105 operational controls plus seven cross-domain governance controls. All 100 existing IDs remain; 12 new IDs make previously embedded or missing requirements independently assessable. The taxonomy expands from 44 to 46 threat classes across 12 categories, adding price/collateral manipulation and policy/provider access restrictions. No replacement CTRS ratings are adopted.
 
 ## Why a major version
 
-The framework moves from a key-centric model to explicit financial authority, aggregate exposure, backing, approval independence, and authority lifecycle governance. Registry/event contracts change incompatibly, scoring and assessment contracts change, and several unsafe procedures are replaced. Version 2.0.0 describes a major specification change. It does not claim completion of outstanding research, implementation, or efficacy validation. No release tag is created by the PR.
+The framework moves from a key-centric model to explicit financial authority, aggregate exposure, backing, approval independence, and authority lifecycle governance. Registry/event contracts change incompatibly, scoring and assessment contracts change, and several unsafe procedures are replaced. Version 2.0.0 describes a major specification change. It does not claim completion of outstanding research, implementation, or efficacy validation.
 
 The version choice follows the [Semantic Versioning rule for incompatible public-contract changes](https://semver.org/). Adding controls alone could justify a minor version; removing or changing scoring, assessment, and data contracts makes this a major update.
 

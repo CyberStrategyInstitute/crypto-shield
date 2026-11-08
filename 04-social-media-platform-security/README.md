@@ -1,6 +1,6 @@
 # Domain 04: Social Media and Platform Security (SMS)
 
-CSI CryptoSHIELD 2.0.0 proposal | Integrity review: November 7, 2026
+CSI CryptoSHIELD 2.0.0 | Integrity review: November 7, 2026
 
 Verify identities, destinations, permissions, and recovery paths independently. A correct URL, HTTPS connection, paid verification badge, clean scam-database search, or plausible video does not establish safety.
 

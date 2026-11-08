@@ -1,6 +1,6 @@
 # Domain 02: Endpoint and Device Defense (EDD)
 
-CSI CryptoSHIELD 2.0.0 proposal | Integrity review: November 7, 2026
+CSI CryptoSHIELD 2.0.0 | Integrity review: November 7, 2026
 
 Default-deny execution policy, containment, signing isolation, patching, and detection address different failure paths. Blocking unknown code and allowing isolated execution are different modes. Document which mode each application uses.
 

@@ -1,6 +1,6 @@
 # CryptoSHIELD Threat Architecture: Five-Layer Causal Stack
 
-**CSI CryptoSHIELD 2.0.0 proposal**
+**CSI CryptoSHIELD 2.0.0**
 
 This is a conceptual threat model, not a complete causal proof or incident dataset. Companion references are provisional; see [mapping requirements](../FRAMEWORK-ALIGNMENT.md).
 Cyber Strategy Institute | Open-Source
